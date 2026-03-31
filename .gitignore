@@ -1,5 +1,6 @@
 # Ignore all local/private dataset contents
 data_local/
+raw_data_structure.md
 
 # Python cache and compiled files
 __pycache__/
