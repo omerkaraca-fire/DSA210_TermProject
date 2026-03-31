@@ -11,17 +11,9 @@ The project will group platforms into entertainment (Spotify, YouTube, Netflix, 
 ## Repository Structure
 ```text
 DSA210_TermProject/
-├── DataScripts/
-│   └── scripts/
 ├── Reports/
-│   ├── .gitignore
 │   └── proposal.pdf
-├── data_github/
-│   ├── academical_calendar/
-│   └── youtube_public/
 ├── .gitignore
 ├── LICENSE
 └── README.md
 ```
-
-Local-only files such as `data_local/`, `raw_data_structure.md`, LaTeX source/build files inside `Reports/`, Python cache files, and virtual environments are ignored and are not intended to be pushed to GitHub.
