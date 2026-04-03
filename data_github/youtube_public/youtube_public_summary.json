@@ -1,0 +1,92 @@
+{
+  "output_dir": "/Users/nihatomerkaraca/DSA210_TermProject/data_github/youtube_public",
+  "row_counts": {
+    "activity_rows": 34317,
+    "subscription_rows": 22
+  },
+  "unique_id_counts": {
+    "account_ids": 2,
+    "source_file_ids": 7,
+    "target_ref_ids": 30264,
+    "channel_ref_ids": 9952
+  },
+  "outputs": {
+    "activity_csv": "data_github/youtube_public/youtube_activity_public.csv",
+    "activity_jsonl": "data_github/youtube_public/youtube_activity_public.jsonl",
+    "subscriptions_csv": "data_github/youtube_public/youtube_subscriptions_public.csv",
+    "subscriptions_jsonl": "data_github/youtube_public/youtube_subscriptions_public.jsonl"
+  },
+  "chunking": {
+    "activity_rows_per_file": 5000,
+    "activity_chunk_count": 7,
+    "chunks": [
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_001.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_001.jsonl",
+        "row_count": 5000
+      },
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_002.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_002.jsonl",
+        "row_count": 5000
+      },
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_003.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_003.jsonl",
+        "row_count": 5000
+      },
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_004.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_004.jsonl",
+        "row_count": 5000
+      },
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_005.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_005.jsonl",
+        "row_count": 5000
+      },
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_006.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_006.jsonl",
+        "row_count": 5000
+      },
+      {
+        "output_csv": "data_github/youtube_public/chunks/csv/youtube_activity_public_part_007.csv",
+        "output_jsonl": "data_github/youtube_public/chunks/jsonl/youtube_activity_public_part_007.jsonl",
+        "row_count": 4317
+      }
+    ]
+  },
+  "schemas": {
+    "activity_fields": [
+      "fine_platform",
+      "fine_table",
+      "fine_record_id",
+      "fine_account",
+      "fine_source_file",
+      "fine_time_start",
+      "fine_time_end",
+      "fine_time_granularity",
+      "fine_date",
+      "source_kind",
+      "used_legacy_fallback",
+      "action",
+      "target_ref_id",
+      "target_kind",
+      "target_url_kind",
+      "channel_ref_id"
+    ],
+    "subscription_fields": [
+      "fine_platform",
+      "fine_table",
+      "fine_record_id",
+      "fine_account",
+      "fine_source_file",
+      "fine_time_start",
+      "fine_time_end",
+      "fine_time_granularity",
+      "fine_date",
+      "channel_ref_id"
+    ]
+  }
+}

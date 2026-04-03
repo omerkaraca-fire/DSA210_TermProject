@@ -1,0 +1,56 @@
+DSA 210 Introduction to Data Science
+2025-2026 Spring Term
+Project Guidelines
+
+Overview
+This term project is designed to give you hands-on experience applying the data science concepts and techniques learned throughout the semester to a real-world problem. You will work through the entire data science pipeline to address a problem of your choice. Every student is expected to work alone.
+Learning Objectives
+By completing this project, you will:
+●	Apply data science methodologies to solve a practical problem
+●	Develop skills in data collection, preparation, and analysis
+●	Implement appropriate statistical and machine learning techniques
+●	Create effective data visualizations
+●	Communicate findings through written reports and presentations
+●	Understand and practice ethical considerations in data science
+Project selection:
+●	You can either work with a data set of your own (e.g. your fitness data, reddit usage data, etc.), or a publicly available dataset. If you opt to work with publicly available data, you are expected to enrich it by another set of data. For example, if you work with stock market price data, you can create indices or add other financial/economic indicators. The planned enrichments should be clearly described in the proposal stage.
+
+Deliverables:
+•	A GitHub repository link and commits to your GitHub repository (throughout the project)
+•	A proposal document
+•	A final report and code (required). You may additionally include a video or project webpage linked within the report.
+
+Proposal Document:  Half a page (single spaced) proposal write up. Where will you get the data? How will you collect it? The characteristics of the data you will be using (number of samples if available)
+
+The Final Report:
+●	Motivation: Why are you working on this project?
+●	Data source: Where did you get this data? How did you collect it? 
+●	Data analysis: Techniques used and different stages of the analysis
+●	Findings: What are the key findings of your analysis?
+●	Limitations and future work: What could be done better? What future extensions could be explored?
+●	You may enrich your report with additional presentation material (video, website)
+
+
+Timeline
+●	17 March, 22:00: Create a Github Repo and submit URL
+●	31 March, 22:00:  Submit the project proposal.
+●	14 April, 22:00: Data collection, EDA and hypothesis tests on the data
+●	  5 May, 22:00: Apply ML methods on the dataset
+●	18 May, 22:00: Final report and code submission
+
+Note: All submissions will be through Github. After you submit the Github links, we will be then following your progress through Github. So do not change the link. Also, we expect you to do Github commits regularly.  
+
+Note: Every student will be assigned to an assistant and is expected to get help from the assistant. 
+
+Code Requirements
+●	All code must be written in Python
+●	Code must be well-documented with comments
+●	Include a requirements.txt file for Python dependencies
+●	Submit a GitHub repository link containing all code and documentation
+●	Include a README.md with instructions to reproduce your analysis
+
+Evaluation
+There will be three aspects for grading: 1) originality (how original is your project idea), 2) quality (how best you applied the relevant methods to analyze your data), 3) presentation (how well the presentation is). We will also consider peer-evaluation, that each student will be asked to grade their own work and a selected set of other students’.
+
+Academic Integrity
+All sources must be properly cited. Your submitted work must be original and completed by yourself. Use of AI tools (e.g. LLMs) is permitted but must be explicitly documented, including specific prompts used and outputs generated. Failure to disclose AI assistance will be considered academic dishonesty.
