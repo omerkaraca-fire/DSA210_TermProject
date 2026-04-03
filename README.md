@@ -9,11 +9,37 @@ The data will come from my own account archives and activity exports: Spotify Ex
 The project will group platforms into entertainment (Spotify, YouTube, Netflix, Prime Video), social (Instagram, Twitter), and AI or study-adjacent usage (ChatGPT). Because these platforms do not provide the same type of time information, I will distinguish between exact duration, estimated active usage, and activity counts instead of treating everything as identical screen time so any assumption from the raw information will be explained how it is done and how could have been better. After preprocessing and exploratory data analysis, I plan to test whether entertainment usage changes during academic-pressure periods, whether ChatGPT usage increases during those periods (I think that with recent changes normal chat usages (except the holiday, where i dont have to do anything with my life) increased), and whether cross-platform substitution or co-usage patterns appear.
 
 ## Repository Structure
+
+The structure below reflects the currently pushed GitHub repository contents.
+
 ```text
 DSA210_TermProject/
+├── DataScripts/
+│   └── scripts/
+│       └── youtube/
+│           ├── README.md
+│           ├── build_youtube_activity_dataset.py
+│           ├── build_youtube_fine_processed.py
+│           ├── build_youtube_local_pipeline.py
+│           ├── build_youtube_public_chunks.py
+│           └── convert_my_activity.py
 ├── Reports/
+│   ├── .gitignore
 │   └── proposal.pdf
+├── data_github/
+│   ├── academical_calendar/
+│   │   └── academicCalendar.jsonl
+│   └── youtube_public/
+│       ├── chunks/
+│       │   ├── csv/
+│       │   └── jsonl/
+│       ├── youtube_activity_public.csv
+│       ├── youtube_activity_public.jsonl
+│       ├── youtube_public_summary.json
+│       ├── youtube_subscriptions_public.csv
+│       └── youtube_subscriptions_public.jsonl
 ├── .gitignore
 ├── LICENSE
+├── ProjectRequirements.txt
 └── README.md
 ```
