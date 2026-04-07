@@ -10,34 +10,21 @@ The project will group platforms into entertainment (Spotify, YouTube, Netflix, 
 
 ## Repository Structure
 
-The structure below reflects the currently pushed GitHub repository contents.
+The structure below reflects the current GitHub-facing repository layout.
 
 ```text
 DSA210_TermProject/
 ├── DataScripts/
 │   └── scripts/
+│       ├── netflix/
 │       └── youtube/
-│           ├── README.md
-│           ├── build_youtube_activity_dataset.py
-│           ├── build_youtube_fine_processed.py
-│           ├── build_youtube_local_pipeline.py
-│           ├── build_youtube_public_chunks.py
-│           └── convert_my_activity.py
 ├── Reports/
 │   ├── .gitignore
 │   └── proposal.pdf
 ├── data_github/
 │   ├── academical_calendar/
-│   │   └── academicCalendar.jsonl
+│   ├── netflix_public/
 │   └── youtube_public/
-│       ├── chunks/
-│       │   ├── csv/
-│       │   └── jsonl/
-│       ├── youtube_activity_public.csv
-│       ├── youtube_activity_public.jsonl
-│       ├── youtube_public_summary.json
-│       ├── youtube_subscriptions_public.csv
-│       └── youtube_subscriptions_public.jsonl
 ├── .gitignore
 ├── LICENSE
 ├── ProjectRequirements.txt

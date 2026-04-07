@@ -1,0 +1,29 @@
+{
+  "dataset": "netflix_viewing_public",
+  "row_count": 2493,
+  "invalid_date_count": 0,
+  "title_missing_count": 5,
+  "date_range": {
+    "min": "2020-02-25",
+    "max": "2026-03-10"
+  },
+  "source_file_reference_count": 1,
+  "files": {
+    "csv": "netflix_viewing_public.csv",
+    "jsonl": "netflix_viewing_public.jsonl",
+    "summary": "netflix_public_summary.json"
+  },
+  "schema": [
+    "fine_platform",
+    "fine_table",
+    "fine_record_id",
+    "fine_account",
+    "fine_source_file",
+    "fine_time_start",
+    "fine_time_end",
+    "fine_time_granularity",
+    "fine_date",
+    "title",
+    "title_missing"
+  ]
+}
