@@ -1,12 +1,51 @@
 # DSA210_TermProject
 This repository contains the term project for the course DSA210.
-Author - Nihat Ömer Karaca e-mail: omer.karaca@sabanciuniv.edu or nihatomer.karaca@gmail.com
 
-As an undergraduate student, I have been curious about how academic pressure shapes my daily digital behavior. During exam weeks, project deadlines, and finals, the way I use entertainment, social media, and AI tools seems to change, but I want to test that idea with data rather than intuition. For this reason, my project will study my cross-platform digital behavior under academic pressure by combining personal platform exports with an academic calendar that labels exam, project, final, and baseline periods with their cross correlations as well.
+Author - Nihat Ömer Karaca  
+E-mail - omer.karaca@sabanciuniv.edu or nihatomer.karaca@gmail.com
 
-The data will come from my own account archives and activity exports: Spotify Extended Streaming History, YouTube and Google Takeout activity, Instagram activity export, Twitter archive, Netflix viewing history, Prime Video watch history, and ChatGPT export data. The repository currently contains approximately 178,438 Spotify stream rows, 34,317 YouTube activity rows, 69,513 Instagram events, 40,839 ChatGPT messages, 2,493 Netflix viewing-history rows, 719 Prime Video watch-history rows, and Twitter data including 664 tweets and 4,540 likes. I will collect these data through the platforms’ export tools (usually they are provided in their website platforms settings section.) and enrich them by merging them into a daily analysis table together with academic-period labels. Sidenote, the data itself is extremely detailed and confusing and would take time too explain it, and requires time to understand the core principles from the raw to processed data then to the EDA and hypothesis testing.
+This project studies how my entertainment behavior changes under academic pressure. The current public version focuses on four entertainment platforms: YouTube, Spotify, Netflix, and Prime Video. These datasets are combined with an academic calendar so the later analysis can compare ordinary term days, final-exam periods, and seasonal term differences.
 
-The project will group platforms into entertainment (Spotify, YouTube, Netflix, Prime Video), social (Instagram, Twitter), and AI or study-adjacent usage (ChatGPT). Because these platforms do not provide the same type of time information, I will distinguish between exact duration, estimated active usage, and activity counts instead of treating everything as identical screen time so any assumption from the raw information will be explained how it is done and how could have been better. After preprocessing and exploratory data analysis, I plan to test whether entertainment usage changes during academic-pressure periods, whether ChatGPT usage increases during those periods (I think that with recent changes normal chat usages (except the holiday, where i dont have to do anything with my life) increased), and whether cross-platform substitution or co-usage patterns appear.
+The private raw exports were not equally clean or equally easy to use. Some platforms gave structured JSON or CSV files, while others needed more careful parsing and privacy handling. For that reason, this README describes the public prepared data and the general cleaning logic, not the private local raw folders.
+
+## Raw Data / Public Data
+
+| Dataset | Public output | Current public size | Date range | Notes |
+|---|---|---:|---|---|
+| YouTube | `data_github/youtube_public/` | 34,317 activity rows and 22 subscription rows | 2022-04-17 to 2026-03-15 | Google Takeout activity converted into public activity and subscription tables. |
+| Spotify | `data_github/spotify_public/` | 178,202 streaming rows | 2019-07-27 to 2026-03-14 | Music-focused streaming history with timestamps and listening duration. |
+| Netflix | `data_github/netflix_public/` | 2,493 viewing rows | 2020-02-25 to 2026-03-10 | Viewing-history data kept at row level with titles visible. |
+| Prime Video | `data_github/prime_video_public/` | 719 watch-history rows | 2022-03-30 to 2026-03-19 | Watch-history data parsed into movie and episode records with titles visible. |
+| Academic calendar | `data_github/academical_calendar/` | Calendar labels | 2021-2022 to 2025-2026 | Used as the label source for term, add-drop, week, and final-exam periods. |
+
+## Methodology
+
+The project will use the day as the main unit of analysis because all current public datasets can be joined by `fine_date`. This makes it possible to compare activity across platforms even though the raw platforms do not measure behavior in the same way. Spotify has duration, YouTube has timestamped activity events, and Netflix and Prime Video mainly provide date-level viewing records.
+
+The later EDA will first inspect each dataset separately, then create a cross-platform daily panel. In that panel, Netflix and Prime Video can be grouped as long-form streaming while still staying separate in their public release files.
+
+## Data Cleaning & Integration
+
+Each platform was converted into a public analysis-ready format through platform-specific scripts. The scripts follow the same general flow: raw export to processed data, processed data to `fine_*` fields, then a reduced public dataset under `data_github/`.
+
+Private identifiers and local paths were masked or removed before public release. Timestamps were preserved where the platform provided them. Netflix titles were not split into show, season, and episode fields because the title strings are not consistent enough to parse safely at this stage. Prime Video records were parsed into movie and episode fields where possible, while parse uncertainty is tracked in local summaries instead of being exposed as a separate public table.
+
+## Visualization
+
+This section will be added after the EDA notebooks or scripts are created.
+
+## Hypothesis Test
+
+These hypotheses are the current planned directions. They are not final results yet.
+
+| Hypothesis | H0 | H1 | Variables |
+|---|---|---|---|
+| Entertainment usage during academic pressure | Daily entertainment usage does not differ between final-exam days and ordinary term days. | Daily entertainment usage is lower during final-exam days. | YouTube watch count, Spotify hours, Netflix count, Prime Video count |
+| Platform diversity during academic pressure | The number of entertainment platforms used per day does not differ between final-exam days and ordinary term days. | Platform diversity is lower during final-exam days. | Distinct active entertainment platforms per day |
+| Long-form streaming and YouTube activity | YouTube watch activity does not differ between long-form streaming active and inactive days. | YouTube watch activity is lower on long-form streaming active days. | Netflix count, Prime Video count, YouTube watch count |
+| Spotify and YouTube co-usage | Daily Spotify listening is not positively associated with daily YouTube watch activity. | Higher Spotify listening is positively associated with higher YouTube watch activity. | Spotify hours, YouTube watch count |
+| After-9:30 PM entertainment during finals | After-9:30 PM entertainment share does not differ between final-exam days and ordinary term days. | After-9:30 PM entertainment share is lower during final-exam days. | YouTube and Spotify activity between 21:30 and 04:59 |
+| Optional seasonal entertainment mix | Entertainment platform mix does not differ across fall, spring, and summer terms. | Summer terms have higher Spotify share and lower YouTube activity. | Term label, Spotify hours, YouTube count, long-form streaming count |
 
 ## Repository Structure
 
