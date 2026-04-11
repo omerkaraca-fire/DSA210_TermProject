@@ -1,0 +1,35 @@
+{
+  "dataset": "spotify_streaming_public",
+  "scope": "music_focused_audio_only",
+  "row_count": 178202,
+  "date_range": {
+    "min": "2019-07-27",
+    "max": "2026-03-14"
+  },
+  "account_reference_count": 1,
+  "source_file_reference_count": 12,
+  "track_reference_count": 11504,
+  "files": {
+    "csv": "spotify_streaming_public.csv",
+    "jsonl": "spotify_streaming_public.jsonl",
+    "summary": "spotify_public_summary.json"
+  },
+  "schema": [
+    "fine_platform",
+    "fine_table",
+    "fine_record_id",
+    "fine_account",
+    "fine_source_file",
+    "fine_time_start",
+    "fine_time_end",
+    "fine_time_granularity",
+    "fine_date",
+    "track_ref_id",
+    "track_name",
+    "artist_name",
+    "album_name",
+    "ms_played",
+    "minutes_played",
+    "hours_played"
+  ]
+}
