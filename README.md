@@ -17,6 +17,7 @@ DSA210_TermProject/
 ├── DataScripts/
 │   └── scripts/
 │       ├── netflix/
+│       ├── prime_video/
 │       ├── spotify/
 │       └── youtube/
 ├── Reports/
@@ -25,6 +26,7 @@ DSA210_TermProject/
 ├── data_github/
 │   ├── academical_calendar/
 │   ├── netflix_public/
+│   ├── prime_video_public/
 │   ├── spotify_public/
 │   └── youtube_public/
 ├── .gitignore

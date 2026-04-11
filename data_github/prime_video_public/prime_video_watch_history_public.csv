@@ -1,0 +1,720 @@
+fine_platform,fine_table,fine_record_id,fine_account,fine_source_file,fine_time_start,fine_time_end,fine_time_granularity,fine_date,record_type,title,series_title,season_number,episode_number,episode_title,movie_title,title_missing
+prime_video,prime_video_watch_history_public,prime_video_000001,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,18,Bring 'em Back Alive,,false
+prime_video,prime_video_watch_history_public,prime_video_000002,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,17,The Thing,,false
+prime_video,prime_video_watch_history_public,prime_video_000003,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,16,Scoobynatural,,false
+prime_video,prime_video_watch_history_public,prime_video_000004,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,15,A Most Holy Man,,false
+prime_video,prime_video_watch_history_public,prime_video_000005,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,14,Good Intentions,,false
+prime_video,prime_video_watch_history_public,prime_video_000006,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,13,Devil's Bargain,,false
+prime_video,prime_video_watch_history_public,prime_video_000007,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,12,Various & Sundry Villains,,false
+prime_video,prime_video_watch_history_public,prime_video_000008,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,11,Breakdown,,false
+prime_video,prime_video_watch_history_public,prime_video_000009,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,10,Wayward Sisters,,false
+prime_video,prime_video_watch_history_public,prime_video_000010,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,9,The Bad Place,,false
+prime_video,prime_video_watch_history_public,prime_video_000011,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,8,The Scorpion and the Frog,,false
+prime_video,prime_video_watch_history_public,prime_video_000012,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,7,War of the Worlds,,false
+prime_video,prime_video_watch_history_public,prime_video_000013,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,6,Tombstone,,false
+prime_video,prime_video_watch_history_public,prime_video_000014,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,5,Advanced Thanatology,,false
+prime_video,prime_video_watch_history_public,prime_video_000015,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,4,The Big Empty,,false
+prime_video,prime_video_watch_history_public,prime_video_000016,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,3,Patience,,false
+prime_video,prime_video_watch_history_public,prime_video_000017,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,2,The Rising Son,,false
+prime_video,prime_video_watch_history_public,prime_video_000018,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,1,Lost,,false
+prime_video,prime_video_watch_history_public,prime_video_000019,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,23,ALL ALONG THE WATCHTOWER,,false
+prime_video,prime_video_watch_history_public,prime_video_000020,,source_000001,2026-03-19,2026-03-19,date,2026-03-19,episode,Supernatural,Supernatural,13,22,WHO WE ARE,,false
+prime_video,prime_video_watch_history_public,prime_video_000021,,source_000001,2026-03-17,2026-03-17,date,2026-03-17,episode,TWINE & TASHA BANES Supernatural,TWINE & TASHA BANES Supernatural,12,21,THERE'S SOMETHING ABOUT MARY,,false
+prime_video,prime_video_watch_history_public,prime_video_000022,,source_000001,2026-03-17,2026-03-17,date,2026-03-17,episode,TWINE & TASHA BANES Supernatural,TWINE & TASHA BANES Supernatural,12,20,TWIGS &,,false
+prime_video,prime_video_watch_history_public,prime_video_000023,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,BETWEEN HEAVEN AND HELL Supernatural,BETWEEN HEAVEN AND HELL Supernatural,12,19,THE FUTURE,,false
+prime_video,prime_video_watch_history_public,prime_video_000024,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,BETWEEN HEAVEN AND HELL Supernatural,BETWEEN HEAVEN AND HELL Supernatural,12,18,THE MEMORY REMAINS,,false
+prime_video,prime_video_watch_history_public,prime_video_000025,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,BETWEEN HEAVEN AND HELL Supernatural,BETWEEN HEAVEN AND HELL Supernatural,12,17,THE BRITISH INVASION,,false
+prime_video,prime_video_watch_history_public,prime_video_000026,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,BETWEEN HEAVEN AND HELL Supernatural,BETWEEN HEAVEN AND HELL Supernatural,12,16,LADIES DRINK FREE,,false
+prime_video,prime_video_watch_history_public,prime_video_000027,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,BETWEEN HEAVEN AND HELL Supernatural,BETWEEN HEAVEN AND HELL Supernatural,12,15,SOMEWHERE,,false
+prime_video,prime_video_watch_history_public,prime_video_000028,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,BETWEEN HEAVEN AND HELL Supernatural,BETWEEN HEAVEN AND HELL Supernatural,12,14,THE RAID,,false
+prime_video,prime_video_watch_history_public,prime_video_000029,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,Supernatural,Supernatural,12,13,FAMILY FEUD,,false
+prime_video,prime_video_watch_history_public,prime_video_000030,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,Supernatural,Supernatural,12,12,Stuck In The Middle (With You),,false
+prime_video,prime_video_watch_history_public,prime_video_000031,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,Supernatural,Supernatural,12,11,Regarding Dean,,false
+prime_video,prime_video_watch_history_public,prime_video_000032,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,Supernatural,Supernatural,12,10,Lily Sunder Has Some Regrets,,false
+prime_video,prime_video_watch_history_public,prime_video_000033,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,Supernatural,Supernatural,12,9,First Blood,,false
+prime_video,prime_video_watch_history_public,prime_video_000034,,source_000001,2026-03-16,2026-03-16,date,2026-03-16,episode,Supernatural,Supernatural,12,8,Lotus,,false
+prime_video,prime_video_watch_history_public,prime_video_000035,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,7,Rock Never Dies,,false
+prime_video,prime_video_watch_history_public,prime_video_000036,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,6,Celebrating The Life of Asa Fox,,false
+prime_video,prime_video_watch_history_public,prime_video_000037,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,5,The One You've Been Waiting For,,false
+prime_video,prime_video_watch_history_public,prime_video_000038,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,4,American Nightmare,,false
+prime_video,prime_video_watch_history_public,prime_video_000039,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,3,The Foundry,,false
+prime_video,prime_video_watch_history_public,prime_video_000040,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,2,Mamma Mia,,false
+prime_video,prime_video_watch_history_public,prime_video_000041,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,1,Keep,,false
+prime_video,prime_video_watch_history_public,prime_video_000042,,source_000001,2026-03-15,2026-03-15,date,2026-03-15,episode,Supernatural,Supernatural,12,23,Alpha and Omega,,false
+prime_video,prime_video_watch_history_public,prime_video_000043,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,22,We Happy Few,,false
+prime_video,prime_video_watch_history_public,prime_video_000044,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,21,All in the Family,,false
+prime_video,prime_video_watch_history_public,prime_video_000045,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,20,Don't Call Me Shurley,,false
+prime_video,prime_video_watch_history_public,prime_video_000046,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,19,The Chitters,,false
+prime_video,prime_video_watch_history_public,prime_video_000047,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,18,Hell's Angel,,false
+prime_video,prime_video_watch_history_public,prime_video_000048,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,17,Red Meat,,false
+prime_video,prime_video_watch_history_public,prime_video_000049,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,16,Safe House,,false
+prime_video,prime_video_watch_history_public,prime_video_000050,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,15,Beyond the Mat,,false
+prime_video,prime_video_watch_history_public,prime_video_000051,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,14,The Vessel,,false
+prime_video,prime_video_watch_history_public,prime_video_000052,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,13,Love Hurts,,false
+prime_video,prime_video_watch_history_public,prime_video_000053,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,12,Don't You Forget About Me,,false
+prime_video,prime_video_watch_history_public,prime_video_000054,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,11,Into the Mystic,,false
+prime_video,prime_video_watch_history_public,prime_video_000055,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,10,The Devil in the Details,,false
+prime_video,prime_video_watch_history_public,prime_video_000056,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,9,O Brother Where Art Thou?,,false
+prime_video,prime_video_watch_history_public,prime_video_000057,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,8,Just My Imagination,,false
+prime_video,prime_video_watch_history_public,prime_video_000058,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,7,Plush,,false
+prime_video,prime_video_watch_history_public,prime_video_000059,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,6,Our Little World,,false
+prime_video,prime_video_watch_history_public,prime_video_000060,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,5,Thin Lizzie,,false
+prime_video,prime_video_watch_history_public,prime_video_000061,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,4,Baby,,false
+prime_video,prime_video_watch_history_public,prime_video_000062,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,3,The Bad Seed,,false
+prime_video,prime_video_watch_history_public,prime_video_000063,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,2,Form and Void,,false
+prime_video,prime_video_watch_history_public,prime_video_000064,,source_000001,2026-03-14,2026-03-14,date,2026-03-14,episode,Supernatural,Supernatural,11,1,"Out of the Darkness, Into the Fire",,false
+prime_video,prime_video_watch_history_public,prime_video_000065,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,23,Brother's Keeper,,false
+prime_video,prime_video_watch_history_public,prime_video_000066,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,22,The Prisoner,,false
+prime_video,prime_video_watch_history_public,prime_video_000067,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,21,Dark Dynasty,,false
+prime_video,prime_video_watch_history_public,prime_video_000068,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,20,Angel Heart,,false
+prime_video,prime_video_watch_history_public,prime_video_000069,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,19,The Werther Project,,false
+prime_video,prime_video_watch_history_public,prime_video_000070,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,18,Book of the Damned,,false
+prime_video,prime_video_watch_history_public,prime_video_000071,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,15,The Things They Carried,,false
+prime_video,prime_video_watch_history_public,prime_video_000072,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,17,Inside Man,,false
+prime_video,prime_video_watch_history_public,prime_video_000073,,source_000001,2026-03-12,2026-03-12,date,2026-03-12,episode,Supernatural,Supernatural,10,16,Paint it Black,,false
+prime_video,prime_video_watch_history_public,prime_video_000074,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,14,The Executioner's Song,,false
+prime_video,prime_video_watch_history_public,prime_video_000075,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,13,Halt & Catch Fire,,false
+prime_video,prime_video_watch_history_public,prime_video_000076,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,12,About a Boy,,false
+prime_video,prime_video_watch_history_public,prime_video_000077,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,11,There's No Place Like Home,,false
+prime_video,prime_video_watch_history_public,prime_video_000078,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,10,The Hunter Games,,false
+prime_video,prime_video_watch_history_public,prime_video_000079,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,9,The Things We Left Behind,,false
+prime_video,prime_video_watch_history_public,prime_video_000080,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,8,Hibbing 911,,false
+prime_video,prime_video_watch_history_public,prime_video_000081,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,7,"Girls, Girls, Girls",,false
+prime_video,prime_video_watch_history_public,prime_video_000082,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,6,Ask Jeeves,,false
+prime_video,prime_video_watch_history_public,prime_video_000083,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,4,Paper Moon,,false
+prime_video,prime_video_watch_history_public,prime_video_000084,,source_000001,2026-03-08,2026-03-08,date,2026-03-08,episode,Supernatural,Supernatural,10,5,Fan Fiction,,false
+prime_video,prime_video_watch_history_public,prime_video_000085,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,3,Soul Survivor,,false
+prime_video,prime_video_watch_history_public,prime_video_000086,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,2,Reichenbach,,false
+prime_video,prime_video_watch_history_public,prime_video_000087,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,1,Black,,false
+prime_video,prime_video_watch_history_public,prime_video_000088,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,23,Do You Believe in Miracles,,false
+prime_video,prime_video_watch_history_public,prime_video_000089,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,22,Stairway to Heaven,,false
+prime_video,prime_video_watch_history_public,prime_video_000090,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,21,King of the Damned,,false
+prime_video,prime_video_watch_history_public,prime_video_000091,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,20,Bloodlines,,false
+prime_video,prime_video_watch_history_public,prime_video_000092,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,19,Alex Annie Alexis Ann,,false
+prime_video,prime_video_watch_history_public,prime_video_000093,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,18,Meta Fiction,,false
+prime_video,prime_video_watch_history_public,prime_video_000094,,source_000001,2026-03-07,2026-03-07,date,2026-03-07,episode,Supernatural,Supernatural,10,17,Mother's Little Helper,,false
+prime_video,prime_video_watch_history_public,prime_video_000095,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,16,Blade Runners,,false
+prime_video,prime_video_watch_history_public,prime_video_000096,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,15,#THINMAN,,false
+prime_video,prime_video_watch_history_public,prime_video_000097,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,14,Captives,,false
+prime_video,prime_video_watch_history_public,prime_video_000098,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,13,The Purge,,false
+prime_video,prime_video_watch_history_public,prime_video_000099,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,12,Sharp Teeth,,false
+prime_video,prime_video_watch_history_public,prime_video_000100,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,11,First Born,,false
+prime_video,prime_video_watch_history_public,prime_video_000101,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,10,Road Trip,,false
+prime_video,prime_video_watch_history_public,prime_video_000102,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,9,Holy Terror,,false
+prime_video,prime_video_watch_history_public,prime_video_000103,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,8,Rock and a Hard Place,,false
+prime_video,prime_video_watch_history_public,prime_video_000104,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,7,Bad Boys,,false
+prime_video,prime_video_watch_history_public,prime_video_000105,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,6,Heaven Can't Wait,,false
+prime_video,prime_video_watch_history_public,prime_video_000106,,source_000001,2026-03-06,2026-03-06,date,2026-03-06,episode,Supernatural,Supernatural,9,5,Dog Dean Afternoon,,false
+prime_video,prime_video_watch_history_public,prime_video_000107,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,4,Slumber Party,,false
+prime_video,prime_video_watch_history_public,prime_video_000108,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,3,I'm No Angel,,false
+prime_video,prime_video_watch_history_public,prime_video_000109,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,2,Devil May Care,,false
+prime_video,prime_video_watch_history_public,prime_video_000110,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,1,I,,false
+prime_video,prime_video_watch_history_public,prime_video_000111,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,23,Sacrifice,,false
+prime_video,prime_video_watch_history_public,prime_video_000112,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,22,Clip Show,,false
+prime_video,prime_video_watch_history_public,prime_video_000113,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,21,The Great Escapist,,false
+prime_video,prime_video_watch_history_public,prime_video_000114,,source_000001,2026-03-05,2026-03-05,date,2026-03-05,episode,Supernatural,Supernatural,9,20,Pac-Man Fever,,false
+prime_video,prime_video_watch_history_public,prime_video_000115,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,19,Taxi Driver,,false
+prime_video,prime_video_watch_history_public,prime_video_000116,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,18,Freaks and Geeks,,false
+prime_video,prime_video_watch_history_public,prime_video_000117,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,17,Goodbye Stranger,,false
+prime_video,prime_video_watch_history_public,prime_video_000118,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,16,Remember the Titans,,false
+prime_video,prime_video_watch_history_public,prime_video_000119,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,15,Man's,,false
+prime_video,prime_video_watch_history_public,prime_video_000120,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,14,Trial and Error,,false
+prime_video,prime_video_watch_history_public,prime_video_000121,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,13,Everybody Hates Hitler,,false
+prime_video,prime_video_watch_history_public,prime_video_000122,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,12,As Time Goes By,,false
+prime_video,prime_video_watch_history_public,prime_video_000123,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,11,LARP and The Real Girl,,false
+prime_video,prime_video_watch_history_public,prime_video_000124,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,10,Torn and Frayed,,false
+prime_video,prime_video_watch_history_public,prime_video_000125,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,9,Citizen Fang,,false
+prime_video,prime_video_watch_history_public,prime_video_000126,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,8,Hunteri Heroici,,false
+prime_video,prime_video_watch_history_public,prime_video_000127,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,9,7,A Little Slice of Kevin,,false
+prime_video,prime_video_watch_history_public,prime_video_000128,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,6,Southern Comfort,,false
+prime_video,prime_video_watch_history_public,prime_video_000129,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,5,Blood Brother,,false
+prime_video,prime_video_watch_history_public,prime_video_000130,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,4,Bitten,,false
+prime_video,prime_video_watch_history_public,prime_video_000131,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,3,Heartache,,false
+prime_video,prime_video_watch_history_public,prime_video_000132,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,2,"What's Up, Tiger Mommy?",,false
+prime_video,prime_video_watch_history_public,prime_video_000133,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,1,We,,false
+prime_video,prime_video_watch_history_public,prime_video_000134,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,23,Survival of The Fittest,,false
+prime_video,prime_video_watch_history_public,prime_video_000135,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,22,There Will Be Blood,,false
+prime_video,prime_video_watch_history_public,prime_video_000136,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,21,Reading is Fundamental,,false
+prime_video,prime_video_watch_history_public,prime_video_000137,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,20,The Girl with the Dungeons and Dragons Tattoo,,false
+prime_video,prime_video_watch_history_public,prime_video_000138,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,19,Of Grave Importance,,false
+prime_video,prime_video_watch_history_public,prime_video_000139,,source_000001,2026-03-03,2026-03-03,date,2026-03-03,episode,Supernatural,Supernatural,8,18,"Party On, Garth",,false
+prime_video,prime_video_watch_history_public,prime_video_000140,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,17,The Born-Again Identity,,false
+prime_video,prime_video_watch_history_public,prime_video_000141,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,16,Out With the Old,,false
+prime_video,prime_video_watch_history_public,prime_video_000142,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,15,Repo Man,,false
+prime_video,prime_video_watch_history_public,prime_video_000143,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,14,Plucky,,false
+prime_video,prime_video_watch_history_public,prime_video_000144,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,13,The Slice Girls,,false
+prime_video,prime_video_watch_history_public,prime_video_000145,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,12,Time after Time after Time,,false
+prime_video,prime_video_watch_history_public,prime_video_000146,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,11,Adventures In Babysitting,,false
+prime_video,prime_video_watch_history_public,prime_video_000147,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,10,Death's Door,,false
+prime_video,prime_video_watch_history_public,prime_video_000148,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,9,How,,false
+prime_video,prime_video_watch_history_public,prime_video_000149,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,8,"Season Seven, Time for a Wedding!",,false
+prime_video,prime_video_watch_history_public,prime_video_000150,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,7,The Mentalists,,false
+prime_video,prime_video_watch_history_public,prime_video_000151,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,6,Slash Fiction,,false
+prime_video,prime_video_watch_history_public,prime_video_000152,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,5,"Shut Up, Dr. Phil",,false
+prime_video,prime_video_watch_history_public,prime_video_000153,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,4,Defending Your Life,,false
+prime_video,prime_video_watch_history_public,prime_video_000154,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,3,The Girl Next Door,,false
+prime_video,prime_video_watch_history_public,prime_video_000155,,source_000001,2026-03-01,2026-03-01,date,2026-03-01,episode,Supernatural,Supernatural,8,2,"Hello, Cruel World",,false
+prime_video,prime_video_watch_history_public,prime_video_000156,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,1,Meet,,false
+prime_video,prime_video_watch_history_public,prime_video_000157,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,22,The Man Who Knew Too Much,,false
+prime_video,prime_video_watch_history_public,prime_video_000158,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,21,Let It Bleed,,false
+prime_video,prime_video_watch_history_public,prime_video_000159,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,20,The Man Who Would Be King,,false
+prime_video,prime_video_watch_history_public,prime_video_000160,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,19,Mommy Dearest,,false
+prime_video,prime_video_watch_history_public,prime_video_000161,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,18,Frontierland,,false
+prime_video,prime_video_watch_history_public,prime_video_000162,,source_000001,2026-02-28,2026-02-28,date,2026-02-28,episode,Supernatural,Supernatural,7,17,My Heart Will Go On,,false
+prime_video,prime_video_watch_history_public,prime_video_000163,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,16,...And Then There Were None,,false
+prime_video,prime_video_watch_history_public,prime_video_000164,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,15,The French Mistake,,false
+prime_video,prime_video_watch_history_public,prime_video_000165,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,14,Mannequin 3: The Reckoning,,false
+prime_video,prime_video_watch_history_public,prime_video_000166,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,13,Unforgiven,,false
+prime_video,prime_video_watch_history_public,prime_video_000167,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,12,Like A Virgin,,false
+prime_video,prime_video_watch_history_public,prime_video_000168,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,11,Appointment In Samarra,,false
+prime_video,prime_video_watch_history_public,prime_video_000169,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,10,Caged Heat,,false
+prime_video,prime_video_watch_history_public,prime_video_000170,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,9,Clap Your Hands If You Believe,,false
+prime_video,prime_video_watch_history_public,prime_video_000171,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,8,All Dogs Go To Heaven,,false
+prime_video,prime_video_watch_history_public,prime_video_000172,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,7,Family Matters,,false
+prime_video,prime_video_watch_history_public,prime_video_000173,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,6,You Can't Handle the Truth,,false
+prime_video,prime_video_watch_history_public,prime_video_000174,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,5,Live Free or Twi-hard,,false
+prime_video,prime_video_watch_history_public,prime_video_000175,,source_000001,2026-02-27,2026-02-27,date,2026-02-27,episode,Supernatural,Supernatural,6,4,Weekend at Bobby's,,false
+prime_video,prime_video_watch_history_public,prime_video_000176,,source_000001,2026-02-26,2026-02-26,date,2026-02-26,episode,Supernatural,Supernatural,6,3,The Third Man,,false
+prime_video,prime_video_watch_history_public,prime_video_000177,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,2,Two and a Half Men,,false
+prime_video,prime_video_watch_history_public,prime_video_000178,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,1,Exile,,false
+prime_video,prime_video_watch_history_public,prime_video_000179,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,22,Swan Song,,false
+prime_video,prime_video_watch_history_public,prime_video_000180,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,21,Two Minutes to Midnight,,false
+prime_video,prime_video_watch_history_public,prime_video_000181,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,20,The Devil You Know,,false
+prime_video,prime_video_watch_history_public,prime_video_000182,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,19,Hammer of the Gods,,false
+prime_video,prime_video_watch_history_public,prime_video_000183,,source_000001,2026-02-24,2026-02-24,date,2026-02-24,episode,Supernatural,Supernatural,6,18,Point of No Return,,false
+prime_video,prime_video_watch_history_public,prime_video_000184,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,17,99 Problems,,false
+prime_video,prime_video_watch_history_public,prime_video_000185,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,16,Dark Side of the Moon,,false
+prime_video,prime_video_watch_history_public,prime_video_000186,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,15,Dead Men Don't Wear Plaid,,false
+prime_video,prime_video_watch_history_public,prime_video_000187,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,14,My,,false
+prime_video,prime_video_watch_history_public,prime_video_000188,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,13,Back to the Future II,,false
+prime_video,prime_video_watch_history_public,prime_video_000189,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,12,Swap Meat,,false
+prime_video,prime_video_watch_history_public,prime_video_000190,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,11,"Sam,",,false
+prime_video,prime_video_watch_history_public,prime_video_000191,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,10,Abandon All Hope,,false
+prime_video,prime_video_watch_history_public,prime_video_000192,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,9,The Real Ghostbusters,,false
+prime_video,prime_video_watch_history_public,prime_video_000193,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,8,Changing Channels,,false
+prime_video,prime_video_watch_history_public,prime_video_000194,,source_000001,2026-02-22,2026-02-22,date,2026-02-22,episode,Supernatural,Supernatural,6,7,The Curious Case of Dean Winchester,,false
+prime_video,prime_video_watch_history_public,prime_video_000195,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,6,I Believe the Children Are Our Future,,false
+prime_video,prime_video_watch_history_public,prime_video_000196,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,5,Fallen Idols,,false
+prime_video,prime_video_watch_history_public,prime_video_000197,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,4,The End,,false
+prime_video,prime_video_watch_history_public,prime_video_000198,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,3,Free to Be You and Me,,false
+prime_video,prime_video_watch_history_public,prime_video_000199,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,2,"Good God, Y'all!",,false
+prime_video,prime_video_watch_history_public,prime_video_000200,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,1,Sympathy,,false
+prime_video,prime_video_watch_history_public,prime_video_000201,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,22,Lucifer Rising,,false
+prime_video,prime_video_watch_history_public,prime_video_000202,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,21,When the Levee Breaks,,false
+prime_video,prime_video_watch_history_public,prime_video_000203,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,20,The Rapture,,false
+prime_video,prime_video_watch_history_public,prime_video_000204,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,19,Jump the Shark,,false
+prime_video,prime_video_watch_history_public,prime_video_000205,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,18,The Monster at the End of This Book,,false
+prime_video,prime_video_watch_history_public,prime_video_000206,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,6,17,It's a Terrible Life,,false
+prime_video,prime_video_watch_history_public,prime_video_000207,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,16,On the Head of a Pin,,false
+prime_video,prime_video_watch_history_public,prime_video_000208,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,15,Death Takes a Holiday,,false
+prime_video,prime_video_watch_history_public,prime_video_000209,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,14,Sex and Violence,,false
+prime_video,prime_video_watch_history_public,prime_video_000210,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,13,After School Special,,false
+prime_video,prime_video_watch_history_public,prime_video_000211,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,12,Criss Angel Is a Douche Bag,,false
+prime_video,prime_video_watch_history_public,prime_video_000212,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,11,Family Remains,,false
+prime_video,prime_video_watch_history_public,prime_video_000213,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,10,Heaven and Hell,,false
+prime_video,prime_video_watch_history_public,prime_video_000214,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,9,I Know What You Did Last Summer,,false
+prime_video,prime_video_watch_history_public,prime_video_000215,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,8,Wishful Thinking,,false
+prime_video,prime_video_watch_history_public,prime_video_000216,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,7,"It's the Great Pumpkin, Sam Winchester",,false
+prime_video,prime_video_watch_history_public,prime_video_000217,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,6,Yellow Fever,,false
+prime_video,prime_video_watch_history_public,prime_video_000218,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,5,Monster Movie,,false
+prime_video,prime_video_watch_history_public,prime_video_000219,,source_000001,2026-02-11,2026-02-11,date,2026-02-11,episode,Supernatural,Supernatural,4,4,Metamorphosis,,false
+prime_video,prime_video_watch_history_public,prime_video_000220,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,3,In the Beginning,,false
+prime_video,prime_video_watch_history_public,prime_video_000221,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,2,"Are You There, God? It's Me, Dean Winchester",,false
+prime_video,prime_video_watch_history_public,prime_video_000222,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,1,Lazarus,,false
+prime_video,prime_video_watch_history_public,prime_video_000223,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,1,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000224,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,19,Folsom,,false
+prime_video,prime_video_watch_history_public,prime_video_000225,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,18,31.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000226,,source_000001,2026-02-07,2026-02-07,date,2026-02-07,episode,Supernatural,Supernatural,4,8,The Strip,,false
+prime_video,prime_video_watch_history_public,prime_video_000227,,source_000001,2026-02-04,2026-02-04,date,2026-02-04,episode,Two and a Half Men,Two and a Half Men,5,7,Teslimat,,false
+prime_video,prime_video_watch_history_public,prime_video_000228,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,Two and a Half Men,Two and a Half Men,5,2,Media Room Slash Dungeon,,false
+prime_video,prime_video_watch_history_public,prime_video_000229,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,"Birds, Spiders and Mom Two and a Half Men","Birds, Spiders and Mom Two and a Half Men",9,1,Large,,false
+prime_video,prime_video_watch_history_public,prime_video_000230,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,"Birds, Spiders and Mom Two and a Half Men","Birds, Spiders and Mom Two and a Half Men",9,4,Nine magic fingers,,false
+prime_video,prime_video_watch_history_public,prime_video_000231,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,"Birds, Spiders and Mom Two and a Half Men","Birds, Spiders and Mom Two and a Half Men",9,3,Big girls don't throw food,,false
+prime_video,prime_video_watch_history_public,prime_video_000232,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,"Birds, Spiders and Mom Two and a Half Men","Birds, Spiders and Mom Two and a Half Men",9,2,People who love peepholes,,false
+prime_video,prime_video_watch_history_public,prime_video_000233,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,"to meet you, Walden Schmidt Gece Müdürü","to meet you, Walden Schmidt Gece Müdürü",2,1,Nice,,false
+prime_video,prime_video_watch_history_public,prime_video_000234,,source_000001,2026-02-02,2026-02-02,date,2026-02-02,episode,"to meet you, Walden Schmidt Gece Müdürü","to meet you, Walden Schmidt Gece Müdürü",2,6,6. Bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000235,,source_000001,2026-01-30,2026-01-30,date,2026-01-30,episode,EŞREF RÜYA,EŞREF RÜYA,2,17,30.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000236,,source_000001,2026-01-30,2026-01-30,date,2026-01-30,episode,EŞREF RÜYA,EŞREF RÜYA,2,16,29.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000237,,source_000001,2026-01-30,2026-01-30,date,2026-01-30,episode,EŞREF RÜYA,EŞREF RÜYA,2,15,28.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000238,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,14,27.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000239,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,13,26.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000240,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,12,25.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000241,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,11,24.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000242,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,10,23.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000243,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,9,22.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000244,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,8,21.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000245,,source_000001,2026-01-29,2026-01-29,date,2026-01-29,episode,EŞREF RÜYA,EŞREF RÜYA,2,7,20.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000246,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,6,19.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000247,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,5,18.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000248,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,4,17.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000249,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,3,16.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000250,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,2,15.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000251,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,1,14.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000252,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,2,13,13.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000253,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,movie,Matrix Reloaded,,,,,Matrix Reloaded,false
+prime_video,prime_video_watch_history_public,prime_video_000254,,source_000001,2026-01-27,2026-01-27,date,2026-01-27,episode,EŞREF RÜYA,EŞREF RÜYA,1,12,12.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000255,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,11,11.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000256,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,10,10.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000257,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,9,9.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000258,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,8,8.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000259,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,7,7.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000260,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,6,6.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000261,,source_000001,2026-01-26,2026-01-26,date,2026-01-26,episode,EŞREF RÜYA,EŞREF RÜYA,1,5,5. Bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000262,,source_000001,2026-01-25,2026-01-25,date,2026-01-25,episode,EŞREF RÜYA,EŞREF RÜYA,1,5,5.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000263,,source_000001,2026-01-25,2026-01-25,date,2026-01-25,episode,EŞREF RÜYA,EŞREF RÜYA,1,4,4.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000264,,source_000001,2026-01-25,2026-01-25,date,2026-01-25,episode,EŞREF RÜYA,EŞREF RÜYA,1,3,3.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000265,,source_000001,2026-01-21,2026-01-21,date,2026-01-21,episode,Fallout,Fallout,2,2,2.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000266,,source_000001,2026-01-21,2026-01-21,date,2026-01-21,episode,Fallout,Fallout,2,1,1.bölüm,,false
+prime_video,prime_video_watch_history_public,prime_video_000267,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,6,Diğer Oyuncu,,false
+prime_video,prime_video_watch_history_public,prime_video_000268,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,5,Kovboy,,false
+prime_video,prime_video_watch_history_public,prime_video_000269,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,4,Kardaki Şeytan,,false
+prime_video,prime_video_watch_history_public,prime_video_000270,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,3,Müsrif,,false
+prime_video,prime_video_watch_history_public,prime_video_000271,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,2,Altın Kural,,false
+prime_video,prime_video_watch_history_public,prime_video_000272,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,1,Mucit,,false
+prime_video,prime_video_watch_history_public,prime_video_000273,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,2,Bölüm 2,,false
+prime_video,prime_video_watch_history_public,prime_video_000274,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Gece Müdürü,Gece Müdürü,1,1,Bölüm 1,,false
+prime_video,prime_video_watch_history_public,prime_video_000275,,source_000001,2026-01-20,2026-01-20,date,2026-01-20,episode,Yüksek Şatodaki Adam,Yüksek Şatodaki Adam,1,6,Üç Maymun,,false
+prime_video,prime_video_watch_history_public,prime_video_000276,,source_000001,2025-12-02,2025-12-02,date,2025-12-02,movie,Oyun Buluşması,,,,,Oyun Buluşması,false
+prime_video,prime_video_watch_history_public,prime_video_000277,,source_000001,2025-11-27,2025-11-27,date,2025-11-27,episode,Yüksek Şatodaki Adam,Yüksek Şatodaki Adam,1,5,Yeni Düzen,,false
+prime_video,prime_video_watch_history_public,prime_video_000278,,source_000001,2025-11-27,2025-11-27,date,2025-11-27,episode,Yüksek Şatodaki Adam,Yüksek Şatodaki Adam,1,4,Keşifler,,false
+prime_video,prime_video_watch_history_public,prime_video_000279,,source_000001,2025-11-27,2025-11-27,date,2025-11-27,episode,Yüksek Şatodaki Adam,Yüksek Şatodaki Adam,1,3,Resmedilmiş Kadın,,false
+prime_video,prime_video_watch_history_public,prime_video_000280,,source_000001,2025-11-27,2025-11-27,date,2025-11-27,episode,Yüksek Şatodaki Adam,Yüksek Şatodaki Adam,1,2,Gün Doğumu,,false
+prime_video,prime_video_watch_history_public,prime_video_000281,,source_000001,2025-11-27,2025-11-27,date,2025-11-27,episode,Yüksek Şatodaki Adam,Yüksek Şatodaki Adam,1,1,Yeni Dünya,,false
+prime_video,prime_video_watch_history_public,prime_video_000282,,source_000001,2025-11-09,2025-11-09,date,2025-11-09,movie,Bar Fedaisi,,,,,Bar Fedaisi,false
+prime_video,prime_video_watch_history_public,prime_video_000283,,source_000001,2025-11-09,2025-11-09,date,2025-11-09,movie,Kahramanın Dönüşü Kahramanın Dönüşü,,,,,Kahramanın Dönüşü Kahramanın Dönüşü,false
+prime_video,prime_video_watch_history_public,prime_video_000284,,source_000001,2025-11-08,2025-11-08,date,2025-11-08,movie,Uncharted,,,,,Uncharted,false
+prime_video,prime_video_watch_history_public,prime_video_000285,,source_000001,2025-11-08,2025-11-08,date,2025-11-08,movie,Jupiter Yükseliyor,,,,,Jupiter Yükseliyor,false
+prime_video,prime_video_watch_history_public,prime_video_000286,,source_000001,2025-07-20,2025-07-20,date,2025-07-20,movie,Pasifik Savaşi: Isyan,,,,,Pasifik Savaşi: Isyan,false
+prime_video,prime_video_watch_history_public,prime_video_000287,,source_000001,2025-06-13,2025-06-13,date,2025-06-13,movie,Aquaman,,,,,Aquaman,false
+prime_video,prime_video_watch_history_public,prime_video_000288,,source_000001,2025-05-28,2025-05-28,date,2025-05-28,movie,Ağır İşçi,,,,,Ağır İşçi,false
+prime_video,prime_video_watch_history_public,prime_video_000289,,source_000001,2025-05-26,2025-05-26,date,2025-05-26,movie,Yüzüklerin Efendisi: İki Kule,,,,,Yüzüklerin Efendisi: İki Kule,false
+prime_video,prime_video_watch_history_public,prime_video_000290,,source_000001,2025-05-12,2025-05-12,date,2025-05-12,movie,Edge of Tomorrow,,,,,Edge of Tomorrow,false
+prime_video,prime_video_watch_history_public,prime_video_000291,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,The,The,2,18,Hollywood Babylon,,false
+prime_video,prime_video_watch_history_public,prime_video_000292,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,The,The,2,16,Roadkill,,false
+prime_video,prime_video_watch_history_public,prime_video_000293,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Tales,Tales,2,15,Tall,,false
+prime_video,prime_video_watch_history_public,prime_video_000294,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,,14,Born,,false
+prime_video,prime_video_watch_history_public,prime_video_000295,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,13,Houses of the Holy,,false
+prime_video,prime_video_watch_history_public,prime_video_000296,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,10,Hunted,,false
+prime_video,prime_video_watch_history_public,prime_video_000297,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,9,Croatoan,,false
+prime_video,prime_video_watch_history_public,prime_video_000298,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,8,Crossroad Blues,,false
+prime_video,prime_video_watch_history_public,prime_video_000299,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,7,The Usual Suspects,,false
+prime_video,prime_video_watch_history_public,prime_video_000300,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,6,No Exit,,false
+prime_video,prime_video_watch_history_public,prime_video_000301,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,5,Simon Said,,false
+prime_video,prime_video_watch_history_public,prime_video_000302,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,4,Children Shouldn't Play with Dead Things,,false
+prime_video,prime_video_watch_history_public,prime_video_000303,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,3,Bloodlust,,false
+prime_video,prime_video_watch_history_public,prime_video_000304,,source_000001,2025-05-11,2025-05-11,date,2025-05-11,episode,Under a Bad Sign The Complete Second Season,Under a Bad Sign The Complete Second Season,2,2,Everybody Loves a Clown,,false
+prime_video,prime_video_watch_history_public,prime_video_000305,,source_000001,2025-05-10,2025-05-10,date,2025-05-10,episode,My Time of Dying Supernatural - Season One,My Time of Dying Supernatural - Season One,,1,In,,false
+prime_video,prime_video_watch_history_public,prime_video_000306,,source_000001,2025-05-10,2025-05-10,date,2025-05-10,episode,My Time of Dying Supernatural - Season One,My Time of Dying Supernatural - Season One,,22,Devil's Trap,,false
+prime_video,prime_video_watch_history_public,prime_video_000307,,source_000001,2025-05-10,2025-05-10,date,2025-05-10,episode,My Time of Dying Supernatural - Season One,My Time of Dying Supernatural - Season One,,21,Salvation,,false
+prime_video,prime_video_watch_history_public,prime_video_000308,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,20,Dead Man's Blood,,false
+prime_video,prime_video_watch_history_public,prime_video_000309,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,12,Faith,,false
+prime_video,prime_video_watch_history_public,prime_video_000310,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,9,Home,,false
+prime_video,prime_video_watch_history_public,prime_video_000311,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,8,Bugs,,false
+prime_video,prime_video_watch_history_public,prime_video_000312,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,7,Hook Man,,false
+prime_video,prime_video_watch_history_public,prime_video_000313,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,6,Skin,,false
+prime_video,prime_video_watch_history_public,prime_video_000314,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,5,Bloody Mary,,false
+prime_video,prime_video_watch_history_public,prime_video_000315,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,4,Phantom Traveler,,false
+prime_video,prime_video_watch_history_public,prime_video_000316,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,3,Dead in the Water,,false
+prime_video,prime_video_watch_history_public,prime_video_000317,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,2,Wendigo,,false
+prime_video,prime_video_watch_history_public,prime_video_000318,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,1,Pilot,,false
+prime_video,prime_video_watch_history_public,prime_video_000319,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,6,Merhametsiz Gözler,,false
+prime_video,prime_video_watch_history_public,prime_video_000320,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,8,Bitmemiş İş,,false
+prime_video,prime_video_watch_history_public,prime_video_000321,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,7,Los Angeles Hikâyesi,,false
+prime_video,prime_video_watch_history_public,prime_video_000322,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,6,Sudaki Duman,,false
+prime_video,prime_video_watch_history_public,prime_video_000323,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,5,Güreş,,false
+prime_video,prime_video_watch_history_public,prime_video_000324,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,4,Dominique,,false
+prime_video,prime_video_watch_history_public,prime_video_000325,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,3,Mermili İki Numara,,false
+prime_video,prime_video_watch_history_public,prime_video_000326,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,2,Kamyoncu,,false
+prime_video,prime_video_watch_history_public,prime_video_000327,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,1,İkna,,false
+prime_video,prime_video_watch_history_public,prime_video_000328,,source_000001,2025-03-30,2025-03-30,date,2025-03-30,episode,Reacher,Reacher,3,5,Damane,,false
+prime_video,prime_video_watch_history_public,prime_video_000329,,source_000001,2025-01-31,2025-01-31,date,2025-01-31,episode,Gizli Seviye,Gizli Seviye,1,7,Crossfire: İyi Çatışma,,false
+prime_video,prime_video_watch_history_public,prime_video_000330,,source_000001,2025-01-24,2025-01-24,date,2025-01-24,episode,Gizli Seviye,Gizli Seviye,1,6,PAC-MAN: Daire,,false
+prime_video,prime_video_watch_history_public,prime_video_000331,,source_000001,2025-01-24,2025-01-24,date,2025-01-24,episode,Gizli Seviye,Gizli Seviye,1,5,Warhammer 40.000: Ve Onlar Korku Nedir Bilmeyecek,,false
+prime_video,prime_video_watch_history_public,prime_video_000332,,source_000001,2025-01-24,2025-01-24,date,2025-01-24,episode,Gizli Seviye,Gizli Seviye,1,4,Unreal Tournament: Xan,,false
+prime_video,prime_video_watch_history_public,prime_video_000333,,source_000001,2025-01-24,2025-01-24,date,2025-01-24,episode,Gizli Seviye,Gizli Seviye,1,3,New World: Bir Zamanların ve Geleceğin Kralı,,false
+prime_video,prime_video_watch_history_public,prime_video_000334,,source_000001,2025-01-24,2025-01-24,date,2025-01-24,episode,Gizli Seviye,Gizli Seviye,1,2,Sifu: Bir Hayat Alır,,false
+prime_video,prime_video_watch_history_public,prime_video_000335,,source_000001,2025-01-24,2025-01-24,date,2025-01-24,episode,Gizli Seviye,Gizli Seviye,1,1,Zindanlar ve Ejderhalar: Kraliçe'nin Beşiği Spider-Man: Across The Spider-Verse,,false
+prime_video,prime_video_watch_history_public,prime_video_000336,,source_000001,2025-01-07,2025-01-07,date,2025-01-07,movie,,,,,,,true
+prime_video,prime_video_watch_history_public,prime_video_000337,,source_000001,2025-01-07,2025-01-07,date,2025-01-07,movie,Men in Black,,,,,Men in Black,false
+prime_video,prime_video_watch_history_public,prime_video_000338,,source_000001,2025-01-07,2025-01-07,date,2025-01-07,movie,Warcraft,,,,,Warcraft,false
+prime_video,prime_video_watch_history_public,prime_video_000339,,source_000001,2024-12-30,2024-12-30,date,2024-12-30,episode,Gizli Seviye,Gizli Seviye,1,4,The One Where Phoebe Hates PBS,,false
+prime_video,prime_video_watch_history_public,prime_video_000340,,source_000001,2024-12-30,2024-12-30,date,2024-12-30,episode,Gizli Seviye,Gizli Seviye,1,3,The One Hundredth,,false
+prime_video,prime_video_watch_history_public,prime_video_000341,,source_000001,2024-12-30,2024-12-30,date,2024-12-30,episode,Gizli Seviye,Gizli Seviye,1,2,The One With All The Kissing,,false
+prime_video,prime_video_watch_history_public,prime_video_000342,,source_000001,2024-12-30,2024-12-30,date,2024-12-30,episode,Gizli Seviye,Gizli Seviye,1,1,The One After Ross Says Rachel,,false
+prime_video,prime_video_watch_history_public,prime_video_000343,,source_000001,2024-12-29,2024-12-29,date,2024-12-29,movie,Şrek 2,,,,,Şrek 2,false
+prime_video,prime_video_watch_history_public,prime_video_000344,,source_000001,2024-12-24,2024-12-24,date,2024-12-24,movie,Şrek Üç,,,,,Şrek Üç,false
+prime_video,prime_video_watch_history_public,prime_video_000345,,source_000001,2024-12-23,2024-12-23,date,2024-12-23,movie,Şrek,,,,,Şrek,false
+prime_video,prime_video_watch_history_public,prime_video_000346,,source_000001,2024-12-23,2024-12-23,date,2024-12-23,movie,Asteriks ve Oburiks: Orta Krallık,,,,,Asteriks ve Oburiks: Orta Krallık,false
+prime_video,prime_video_watch_history_public,prime_video_000347,,source_000001,2024-12-23,2024-12-23,date,2024-12-23,movie,Hansel ve Gretel: Cadı Avcıları,,,,,Hansel ve Gretel: Cadı Avcıları,false
+prime_video,prime_video_watch_history_public,prime_video_000348,,source_000001,2024-12-15,2024-12-15,date,2024-12-15,movie,OPERATION FORTUNE: RUSE DE GUERRE (SERVET OPERASYONU),,,,,OPERATION FORTUNE: RUSE DE GUERRE (SERVET OPERASYONU),false
+prime_video,prime_video_watch_history_public,prime_video_000349,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,movie,Oblivion,,,,,Oblivion,false
+prime_video,prime_video_watch_history_public,prime_video_000350,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,movie,Kod Adı: Kırmızı,,,,,Kod Adı: Kırmızı,false
+prime_video,prime_video_watch_history_public,prime_video_000351,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,movie,Mumya,,,,,Mumya,false
+prime_video,prime_video_watch_history_public,prime_video_000352,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,movie,Mumya,,,,,Mumya,false
+prime_video,prime_video_watch_history_public,prime_video_000353,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,movie,Van Helsing,,,,,Van Helsing,false
+prime_video,prime_video_watch_history_public,prime_video_000354,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,movie,Çin Seddi,,,,,Çin Seddi,false
+prime_video,prime_video_watch_history_public,prime_video_000355,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,2,The Wedding Gift Wormhole,,false
+prime_video,prime_video_watch_history_public,prime_video_000356,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,1,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000357,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,24,The Bow Tie Asymmetry,,false
+prime_video,prime_video_watch_history_public,prime_video_000358,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,23,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000359,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,3,The Scavenger Vortex,,false
+prime_video,prime_video_watch_history_public,prime_video_000360,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,2,The Deception Verification,,false
+prime_video,prime_video_watch_history_public,prime_video_000361,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,1,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000362,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,24,The Bon Voyage Reaction,,false
+prime_video,prime_video_watch_history_public,prime_video_000363,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,23,The Love Spell Potential,,false
+prime_video,prime_video_watch_history_public,prime_video_000364,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,22,The Proton Resurgence,,false
+prime_video,prime_video_watch_history_public,prime_video_000365,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,21,The Closure Alternative,,false
+prime_video,prime_video_watch_history_public,prime_video_000366,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,20,The Tenure Turbulence,,false
+prime_video,prime_video_watch_history_public,prime_video_000367,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,19,The Closet Reconfiguration,,false
+prime_video,prime_video_watch_history_public,prime_video_000368,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,18,The Contractual Obligation Implementation,,false
+prime_video,prime_video_watch_history_public,prime_video_000369,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,17,The Monster Isolation,,false
+prime_video,prime_video_watch_history_public,prime_video_000370,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,16,The Tangible Aﬀection Proof,,false
+prime_video,prime_video_watch_history_public,prime_video_000371,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,15,The Spoiler Alert Segmentation,,false
+prime_video,prime_video_watch_history_public,prime_video_000372,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,14,The Cooper/Kripke Inversion,,false
+prime_video,prime_video_watch_history_public,prime_video_000373,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,13,The Bakersfield Expedition,,false
+prime_video,prime_video_watch_history_public,prime_video_000374,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,12,The Egg Salad Equivalency,,false
+prime_video,prime_video_watch_history_public,prime_video_000375,,source_000001,2024-12-13,2024-12-13,date,2024-12-13,episode,The Big Bang Theory,The Big Bang Theory,12,11,The Santa Simulation,,false
+prime_video,prime_video_watch_history_public,prime_video_000376,,source_000001,2024-12-12,2024-12-12,date,2024-12-12,episode,The Big Bang Theory,The Big Bang Theory,3,5,The Creepy Candy Coating Corollary,,false
+prime_video,prime_video_watch_history_public,prime_video_000377,,source_000001,2024-12-12,2024-12-12,date,2024-12-12,episode,The Big Bang Theory,The Big Bang Theory,3,4,The Pirate Solution,,false
+prime_video,prime_video_watch_history_public,prime_video_000378,,source_000001,2024-12-12,2024-12-12,date,2024-12-12,episode,The Big Bang Theory,The Big Bang Theory,3,3,The Gothowitz Deviation,,false
+prime_video,prime_video_watch_history_public,prime_video_000379,,source_000001,2024-12-08,2024-12-08,date,2024-12-08,episode,Friends,Friends,5,19,The One Where Ross Can't Flirt,,false
+prime_video,prime_video_watch_history_public,prime_video_000380,,source_000001,2024-12-08,2024-12-08,date,2024-12-08,episode,Friends,Friends,5,18,The One Where Rachel Smokes,,false
+prime_video,prime_video_watch_history_public,prime_video_000381,,source_000001,2024-12-02,2024-12-02,date,2024-12-02,movie,Soysuzlar Çetesi,,,,,Soysuzlar Çetesi,false
+prime_video,prime_video_watch_history_public,prime_video_000382,,source_000001,2024-12-01,2024-12-01,date,2024-12-01,movie,Sefiller,,,,,Sefiller,false
+prime_video,prime_video_watch_history_public,prime_video_000383,,source_000001,2024-11-30,2024-11-30,date,2024-11-30,movie,Kıyamet Z : Sonun Başlangıcı,,,,,Kıyamet Z : Sonun Başlangıcı,false
+prime_video,prime_video_watch_history_public,prime_video_000384,,source_000001,2024-11-30,2024-11-30,date,2024-11-30,movie,Robin Hood,,,,,Robin Hood,false
+prime_video,prime_video_watch_history_public,prime_video_000385,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,17,The One With Rachel's Inadvertent Kiss,,false
+prime_video,prime_video_watch_history_public,prime_video_000386,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,16,The One With The Cop,,false
+prime_video,prime_video_watch_history_public,prime_video_000387,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,15,The One With The Girl Who Hits Joey,,false
+prime_video,prime_video_watch_history_public,prime_video_000388,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,14,The One Where Everybody Finds Out,,false
+prime_video,prime_video_watch_history_public,prime_video_000389,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,13,The One With Joey's Bag,,false
+prime_video,prime_video_watch_history_public,prime_video_000390,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,12,The One With Chandler's Work Laugh,,false
+prime_video,prime_video_watch_history_public,prime_video_000391,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,episode,Friends,Friends,5,11,The One With All The Resolutions,,false
+prime_video,prime_video_watch_history_public,prime_video_000392,,source_000001,2024-11-29,2024-11-29,date,2024-11-29,movie,Gladiator,,,,,Gladiator,false
+prime_video,prime_video_watch_history_public,prime_video_000393,,source_000001,2024-10-26,2024-10-26,date,2024-10-26,episode,Friends,Friends,4,6,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000394,,source_000001,2024-10-25,2024-10-25,date,2024-10-25,episode,Vaulter Succession,Vaulter Succession,2,2,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000395,,source_000001,2024-10-25,2024-10-25,date,2024-10-25,episode,Summer Palace Succession,Summer Palace Succession,1,1,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000396,,source_000001,2024-10-25,2024-10-25,date,2024-10-25,episode,Summer Palace Succession,Summer Palace Succession,1,10,Nobody Is Ever Missing,,false
+prime_video,prime_video_watch_history_public,prime_video_000397,,source_000001,2024-10-25,2024-10-25,date,2024-10-25,episode,Summer Palace Succession,Summer Palace Succession,1,9,Pre-Nuptial,,false
+prime_video,prime_video_watch_history_public,prime_video_000398,,source_000001,2024-10-25,2024-10-25,date,2024-10-25,episode,Summer Palace Succession,Summer Palace Succession,1,8,Prague,,false
+prime_video,prime_video_watch_history_public,prime_video_000399,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,7,Austerlitz,,false
+prime_video,prime_video_watch_history_public,prime_video_000400,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,6,Which,,false
+prime_video,prime_video_watch_history_public,prime_video_000401,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,5,I Went to Market,,false
+prime_video,prime_video_watch_history_public,prime_video_000402,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,4,Sad Sack Wasp Trap,,false
+prime_video,prime_video_watch_history_public,prime_video_000403,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,3,Lifeboats,,false
+prime_video,prime_video_watch_history_public,prime_video_000404,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,2,Sh*t Show at the F**k Factory,,false
+prime_video,prime_video_watch_history_public,prime_video_000405,,source_000001,2024-09-27,2024-09-27,date,2024-09-27,episode,Succession,Succession,1,1,Celebration,,false
+prime_video,prime_video_watch_history_public,prime_video_000406,,source_000001,2024-09-16,2024-09-16,date,2024-09-16,movie,AYKUT ENİŞTE,,,,,AYKUT ENİŞTE,false
+prime_video,prime_video_watch_history_public,prime_video_000407,,source_000001,2024-09-16,2024-09-16,date,2024-09-16,movie,Yarının Savaşı,,,,,Yarının Savaşı,false
+prime_video,prime_video_watch_history_public,prime_video_000408,,source_000001,2024-09-16,2024-09-16,date,2024-09-16,movie,Pamuk Prenses ve Avcı,,,,,Pamuk Prenses ve Avcı,false
+prime_video,prime_video_watch_history_public,prime_video_000409,,source_000001,2024-08-03,2024-08-03,date,2024-08-03,movie,Hobbit: Smaug’un Çorak Toprakları,,,,,Hobbit: Smaug’un Çorak Toprakları,false
+prime_video,prime_video_watch_history_public,prime_video_000410,,source_000001,2024-08-03,2024-08-03,date,2024-08-03,movie,Hobbit: Beklenmedik Yolculuk,,,,,Hobbit: Beklenmedik Yolculuk,false
+prime_video,prime_video_watch_history_public,prime_video_000411,,source_000001,2024-07-24,2024-07-24,date,2024-07-24,movie,Hızlı ve Öfkeli 4,,,,,Hızlı ve Öfkeli 4,false
+prime_video,prime_video_watch_history_public,prime_video_000412,,source_000001,2024-07-24,2024-07-24,date,2024-07-24,movie,Daha Hızlı Daha Öfkeli,,,,,Daha Hızlı Daha Öfkeli,false
+prime_video,prime_video_watch_history_public,prime_video_000413,,source_000001,2024-07-21,2024-07-21,date,2024-07-21,episode,Two and a Half Men,Two and a Half Men,,21,And the Plot Moistens,,false
+prime_video,prime_video_watch_history_public,prime_video_000414,,source_000001,2024-07-21,2024-07-21,date,2024-07-21,episode,Two and a Half Men,Two and a Half Men,,20,Always a Bridesmaid Never A Burro,,false
+prime_video,prime_video_watch_history_public,prime_video_000415,,source_000001,2024-07-21,2024-07-21,date,2024-07-21,episode,Two and a Half Men,Two and a Half Men,,19,"Golly Moses, She's A Muﬀin",,false
+prime_video,prime_video_watch_history_public,prime_video_000416,,source_000001,2024-07-21,2024-07-21,date,2024-07-21,episode,Two and a Half Men,Two and a Half Men,,18,The Spit-Covered Cobbler,,false
+prime_video,prime_video_watch_history_public,prime_video_000417,,source_000001,2024-07-21,2024-07-21,date,2024-07-21,episode,Two and a Half Men,Two and a Half Men,,17,The Unfortunate Little Schnauzer,,false
+prime_video,prime_video_watch_history_public,prime_video_000418,,source_000001,2024-07-21,2024-07-21,date,2024-07-21,episode,Two and a Half Men,Two and a Half Men,,16,"Ergo, The Booty Call",,false
+prime_video,prime_video_watch_history_public,prime_video_000419,,source_000001,2024-07-20,2024-07-20,date,2024-07-20,episode,Two and a Half Men,Two and a Half Men,,15,My Tongue is Meat,,false
+prime_video,prime_video_watch_history_public,prime_video_000420,,source_000001,2024-07-20,2024-07-20,date,2024-07-20,episode,Two and a Half Men,Two and a Half Men,,14,"Love Isn't Blind, It's Retarded",,false
+prime_video,prime_video_watch_history_public,prime_video_000421,,source_000001,2024-07-19,2024-07-19,date,2024-07-19,episode,The Boys,The Boys,4,8,Dördüncü Sezon Finali,,false
+prime_video,prime_video_watch_history_public,prime_video_000422,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,1,God,,false
+prime_video,prime_video_watch_history_public,prime_video_000423,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,7,Köstebek,,false
+prime_video,prime_video_watch_history_public,prime_video_000424,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,6,Pis İş,,false
+prime_video,prime_video_watch_history_public,prime_video_000425,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,5,"Jabberwock'a Dikkat Et, Oğlum",,false
+prime_video,prime_video_watch_history_public,prime_video_000426,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,4,Asırların Bilgeliği,,false
+prime_video,prime_video_watch_history_public,prime_video_000427,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,3,Kızıl Bayrak Burada Dalgalanmaya Devam Edecek,,false
+prime_video,prime_video_watch_history_public,prime_video_000428,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,2,Septikler Arasında Yaşam,,false
+prime_video,prime_video_watch_history_public,prime_video_000429,,source_000001,2024-07-17,2024-07-17,date,2024-07-17,episode,Gen V,Gen V,1,1,Pis Numaralar Departmanı,,false
+prime_video,prime_video_watch_history_public,prime_video_000430,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,8,Başlangıç,,false
+prime_video,prime_video_watch_history_public,prime_video_000431,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,7,Radyo,,false
+prime_video,prime_video_watch_history_public,prime_video_000432,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,6,Tuzak,,false
+prime_video,prime_video_watch_history_public,prime_video_000433,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,5,Geçmiş,,false
+prime_video,prime_video_watch_history_public,prime_video_000434,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,4,Hortlaklar,,false
+prime_video,prime_video_watch_history_public,prime_video_000435,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,3,Kafa,,false
+prime_video,prime_video_watch_history_public,prime_video_000436,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,2,Hedef,,false
+prime_video,prime_video_watch_history_public,prime_video_000437,,source_000001,2024-05-31,2024-05-31,date,2024-05-31,episode,Fallout,Fallout,1,1,Son,,false
+prime_video,prime_video_watch_history_public,prime_video_000438,,source_000001,2024-05-22,2024-05-22,date,2024-05-22,movie,Hızlı ve Öfkeli 10,,,,,Hızlı ve Öfkeli 10,false
+prime_video,prime_video_watch_history_public,prime_video_000439,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,6,The Iron Throne,,false
+prime_video,prime_video_watch_history_public,prime_video_000440,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,5,The Bells,,false
+prime_video,prime_video_watch_history_public,prime_video_000441,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,4,The Last of the Starks,,false
+prime_video,prime_video_watch_history_public,prime_video_000442,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,3,The Long Night,,false
+prime_video,prime_video_watch_history_public,prime_video_000443,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,2,A Knight of the Seven Kingdoms,,false
+prime_video,prime_video_watch_history_public,prime_video_000444,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,1,Winterfell,,false
+prime_video,prime_video_watch_history_public,prime_video_000445,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,7,The Dragon and the Wolf,,false
+prime_video,prime_video_watch_history_public,prime_video_000446,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,6,Beyond the Wall,,false
+prime_video,prime_video_watch_history_public,prime_video_000447,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,5,Eastwatch,,false
+prime_video,prime_video_watch_history_public,prime_video_000448,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,4,The Spoils of War,,false
+prime_video,prime_video_watch_history_public,prime_video_000449,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,3,The Queen's Justice,,false
+prime_video,prime_video_watch_history_public,prime_video_000450,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,2,Stormborn,,false
+prime_video,prime_video_watch_history_public,prime_video_000451,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,1,Dragonstone,,false
+prime_video,prime_video_watch_history_public,prime_video_000452,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,10,The Winds of Winter,,false
+prime_video,prime_video_watch_history_public,prime_video_000453,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,9,Battle of the Bastards,,false
+prime_video,prime_video_watch_history_public,prime_video_000454,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,8,No One,,false
+prime_video,prime_video_watch_history_public,prime_video_000455,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,7,The Broken Man,,false
+prime_video,prime_video_watch_history_public,prime_video_000456,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,6,Blood of My Blood,,false
+prime_video,prime_video_watch_history_public,prime_video_000457,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,5,The Door,,false
+prime_video,prime_video_watch_history_public,prime_video_000458,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,4,Book of the Stranger,,false
+prime_video,prime_video_watch_history_public,prime_video_000459,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,3,Oathbreaker,,false
+prime_video,prime_video_watch_history_public,prime_video_000460,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,2,Home,,false
+prime_video,prime_video_watch_history_public,prime_video_000461,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,1,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000462,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,10,Mother's Mercy,,false
+prime_video,prime_video_watch_history_public,prime_video_000463,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,9,The Dance of Dragons,,false
+prime_video,prime_video_watch_history_public,prime_video_000464,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,8,Hardhome,,false
+prime_video,prime_video_watch_history_public,prime_video_000465,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,7,The Gift,,false
+prime_video,prime_video_watch_history_public,prime_video_000466,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,6,"Unbowed, Unbent, Unbroken",,false
+prime_video,prime_video_watch_history_public,prime_video_000467,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,5,Kill the Boy,,false
+prime_video,prime_video_watch_history_public,prime_video_000468,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,4,Sons of the Harpy,,false
+prime_video,prime_video_watch_history_public,prime_video_000469,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,3,High Sparrow,,false
+prime_video,prime_video_watch_history_public,prime_video_000470,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,2,The House of Black and White,,false
+prime_video,prime_video_watch_history_public,prime_video_000471,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,8,1,The Wars To Come,,false
+prime_video,prime_video_watch_history_public,prime_video_000472,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,10,The Children,,false
+prime_video,prime_video_watch_history_public,prime_video_000473,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,9,The Watchers on the Wall,,false
+prime_video,prime_video_watch_history_public,prime_video_000474,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,8,The Mountain and the Viper,,false
+prime_video,prime_video_watch_history_public,prime_video_000475,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,7,Mockingbird,,false
+prime_video,prime_video_watch_history_public,prime_video_000476,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,6,The Laws of Gods and Men,,false
+prime_video,prime_video_watch_history_public,prime_video_000477,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,5,First of His Name,,false
+prime_video,prime_video_watch_history_public,prime_video_000478,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,4,Oathkeeper,,false
+prime_video,prime_video_watch_history_public,prime_video_000479,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,3,Breaker of Chains,,false
+prime_video,prime_video_watch_history_public,prime_video_000480,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,2,The Lion and the Rose,,false
+prime_video,prime_video_watch_history_public,prime_video_000481,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,1,Two,,false
+prime_video,prime_video_watch_history_public,prime_video_000482,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,10,Mhysa,,false
+prime_video,prime_video_watch_history_public,prime_video_000483,,source_000001,2024-04-27,2024-04-27,date,2024-04-27,episode,Game of Thrones,Game of Thrones,4,9,The Rains of Castamere,,false
+prime_video,prime_video_watch_history_public,prime_video_000484,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,8,Second Sons,,false
+prime_video,prime_video_watch_history_public,prime_video_000485,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,7,The Bear and the Maiden Fair,,false
+prime_video,prime_video_watch_history_public,prime_video_000486,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,6,The Climb,,false
+prime_video,prime_video_watch_history_public,prime_video_000487,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,5,Kissed by Fire,,false
+prime_video,prime_video_watch_history_public,prime_video_000488,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,4,And Now His Watch Is Ended,,false
+prime_video,prime_video_watch_history_public,prime_video_000489,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,3,Walk of Punishment,,false
+prime_video,prime_video_watch_history_public,prime_video_000490,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,2,"Dark Wings, Dark Words",,false
+prime_video,prime_video_watch_history_public,prime_video_000491,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,1,Valar,,false
+prime_video,prime_video_watch_history_public,prime_video_000492,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,10,Valar Morghulis,,false
+prime_video,prime_video_watch_history_public,prime_video_000493,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,9,Blackwater,,false
+prime_video,prime_video_watch_history_public,prime_video_000494,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,8,The Prince of Winterfell,,false
+prime_video,prime_video_watch_history_public,prime_video_000495,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,7,A Man Without Honor,,false
+prime_video,prime_video_watch_history_public,prime_video_000496,,source_000001,2024-04-24,2024-04-24,date,2024-04-24,episode,Game of Thrones,Game of Thrones,3,6,The Old Gods and the New,,false
+prime_video,prime_video_watch_history_public,prime_video_000497,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,5,The Ghost of Harrenhal,,false
+prime_video,prime_video_watch_history_public,prime_video_000498,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,4,Garden of Bones,,false
+prime_video,prime_video_watch_history_public,prime_video_000499,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,3,What Is Dead May Never Die,,false
+prime_video,prime_video_watch_history_public,prime_video_000500,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,2,The Night Lands,,false
+prime_video,prime_video_watch_history_public,prime_video_000501,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,1,The,,false
+prime_video,prime_video_watch_history_public,prime_video_000502,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,10,Fire and Blood,,false
+prime_video,prime_video_watch_history_public,prime_video_000503,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,9,Baelor,,false
+prime_video,prime_video_watch_history_public,prime_video_000504,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,8,The Pointy End,,false
+prime_video,prime_video_watch_history_public,prime_video_000505,,source_000001,2024-04-23,2024-04-23,date,2024-04-23,episode,Game of Thrones,Game of Thrones,2,7,You Win or You Die,,false
+prime_video,prime_video_watch_history_public,prime_video_000506,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,6,A Golden Crown,,false
+prime_video,prime_video_watch_history_public,prime_video_000507,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,5,The Wolf and the Lion,,false
+prime_video,prime_video_watch_history_public,prime_video_000508,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,4,"Cripples, Bastards, and Broken Things",,false
+prime_video,prime_video_watch_history_public,prime_video_000509,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,3,Lord Snow,,false
+prime_video,prime_video_watch_history_public,prime_video_000510,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,2,The Kingsroad,,false
+prime_video,prime_video_watch_history_public,prime_video_000511,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,1,Winter,,false
+prime_video,prime_video_watch_history_public,prime_video_000512,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,8,Uçan Çocuk,,false
+prime_video,prime_video_watch_history_public,prime_video_000513,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,7,Adam Geçiyor,,false
+prime_video,prime_video_watch_history_public,prime_video_000514,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,6,New York'un En İyisi,,false
+prime_video,prime_video_watch_history_public,prime_video_000515,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,5,Cenaze,,false
+prime_video,prime_video_watch_history_public,prime_video_000516,,source_000001,2024-04-05,2024-04-05,date,2024-04-05,episode,Game of Thrones,Game of Thrones,2,4,Senfonide Bir Gece,,false
+prime_video,prime_video_watch_history_public,prime_video_000517,,source_000001,2024-04-04,2024-04-04,date,2024-04-04,episode,Reacher,Reacher,2,3,Bir Resim Bin Sözcüğe Bedeldir,,false
+prime_video,prime_video_watch_history_public,prime_video_000518,,source_000001,2024-04-04,2024-04-04,date,2024-04-04,episode,Reacher,Reacher,2,2,Atlantik City'de Olan,,false
+prime_video,prime_video_watch_history_public,prime_video_000519,,source_000001,2024-04-04,2024-04-04,date,2024-04-04,episode,Reacher,Reacher,2,1,ATM,,false
+prime_video,prime_video_watch_history_public,prime_video_000520,,source_000001,2024-04-02,2024-04-02,date,2024-04-02,episode,Zaman Çarkı,Zaman Çarkı,2,4,Gecenin Kızı,,false
+prime_video,prime_video_watch_history_public,prime_video_000521,,source_000001,2024-04-02,2024-04-02,date,2024-04-02,episode,Zaman Çarkı,Zaman Çarkı,2,3,Olabilecekler,,false
+prime_video,prime_video_watch_history_public,prime_video_000522,,source_000001,2024-04-02,2024-04-02,date,2024-04-02,episode,Zaman Çarkı,Zaman Çarkı,2,2,Yabancılar ve Dostlar,,false
+prime_video,prime_video_watch_history_public,prime_video_000523,,source_000001,2024-04-02,2024-04-02,date,2024-04-02,episode,Zaman Çarkı,Zaman Çarkı,2,1,Biraz,,false
+prime_video,prime_video_watch_history_public,prime_video_000524,,source_000001,2024-04-02,2024-04-02,date,2024-04-02,episode,Zaman Çarkı,Zaman Çarkı,2,8,Dünyanın Gözü,,false
+prime_video,prime_video_watch_history_public,prime_video_000525,,source_000001,2024-04-02,2024-04-02,date,2024-04-02,episode,Zaman Çarkı,Zaman Çarkı,2,7,Yollardaki Karanlık,,false
+prime_video,prime_video_watch_history_public,prime_video_000526,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,6,Tar Valon'un Alevi,,false
+prime_video,prime_video_watch_history_public,prime_video_000527,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,5,Kan Kanı Çeker,,false
+prime_video,prime_video_watch_history_public,prime_video_000528,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,4,Yenidendoğan Ejder,,false
+prime_video,prime_video_watch_history_public,prime_video_000529,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,3,Güvenli Bir Yer,,false
+prime_video,prime_video_watch_history_public,prime_video_000530,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,2,Gölgenin Beklediği Yer,,false
+prime_video,prime_video_watch_history_public,prime_video_000531,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,1,Veda,,false
+prime_video,prime_video_watch_history_public,prime_video_000532,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,6,Uyuma,,false
+prime_video,prime_video_watch_history_public,prime_video_000533,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,5,Göz Kalemi,,false
+prime_video,prime_video_watch_history_public,prime_video_000534,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,4,Gözümün İçine Bak,,false
+prime_video,prime_video_watch_history_public,prime_video_000535,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,3,Nadiya,,false
+prime_video,prime_video_watch_history_public,prime_video_000536,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,2,Asmalar ve Portakal Ağaçları,,false
+prime_video,prime_video_watch_history_public,prime_video_000537,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,1,Direniş,,false
+prime_video,prime_video_watch_history_public,prime_video_000538,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,8,Liste,,false
+prime_video,prime_video_watch_history_public,prime_video_000539,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,7,Tacitus,,false
+prime_video,prime_video_watch_history_public,prime_video_000540,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,6,Artık Bizimlesin,,false
+prime_video,prime_video_watch_history_public,prime_video_000541,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,5,Yas Tutmanın Bir Yolu,,false
+prime_video,prime_video_watch_history_public,prime_video_000542,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,4,Hoş Geldin Mia,,false
+prime_video,prime_video_watch_history_public,prime_video_000543,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,3,Meadows'a,,false
+prime_video,prime_video_watch_history_public,prime_video_000544,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,2,Deney,,false
+prime_video,prime_video_watch_history_public,prime_video_000545,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,1,Güvende,,false
+prime_video,prime_video_watch_history_public,prime_video_000546,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,8,Utrax,,false
+prime_video,prime_video_watch_history_public,prime_video_000547,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,7,Yol,,false
+prime_video,prime_video_watch_history_public,prime_video_000548,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,6,Anne,,false
+prime_video,prime_video_watch_history_public,prime_video_000549,,source_000001,2024-03-30,2024-03-30,date,2024-03-30,episode,Zaman Çarkı,Zaman Çarkı,2,5,Kasaba,,false
+prime_video,prime_video_watch_history_public,prime_video_000550,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,4,Baba,,false
+prime_video,prime_video_watch_history_public,prime_video_000551,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,3,Şehir,,false
+prime_video,prime_video_watch_history_public,prime_video_000552,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,2,Arkadaş,,false
+prime_video,prime_video_watch_history_public,prime_video_000553,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,1,Orman Two and a Half Men,,false
+prime_video,prime_video_watch_history_public,prime_video_000554,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,13,Humiliation is a Visual Medium,,false
+prime_video,prime_video_watch_history_public,prime_video_000555,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,12,That Special Tug,,false
+prime_video,prime_video_watch_history_public,prime_video_000556,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,11,Santa's Village of the Damned Two and a Half Men,,false
+prime_video,prime_video_watch_history_public,prime_video_000557,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,10,Something Salty and Twisted,,false
+prime_video,prime_video_watch_history_public,prime_video_000558,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,9,Madame and her Special Friend,,false
+prime_video,prime_video_watch_history_public,prime_video_000559,,source_000001,2024-03-26,2024-03-26,date,2024-03-26,episode,Zaman Çarkı,Zaman Çarkı,2,8,That Voodoo That I Do,,false
+prime_video,prime_video_watch_history_public,prime_video_000560,,source_000001,2023-10-14,2023-10-14,date,2023-10-14,episode,Zaman Çarkı,Zaman Çarkı,2,7,"Sleep Tight, Puddin' Pop Two and a Half Men",,false
+prime_video,prime_video_watch_history_public,prime_video_000561,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Zaman Çarkı,Zaman Çarkı,2,6,The Price of Healthy Gums is Eternal Vigilance,,false
+prime_video,prime_video_watch_history_public,prime_video_000562,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Zaman Çarkı,Zaman Çarkı,2,5,Bad News from the Clinic?,,false
+prime_video,prime_video_watch_history_public,prime_video_000563,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Zaman Çarkı,Zaman Çarkı,2,4,Go Get Mommy's Bra,,false
+prime_video,prime_video_watch_history_public,prime_video_000564,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Zaman Çarkı,Zaman Çarkı,2,3,A Bag Full of Jawea,,false
+prime_video,prime_video_watch_history_public,prime_video_000565,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Zaman Çarkı,Zaman Çarkı,2,2,Enjoy Those Garlic Balls,,false
+prime_video,prime_video_watch_history_public,prime_video_000566,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,oﬀ Mary Poppins Two and a Half Men,oﬀ Mary Poppins Two and a Half Men,1,1,Back,,false
+prime_video,prime_video_watch_history_public,prime_video_000567,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Güzelleştiğim O Yaz,Güzelleştiğim O Yaz,1,1,Pilot,,false
+prime_video,prime_video_watch_history_public,prime_video_000568,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,Güzelleştiğim O Yaz,Güzelleştiğim O Yaz,1,1,Yaz Evi,,false
+prime_video,prime_video_watch_history_public,prime_video_000569,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,14,Fool Me Once,,false
+prime_video,prime_video_watch_history_public,prime_video_000570,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,13,Children of the Damned,,false
+prime_video,prime_video_watch_history_public,prime_video_000571,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,12,Unpleasantville,,false
+prime_video,prime_video_watch_history_public,prime_video_000572,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,11,Bloodlines,,false
+prime_video,prime_video_watch_history_public,prime_video_000573,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,10,The Turning Point,,false
+prime_video,prime_video_watch_history_public,prime_video_000574,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,9,History Repeating,,false
+prime_video,prime_video_watch_history_public,prime_video_000575,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,8,162 Candles,,false
+prime_video,prime_video_watch_history_public,prime_video_000576,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,7,Haunted,,false
+prime_video,prime_video_watch_history_public,prime_video_000577,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,6,Lost Girls,,false
+prime_video,prime_video_watch_history_public,prime_video_000578,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,episode,The Vampire Diaries,The Vampire Diaries,1,5,You're Undead To Me,,false
+prime_video,prime_video_watch_history_public,prime_video_000579,,source_000001,2023-08-29,2023-08-29,date,2023-08-29,movie,Alacakaranlık,,,,,Alacakaranlık,false
+prime_video,prime_video_watch_history_public,prime_video_000580,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,4,Family Ties,,false
+prime_video,prime_video_watch_history_public,prime_video_000581,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,3,Friday,,false
+prime_video,prime_video_watch_history_public,prime_video_000582,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,2,Night of the Comet,,false
+prime_video,prime_video_watch_history_public,prime_video_000583,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,1,PILOT,,false
+prime_video,prime_video_watch_history_public,prime_video_000584,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,16,I,,false
+prime_video,prime_video_watch_history_public,prime_video_000585,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,1,Geçmişin Gölgesi,,false
+prime_video,prime_video_watch_history_public,prime_video_000586,,source_000001,2023-08-28,2023-08-28,date,2023-08-28,episode,The Vampire Diaries,The Vampire Diaries,1,2,Avare,,false
+prime_video,prime_video_watch_history_public,prime_video_000587,,source_000001,2023-06-20,2023-06-20,date,2023-06-20,episode,The Boys,The Boys,3,8,Anında Vahşi Beyaz-Sıcak,,false
+prime_video,prime_video_watch_history_public,prime_video_000588,,source_000001,2023-06-20,2023-06-20,date,2023-06-20,episode,The Boys,The Boys,3,7,İşte Seni Yatağa Yakacak Bir Mum Geliyor,,false
+prime_video,prime_video_watch_history_public,prime_video_000589,,source_000001,2023-06-20,2023-06-20,date,2023-06-20,episode,The Boys,The Boys,3,6,Kahramangazm,,false
+prime_video,prime_video_watch_history_public,prime_video_000590,,source_000001,2023-02-15,2023-02-15,date,2023-02-15,episode,The Boys,The Boys,3,5,Bu Yalanlar Dünyasına Son Kez Bakmak,,false
+prime_video,prime_video_watch_history_public,prime_video_000591,,source_000001,2023-02-15,2023-02-15,date,2023-02-15,episode,The Boys,The Boys,3,4,Muhteşem Beş Yıllık Plan,,false
+prime_video,prime_video_watch_history_public,prime_video_000592,,source_000001,2023-02-15,2023-02-15,date,2023-02-15,episode,The Boys,The Boys,3,3,Barbary Coast,,false
+prime_video,prime_video_watch_history_public,prime_video_000593,,source_000001,2023-02-15,2023-02-15,date,2023-02-15,episode,The Boys,The Boys,3,2,Gökteki Tek Adam,,false
+prime_video,prime_video_watch_history_public,prime_video_000594,,source_000001,2023-02-15,2023-02-15,date,2023-02-15,episode,The Boys,The Boys,3,1,Ödeşme,,false
+prime_video,prime_video_watch_history_public,prime_video_000595,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,8,"""Bildiğim Şu""",,false
+prime_video,prime_video_watch_history_public,prime_video_000596,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,7,"""Her Kesimden İnsan""",,false
+prime_video,prime_video_watch_history_public,prime_video_000597,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,6,"""Lanet",,false
+prime_video,prime_video_watch_history_public,prime_video_000598,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,5,"""Hemen Gitmeliyiz""",,false
+prime_video,prime_video_watch_history_public,prime_video_000599,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,4,"""Hiçbir",,false
+prime_video,prime_video_watch_history_public,prime_video_000600,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,3,"""Binlerce Adamın Kılıcıyla""",,false
+prime_video,prime_video_watch_history_public,prime_video_000601,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,2,"""Muntazam Hazırlıklar ve Planlamalar""",,false
+prime_video,prime_video_watch_history_public,prime_video_000602,,source_000001,2023-02-14,2023-02-14,date,2023-02-14,episode,The Boys,The Boys,2,1,"""Büyük Yolculuk""",,false
+prime_video,prime_video_watch_history_public,prime_video_000603,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,8,"""Beni Buldun""",,false
+prime_video,prime_video_watch_history_public,prime_video_000604,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,7,"""Kendini Koruma Cemiyeti""",,false
+prime_video,prime_video_watch_history_public,prime_video_000605,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,6,"""Masumlar""",,false
+prime_video,prime_video_watch_history_public,prime_video_000606,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,5,"""Ruhun İlacı""",,false
+prime_video,prime_video_watch_history_public,prime_video_000607,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,4,"""Türün Dişisi""",,false
+prime_video,prime_video_watch_history_public,prime_video_000608,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,3,"""Al Bakalım""",,false
+prime_video,prime_video_watch_history_public,prime_video_000609,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,2,"""Vişne""",,false
+prime_video,prime_video_watch_history_public,prime_video_000610,,source_000001,2023-02-12,2023-02-12,date,2023-02-12,episode,The Boys,The Boys,1,1,“Oyunun Adı”,,false
+prime_video,prime_video_watch_history_public,prime_video_000611,,source_000001,2023-01-11,2023-01-11,date,2023-01-11,episode,Reacher,Reacher,1,8,Turta,,false
+prime_video,prime_video_watch_history_public,prime_video_000612,,source_000001,2023-01-11,2023-01-11,date,2023-01-11,episode,Reacher,Reacher,1,7,Reacher Bir Şey Demedi,,false
+prime_video,prime_video_watch_history_public,prime_video_000613,,source_000001,2023-01-11,2023-01-11,date,2023-01-11,episode,Reacher,Reacher,1,6,Kağıt,,false
+prime_video,prime_video_watch_history_public,prime_video_000614,,source_000001,2023-01-10,2023-01-10,date,2023-01-10,episode,Reacher,Reacher,1,5,Kabahat Yok,,false
+prime_video,prime_video_watch_history_public,prime_video_000615,,source_000001,2023-01-10,2023-01-10,date,2023-01-10,episode,Reacher,Reacher,1,4,Ağaçta,,false
+prime_video,prime_video_watch_history_public,prime_video_000616,,source_000001,2023-01-10,2023-01-10,date,2023-01-10,episode,Reacher,Reacher,1,3,Kaşık Dolusu,,false
+prime_video,prime_video_watch_history_public,prime_video_000617,,source_000001,2023-01-10,2023-01-10,date,2023-01-10,episode,Reacher,Reacher,1,2,İlk Dans,,false
+prime_video,prime_video_watch_history_public,prime_video_000618,,source_000001,2023-01-10,2023-01-10,date,2023-01-10,episode,Reacher,Reacher,1,1,Margrave'e Hoş geldin,,false
+prime_video,prime_video_watch_history_public,prime_video_000619,,source_000001,2022-11-16,2022-11-16,date,2022-11-16,movie,The Big Short,,,,,The Big Short,false
+prime_video,prime_video_watch_history_public,prime_video_000620,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,12,16,Of course he's dead - part,,false
+prime_video,prime_video_watch_history_public,prime_video_000621,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,18,The 9:04 from Pemberton,,false
+prime_video,prime_video_watch_history_public,prime_video_000622,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,17,Throgwarten Middle School mysteries,,false
+prime_video,prime_video_watch_history_public,prime_video_000623,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,16,"Advantage: fat, flying baby",,false
+prime_video,prime_video_watch_history_public,prime_video_000624,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,15,"Paint it, pierce it or plug it",,false
+prime_video,prime_video_watch_history_public,prime_video_000625,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,14,"Run, Steven Staven! Run!",,false
+prime_video,prime_video_watch_history_public,prime_video_000626,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,13,Grab a feather and get in line,,false
+prime_video,prime_video_watch_history_public,prime_video_000627,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,12,Welcome to Alancrest,,false
+prime_video,prime_video_watch_history_public,prime_video_000628,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,11,Give Santa a tail-hole,,false
+prime_video,prime_video_watch_history_public,prime_video_000629,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,10,One nut Johnson,,false
+prime_video,prime_video_watch_history_public,prime_video_000630,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,9,I,,false
+prime_video,prime_video_watch_history_public,prime_video_000631,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,2,Who Is This Vod Kanockers?,,false
+prime_video,prime_video_watch_history_public,prime_video_000632,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,1,Working for Caligula Two and a Half Men,,false
+prime_video,prime_video_watch_history_public,prime_video_000633,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,24,That Pistol-Packin' Hermaphrodite,,false
+prime_video,prime_video_watch_history_public,prime_video_000634,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,23,Arguments for the Quickie,,false
+prime_video,prime_video_watch_history_public,prime_video_000635,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,22,Just Once with Aunt Sophie,,false
+prime_video,prime_video_watch_history_public,prime_video_000636,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,19,"Golly Moses, She's A Muﬀin",,false
+prime_video,prime_video_watch_history_public,prime_video_000637,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,18,The Spit-Covered Cobbler,,false
+prime_video,prime_video_watch_history_public,prime_video_000638,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,16,"Ergo, The Booty Call",,false
+prime_video,prime_video_watch_history_public,prime_video_000639,,source_000001,2022-11-15,2022-11-15,date,2022-11-15,episode,Two and a Half Men,Two and a Half Men,10,14,"Love Isn't Blind, It's Retarded",,false
+prime_video,prime_video_watch_history_public,prime_video_000640,,source_000001,2022-11-01,2022-11-01,date,2022-11-01,episode,Two and a Half Men,Two and a Half Men,,5,We Called It Mr. Pinky,,false
+prime_video,prime_video_watch_history_public,prime_video_000641,,source_000001,2022-11-01,2022-11-01,date,2022-11-01,episode,Two and a Half Men,Two and a Half Men,,4,Your Dismissive Attitude Towards Boobs,,false
+prime_video,prime_video_watch_history_public,prime_video_000642,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,3,Carpet Burns and a Bite,,false
+prime_video,prime_video_watch_history_public,prime_video_000643,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,2,Principal Gallagher's Lesbian Lover,,false
+prime_video,prime_video_watch_history_public,prime_video_000644,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,1,Weekend in Bangkok with Two Olympic Gymnasts Two and a Half Men,,false
+prime_video,prime_video_watch_history_public,prime_video_000645,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,24,Does This Smell Funny to,,false
+prime_video,prime_video_watch_history_public,prime_video_000646,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,23,"Squab, Squab, Squab, Squab, Squab",,false
+prime_video,prime_video_watch_history_public,prime_video_000647,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,22,That Old Hose Bag Is My Mother,,false
+prime_video,prime_video_watch_history_public,prime_video_000648,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,21,A Sympathetic Crotch to Cry On,,false
+prime_video,prime_video_watch_history_public,prime_video_000649,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,20,I Always Wanted a Shaved Monkey,,false
+prime_video,prime_video_watch_history_public,prime_video_000650,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,19,A Low Guttural Tongue- Flapping Noise,,false
+prime_video,prime_video_watch_history_public,prime_video_000651,,source_000001,2022-10-17,2022-10-17,date,2022-10-17,episode,Two and a Half Men,Two and a Half Men,,18,"It Was 'Mame,' Mom",,false
+prime_video,prime_video_watch_history_public,prime_video_000652,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,17,"Woo-hoo, a Hernia Exam!",,false
+prime_video,prime_video_watch_history_public,prime_video_000653,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,16,Can You Eat Human Flesh with Wooden Teeth?,,false
+prime_video,prime_video_watch_history_public,prime_video_000654,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,15,Smell the Umbrella Stand,,false
+prime_video,prime_video_watch_history_public,prime_video_000655,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,14,Those Big Pink Things with Coconut,,false
+prime_video,prime_video_watch_history_public,prime_video_000656,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,13,Zejdz zmoich wlosow (Get oﬀ my hair),,false
+prime_video,prime_video_watch_history_public,prime_video_000657,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,12,A Lungful of Alan,,false
+prime_video,prime_video_watch_history_public,prime_video_000658,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,11,Last Chance to See Those Tattoos,,false
+prime_video,prime_video_watch_history_public,prime_video_000659,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,10,The Salmon Under My Sweater,,false
+prime_video,prime_video_watch_history_public,prime_video_000660,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,9,"Yes, Monsignor",,false
+prime_video,prime_video_watch_history_public,prime_video_000661,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,8,Frankenstein and the Horny Villagers,,false
+prime_video,prime_video_watch_history_public,prime_video_000662,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,7,A Kosher Slaughterhouse Out in Fontana,,false
+prime_video,prime_video_watch_history_public,prime_video_000663,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,3,A Bag Full of Jawea,,false
+prime_video,prime_video_watch_history_public,prime_video_000664,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,1,Back oﬀ Mary Poppins,,false
+prime_video,prime_video_watch_history_public,prime_video_000665,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,1,Back,,false
+prime_video,prime_video_watch_history_public,prime_video_000666,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,17,"Ate the Hamburgers, Wearing the Hats",,false
+prime_video,prime_video_watch_history_public,prime_video_000667,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,24,Can You Feel My Finger?,,false
+prime_video,prime_video_watch_history_public,prime_video_000668,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,23,Just Like Buﬀalo,,false
+prime_video,prime_video_watch_history_public,prime_video_000669,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,22,My Doctor Has a Cow Puppet,,false
+prime_video,prime_video_watch_history_public,prime_video_000670,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,21,"No Sniﬀing, No Wowing",,false
+prime_video,prime_video_watch_history_public,prime_video_000671,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,20,"Hey, I Can Pee Outside in the Dark",,false
+prime_video,prime_video_watch_history_public,prime_video_000672,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,19,"I Remember The Coat Room, I Just Don't Remember You",,false
+prime_video,prime_video_watch_history_public,prime_video_000673,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,18,An Old Flame With a New Wick,,false
+prime_video,prime_video_watch_history_public,prime_video_000674,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,16,"That Was Saliva, Alan",,false
+prime_video,prime_video_watch_history_public,prime_video_000675,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,15,Round One to the Hot Crazy Chick,,false
+prime_video,prime_video_watch_history_public,prime_video_000676,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,14,I Can't Aﬀord Hyenas,,false
+prime_video,prime_video_watch_history_public,prime_video_000677,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,13,Sarah Like Puny Alan,,false
+prime_video,prime_video_watch_history_public,prime_video_000678,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,12,Camel Filters and Pheremones,,false
+prime_video,prime_video_watch_history_public,prime_video_000679,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,11,"Alan Harper, Frontier Chiropractor",,false
+prime_video,prime_video_watch_history_public,prime_video_000680,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,10,Merry Thanksgiving,,false
+prime_video,prime_video_watch_history_public,prime_video_000681,,source_000001,2022-10-16,2022-10-16,date,2022-10-16,episode,Two and a Half Men,Two and a Half Men,,9,"Phase One, Complete",,false
+prime_video,prime_video_watch_history_public,prime_video_000682,,source_000001,2022-10-15,2022-10-15,date,2022-10-15,episode,Two and a Half Men,Two and a Half Men,1,8,Twenty-Five Little Pre- Pubers Without a Snoot-Ful,,false
+prime_video,prime_video_watch_history_public,prime_video_000683,,source_000001,2022-10-14,2022-10-14,date,2022-10-14,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,8,Alaşım,,false
+prime_video,prime_video_watch_history_public,prime_video_000684,,source_000001,2022-10-14,2022-10-14,date,2022-10-14,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,7,If,,false
+prime_video,prime_video_watch_history_public,prime_video_000685,,source_000001,2022-10-14,2022-10-14,date,2022-10-14,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,6,Did You Check with the Captain of the Flying Monkeys?,,false
+prime_video,prime_video_watch_history_public,prime_video_000686,,source_000001,2022-10-14,2022-10-14,date,2022-10-14,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,5,Last Thing You Want is to Wind Up with a Hump,,false
+prime_video,prime_video_watch_history_public,prime_video_000687,,source_000001,2022-10-14,2022-10-14,date,2022-10-14,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,4,"If I Can't Write My Chocolate Song, I'm Going to Take a Nap",,false
+prime_video,prime_video_watch_history_public,prime_video_000688,,source_000001,2022-10-14,2022-10-14,date,2022-10-14,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,3,Go East on Sunset Until You Reach the Gates of Hell,,false
+prime_video,prime_video_watch_history_public,prime_video_000689,,source_000001,2022-10-09,2022-10-09,date,2022-10-09,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,2,Big Flappy Bastards,,false
+prime_video,prime_video_watch_history_public,prime_video_000690,,source_000001,2022-10-09,2022-10-09,date,2022-10-09,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,0,8. Bölüm Ön Gösterim - Güç Yüzükleri,,false
+prime_video,prime_video_watch_history_public,prime_video_000691,,source_000001,2022-09-30,2022-09-30,date,2022-09-30,movie,,,,,,,true
+prime_video,prime_video_watch_history_public,prime_video_000692,,source_000001,2022-09-29,2022-09-29,date,2022-09-29,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,7,Göz,,false
+prime_video,prime_video_watch_history_public,prime_video_000693,,source_000001,2022-09-29,2022-09-29,date,2022-09-29,episode,Yüzüklerin Efendisi: Güç Yüzükleri,Yüzüklerin Efendisi: Güç Yüzükleri,1,6,Udûn,,false
+prime_video,prime_video_watch_history_public,prime_video_000694,,source_000001,2022-09-28,2022-09-28,date,2022-09-28,movie,Hızlı ve Öfkeli 7,,,,,Hızlı ve Öfkeli 7,false
+prime_video,prime_video_watch_history_public,prime_video_000695,,source_000001,2022-09-28,2022-09-28,date,2022-09-28,movie,Hızlı ve Öfkeli 7,,,,,Hızlı ve Öfkeli 7,false
+prime_video,prime_video_watch_history_public,prime_video_000696,,source_000001,2022-09-28,2022-09-28,date,2022-09-28,movie,Hızlı ve Öfkeli 6,,,,,Hızlı ve Öfkeli 6,false
+prime_video,prime_video_watch_history_public,prime_video_000697,,source_000001,2022-09-28,2022-09-28,date,2022-09-28,movie,Hızlı ve Öfkeli 5: Rio Soygunu,,,,,Hızlı ve Öfkeli 5: Rio Soygunu,false
+prime_video,prime_video_watch_history_public,prime_video_000698,,source_000001,2022-09-28,2022-09-28,date,2022-09-28,movie,Hızlı ve Öfkeli 5: Rio Soygunu,,,,,Hızlı ve Öfkeli 5: Rio Soygunu,false
+prime_video,prime_video_watch_history_public,prime_video_000699,,source_000001,2022-04-30,2022-04-30,date,2022-04-30,movie,Gazap Ateşi,,,,,Gazap Ateşi,false
+prime_video,prime_video_watch_history_public,prime_video_000700,,source_000001,2022-04-14,2022-04-14,date,2022-04-14,movie,Gazap Ateşi,,,,,Gazap Ateşi,false
+prime_video,prime_video_watch_history_public,prime_video_000701,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,movie,Madagaskar Penguenleri,,,,,Madagaskar Penguenleri,false
+prime_video,prime_video_watch_history_public,prime_video_000702,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,movie,Madagaskar Penguenleri,,,,,Madagaskar Penguenleri,false
+prime_video,prime_video_watch_history_public,prime_video_000703,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: Kaderin Patileri,Kung Fu Panda: Kaderin Patileri,102,3,Yumruk Oyunları,,false
+prime_video,prime_video_watch_history_public,prime_video_000704,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: Kaderin Patileri,Kung Fu Panda: Kaderin Patileri,102,2,Maymun Kral'ın Laneti,,false
+prime_video,prime_video_watch_history_public,prime_video_000705,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: Kaderin Patileri,Kung Fu Panda: Kaderin Patileri,102,1,Doğu Seyahati,,false
+prime_video,prime_video_watch_history_public,prime_video_000706,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,13,Usta Ejderha'nın Sonu,,false
+prime_video,prime_video_watch_history_public,prime_video_000707,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,12,Zamanın Kıyısında Fedakarlık,,false
+prime_video,prime_video_watch_history_public,prime_video_000708,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,11,Korkunç Ejderha Dağlara Döner,,false
+prime_video,prime_video_watch_history_public,prime_video_000709,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,10,Dörtlü Takımyıldız'ın Dönüşü,,false
+prime_video,prime_video_watch_history_public,prime_video_000710,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,9,Mağaranın Dışına İnce Buzun Üstüne,,false
+prime_video,prime_video_watch_history_public,prime_video_000711,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,8,Gölgede Kaybolan Sırlar,,false
+prime_video,prime_video_watch_history_public,prime_video_000712,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,7,Panda Köyü'nde Büyük Bela,,false
+prime_video,prime_video_watch_history_public,prime_video_000713,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,5,Bir Avuç Baharat,,false
+prime_video,prime_video_watch_history_public,prime_video_000714,,source_000001,2022-04-13,2022-04-13,date,2022-04-13,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,4,İşgalci Hileli Bir Yol İzler,,false
+prime_video,prime_video_watch_history_public,prime_video_000715,,source_000001,2022-04-03,2022-04-03,date,2022-04-03,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,3,Kızıl Anka'nın Kılıcı,,false
+prime_video,prime_video_watch_history_public,prime_video_000716,,source_000001,2022-04-03,2022-04-03,date,2022-04-03,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,2,Ejderha Ateşle Oynuyor,,false
+prime_video,prime_video_watch_history_public,prime_video_000717,,source_000001,2022-04-03,2022-04-03,date,2022-04-03,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,1,Usta Ejderha'nın Girişi,,false
+prime_video,prime_video_watch_history_public,prime_video_000718,,source_000001,2022-03-30,2022-03-30,date,2022-03-30,episode,Kung Fu Panda: The Paws of Destiny,Kung Fu Panda: The Paws of Destiny,1,0,Teaser Fragman,,false
+prime_video,prime_video_watch_history_public,prime_video_000719,,source_000001,2022-03-30,2022-03-30,date,2022-03-30,movie,,,,,,,true

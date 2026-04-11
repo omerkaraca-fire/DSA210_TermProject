@@ -1,0 +1,36 @@
+{
+  "dataset": "prime_video_watch_history_public",
+  "row_count": 719,
+  "episode_count": 667,
+  "movie_count": 52,
+  "title_missing_count": 3,
+  "date_range": {
+    "min": "2022-03-30",
+    "max": "2026-03-19"
+  },
+  "source_file_reference_count": 1,
+  "files": {
+    "csv": "prime_video_watch_history_public.csv",
+    "jsonl": "prime_video_watch_history_public.jsonl",
+    "summary": "prime_video_public_summary.json"
+  },
+  "schema": [
+    "fine_platform",
+    "fine_table",
+    "fine_record_id",
+    "fine_account",
+    "fine_source_file",
+    "fine_time_start",
+    "fine_time_end",
+    "fine_time_granularity",
+    "fine_date",
+    "record_type",
+    "title",
+    "series_title",
+    "season_number",
+    "episode_number",
+    "episode_title",
+    "movie_title",
+    "title_missing"
+  ]
+}
