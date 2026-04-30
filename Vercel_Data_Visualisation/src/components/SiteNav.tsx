@@ -17,25 +17,53 @@ export function SiteNav() {
   const [activeSection, setActiveSection] = useState("project");
 
   useEffect(() => {
-    const sections = links
-      .map((link) => document.getElementById(link.id))
-      .filter((section): section is HTMLElement => section !== null);
+    let animationFrame = 0;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntry = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    function updateActiveSection() {
+      const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+      const sectionFocusLine = headerHeight + window.innerHeight * 0.28;
+      const pageBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
 
-        if (visibleEntry?.target.id) {
-          setActiveSection(visibleEntry.target.id);
-        }
-      },
-      { rootMargin: "-18% 0px -62% 0px", threshold: [0.12, 0.3, 0.6] },
-    );
+      if (pageBottom) {
+        setActiveSection(links[links.length - 1].id);
+        return;
+      }
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+      const sections = links
+        .map((link) => ({ id: link.id, element: document.getElementById(link.id) }))
+        .filter((section): section is { id: string; element: HTMLElement } => section.element !== null);
+
+      const currentSection =
+        sections.find(({ element }) => {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= sectionFocusLine && rect.bottom > sectionFocusLine;
+        })?.id ??
+        sections
+          .filter(({ element }) => element.getBoundingClientRect().top <= sectionFocusLine)
+          .at(-1)?.id ??
+        links[0].id;
+
+      setActiveSection(currentSection);
+    }
+
+    function requestActiveSectionUpdate() {
+      window.cancelAnimationFrame(animationFrame);
+      animationFrame = window.requestAnimationFrame(updateActiveSection);
+    }
+
+    updateActiveSection();
+    window.addEventListener("scroll", requestActiveSectionUpdate, { passive: true });
+    window.addEventListener("resize", requestActiveSectionUpdate);
+    window.addEventListener("hashchange", requestActiveSectionUpdate);
+    window.addEventListener("load", requestActiveSectionUpdate);
+
+    return () => {
+      window.cancelAnimationFrame(animationFrame);
+      window.removeEventListener("scroll", requestActiveSectionUpdate);
+      window.removeEventListener("resize", requestActiveSectionUpdate);
+      window.removeEventListener("hashchange", requestActiveSectionUpdate);
+      window.removeEventListener("load", requestActiveSectionUpdate);
+    };
   }, []);
 
   return (

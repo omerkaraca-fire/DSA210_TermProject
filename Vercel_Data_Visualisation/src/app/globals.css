@@ -563,29 +563,6 @@ img {
   text-transform: uppercase;
 }
 
-.zoom-chart-toolbar div {
-  display: flex;
-  gap: 0.35rem;
-}
-
-.zoom-chart-toolbar button {
-  border: 1px solid rgba(240, 234, 219, 0.18);
-  border-radius: 999px;
-  background: rgba(18, 13, 10, 0.5);
-  color: #f0eadb;
-  cursor: pointer;
-  font-size: 0.82rem;
-  font-weight: 900;
-  min-width: 2.2rem;
-  padding: 0.42rem 0.68rem;
-  transition: 160ms ease;
-}
-
-.zoom-chart-toolbar button:hover {
-  background: #f3a35c;
-  color: #120d0a;
-}
-
 .zoom-chart-description {
   max-width: 58rem;
   margin: -0.25rem 0 0.85rem;
@@ -1299,7 +1276,6 @@ html[data-theme="light"] .result-table td {
   color: rgba(42, 26, 18, 0.72);
 }
 
-html[data-theme="light"] .zoom-chart-toolbar button,
 html[data-theme="light"] .code-panel,
 html[data-theme="light"] .modal-panel,
 html[data-theme="light"] .result-detail-popover,
@@ -1374,11 +1350,6 @@ html[data-theme="light"] .mobile-table-card dt {
 
   .table-shell {
     overflow-x: visible;
-  }
-
-  .zoom-chart-toolbar {
-    align-items: flex-start;
-    flex-direction: column;
   }
 
   .zoom-chart-scale {
