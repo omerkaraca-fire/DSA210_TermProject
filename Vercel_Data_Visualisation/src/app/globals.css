@@ -299,6 +299,10 @@ img {
   scroll-margin-top: 6rem;
 }
 
+.ml-section {
+  padding-top: 1.5rem;
+}
+
 .raw-note-grid,
 .formula-grid {
   display: grid;
@@ -950,6 +954,130 @@ img {
   font-size: 0.84rem;
 }
 
+.ml-intro-panel {
+  border: 1px solid rgba(240, 234, 219, 0.14);
+  border-radius: 2rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
+  margin-bottom: 2rem;
+  padding: clamp(2rem, 6vw, 5rem) var(--page-pad);
+}
+
+.ml-feature-grid,
+.ml-two-column,
+.ml-model-grid,
+.ml-period-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.ml-feature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 1.2rem;
+}
+
+.ml-feature-grid code {
+  border: 1px solid rgba(125, 215, 186, 0.18);
+  border-radius: 999px;
+  background: rgba(125, 215, 186, 0.08);
+  color: #bdf5df;
+  font-size: 0.86rem;
+  font-weight: 800;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+}
+
+.ml-two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.ml-model-card,
+.ml-period-panel,
+.ml-mini-model-card {
+  border: 1px solid rgba(240, 234, 219, 0.14);
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.025));
+  padding: 1rem;
+}
+
+.ml-model-card h3,
+.ml-period-panel h3,
+.ml-mini-model-card h4 {
+  margin: 0 0 0.5rem;
+  color: #fff1cf;
+}
+
+.ml-model-card p,
+.ml-period-panel p,
+.ml-mini-model-card p {
+  color: rgba(240, 234, 219, 0.7);
+}
+
+.ml-metric-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0;
+}
+
+.ml-metric-list div {
+  border: 1px solid rgba(240, 234, 219, 0.12);
+  border-radius: 1rem;
+  background: rgba(7, 9, 8, 0.22);
+  padding: 0.75rem;
+}
+
+.ml-metric-list dt {
+  color: rgba(240, 234, 219, 0.54);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ml-metric-list dd {
+  margin: 0.25rem 0 0;
+  color: #f0eadb;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.ml-metric-list.is-compact {
+  gap: 0.45rem;
+}
+
+.ml-metric-list.is-compact div {
+  padding: 0.55rem;
+}
+
+.ml-metric-list.is-compact dd {
+  font-size: 1rem;
+}
+
+.ml-period-stack {
+  margin-top: 1rem;
+}
+
+.ml-model-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ml-mini-model-card h4 {
+  font-family: var(--font-sans), Avenir Next, sans-serif;
+  font-size: 1rem;
+}
+
+.ml-model-label,
+.ml-axis-label {
+  font-size: 13px;
+}
+
+.ml-confusion-value {
+  fill: #1a100b;
+  font-family: var(--font-sans), Avenir Next, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
 .table-shell {
   overflow-x: auto;
   max-width: 100%;
@@ -1119,6 +1247,9 @@ html[data-theme="light"] .data-card h3,
 html[data-theme="light"] .result-card h3,
 html[data-theme="light"] .roadmap-card h3,
 html[data-theme="light"] .matrix-card h3,
+html[data-theme="light"] .ml-model-card h3,
+html[data-theme="light"] .ml-period-panel h3,
+html[data-theme="light"] .ml-mini-model-card h4,
 html[data-theme="light"] .gallery-group h3,
 html[data-theme="light"] .plot-title,
 html[data-theme="light"] .modal-header h2 {
@@ -1138,6 +1269,9 @@ html[data-theme="light"] .data-card small,
 html[data-theme="light"] .result-card p,
 html[data-theme="light"] .roadmap-card p,
 html[data-theme="light"] .matrix-card p,
+html[data-theme="light"] .ml-model-card p,
+html[data-theme="light"] .ml-period-panel p,
+html[data-theme="light"] .ml-mini-model-card p,
 html[data-theme="light"] .plot-caption,
 html[data-theme="light"] .metric-card span {
   color: rgba(42, 26, 18, 0.7);
@@ -1183,10 +1317,14 @@ html[data-theme="light"] .cta-link:hover {
 
 html[data-theme="light"] .glass-panel,
 html[data-theme="light"] .chart-panel,
+html[data-theme="light"] .ml-intro-panel,
 html[data-theme="light"] .data-card,
 html[data-theme="light"] .plot-card,
 html[data-theme="light"] .result-card,
 html[data-theme="light"] .matrix-card,
+html[data-theme="light"] .ml-model-card,
+html[data-theme="light"] .ml-period-panel,
+html[data-theme="light"] .ml-mini-model-card,
 html[data-theme="light"] .roadmap-card,
 html[data-theme="light"] .raw-note-card,
 html[data-theme="light"] .formula-card,
@@ -1210,8 +1348,24 @@ html[data-theme="light"] .matrix-card.is-not-rejected {
 
 html[data-theme="light"] .decision-pill,
 html[data-theme="light"] .matrix-stats,
-html[data-theme="light"] .result-card dt {
+html[data-theme="light"] .result-card dt,
+html[data-theme="light"] .ml-metric-list dt {
   color: rgba(42, 26, 18, 0.72);
+}
+
+html[data-theme="light"] .ml-feature-grid code {
+  border-color: rgba(50, 124, 94, 0.2);
+  background: rgba(50, 124, 94, 0.08);
+  color: #235f47;
+}
+
+html[data-theme="light"] .ml-metric-list div {
+  border-color: rgba(80, 52, 34, 0.14);
+  background: rgba(255, 248, 232, 0.72);
+}
+
+html[data-theme="light"] .ml-metric-list dd {
+  color: #2a1a12;
 }
 
 html[data-theme="light"] .is-rejected .decision-pill {
@@ -1321,7 +1475,10 @@ html[data-theme="light"] .mobile-table-card dt {
   .platform-eda-block,
   .plot-grid,
   .result-card-grid,
-  .matrix-grid {
+  .matrix-grid,
+  .ml-feature-grid,
+  .ml-two-column,
+  .ml-model-grid {
     grid-template-columns: 1fr;
   }
 

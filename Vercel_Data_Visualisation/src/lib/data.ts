@@ -1,12 +1,17 @@
 import chartSeriesJson from "../../public/data/chart-series.json";
+import machineLearningPlotsJson from "../../public/data/machine-learning-plots.json";
+import machineLearningResultsJson from "../../public/data/machine-learning-results.json";
 import projectSummaryJson from "../../public/data/project-summary.json";
-import type { ChartSeries, ProjectSummary } from "@/types";
+import type { ChartSeries, EdaPlot, MachineLearningResults, ProjectSummary } from "@/types";
 
 export const projectSummary = projectSummaryJson as ProjectSummary;
 export const chartSeries = chartSeriesJson as ChartSeries;
+export const machineLearningResults = machineLearningResultsJson as MachineLearningResults;
+export const machineLearningPlots = machineLearningPlotsJson as EdaPlot[];
 
 export const curatedPlots = projectSummary.edaPlots.filter((plot) => plot.curated);
 export const allPlots = projectSummary.edaPlots;
+export const appendixPlots = [...allPlots, ...machineLearningPlots];
 
 export const resultGroups = [
   {

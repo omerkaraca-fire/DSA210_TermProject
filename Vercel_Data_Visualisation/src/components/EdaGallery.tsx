@@ -10,6 +10,8 @@ const filters = [
   { id: "youtube", label: "YouTube" },
   { id: "spotify", label: "Spotify" },
   { id: "prime-netflix", label: "Netflix + Prime" },
+  { id: "ml-academic", label: "Academic ML" },
+  { id: "ml-summer", label: "Summer ML" },
 ];
 
 const groupLabels: Record<string, string> = {
@@ -17,6 +19,8 @@ const groupLabels: Record<string, string> = {
   youtube: "YouTube plots",
   spotify: "Spotify plots",
   "prime-netflix": "Netflix + Prime Video plots",
+  "ml-academic": "Academic-period ML plots",
+  "ml-summer": "Summer-work ML plots",
 };
 
 type EdaGalleryProps = {

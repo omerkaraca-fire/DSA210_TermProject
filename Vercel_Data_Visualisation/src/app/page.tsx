@@ -1,4 +1,9 @@
 import { EdaGallery } from "@/components/EdaGallery";
+import {
+  MLAllModelMatrices,
+  MLBestModels,
+  MLMetricComparisonChart,
+} from "@/components/MachineLearningCharts";
 import { Reveal } from "@/components/Reveal";
 import { DatasetCards } from "@/components/StatCards";
 import {
@@ -20,12 +25,19 @@ import {
   SparseActivityChart,
 } from "@/components/StoryCharts";
 import { ZoomableChart } from "@/components/ZoomableChart";
-import { allPlots, chartSeries, formatNumber, formatPValue, projectSummary } from "@/lib/data";
+import {
+  appendixPlots,
+  chartSeries,
+  formatNumber,
+  formatPValue,
+  machineLearningResults,
+  projectSummary,
+} from "@/lib/data";
 
 const metricCards = [
   { value: projectSummary.commonDateRange.days.toLocaleString("en-US"), label: "daily rows in the shared analysis window" },
   { value: projectSummary.datasets.length.toString(), label: "public behavior datasets" },
-  { value: projectSummary.edaPlots.length.toString(), label: "EDA appendix figures" },
+  { value: appendixPlots.length.toString(), label: "appendix figures" },
   { value: projectSummary.hypothesisResults.length.toString(), label: "basic result rows" },
 ];
 
@@ -615,19 +627,83 @@ export default function HomePage() {
         </Reveal>
       </section>
 
+      <section className="section ml-section" id="machine-learning">
+        <Reveal className="ml-intro-panel">
+          <div className="hero-intro-block relative z-10">
+            <p className="eyebrow">Machine learning extension</p>
+            <h2 className="hero-title">Predicting period labels from activity.</h2>
+            <div className="project-intro">
+              <p>
+                <em>to be filled</em>
+              </p>
+              <p>
+                Model results are reported with macro F1, macro precision, and macro recall so the minority
+                target classes are visible instead of being hidden by overall accuracy.
+              </p>
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal className="chart-panel">
+          <p className="eyebrow">ML data preparation</p>
+          <h2>Daily feature panel.</h2>
+          <p>
+            <em>to be filled</em>
+          </p>
+          <div className="ml-feature-grid" aria-label="Machine learning feature examples">
+            {[
+              "youtube_daily_watched_count",
+              "youtube_daily_search_count",
+              "spotify_daily_hours",
+              "spotify_daily_stream_count",
+              "netflix_prime_daily_count",
+              "daily_active_platform_count",
+              "youtube_after_2130_share",
+              "spotify_after_2130_share",
+            ].map((feature) => (
+              <code key={feature}>{feature}</code>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal className="chart-panel">
+          <p className="eyebrow">Cumulative model comparison</p>
+          <h2>Academic vs summer-work classifiers.</h2>
+          <div className="ml-two-column">
+            {machineLearningResults.periods.map((period) => (
+              <ZoomableChart key={period.id} title={period.title} description={period.target}>
+                <MLMetricComparisonChart period={period} />
+              </ZoomableChart>
+            ))}
+          </div>
+        </Reveal>
+
+        <Reveal className="chart-panel">
+          <p className="eyebrow">Best models</p>
+          <h2>Best macro-F1 result by target.</h2>
+          <MLBestModels periods={machineLearningResults.periods} />
+        </Reveal>
+
+        <Reveal className="chart-panel">
+          <p className="eyebrow">All model confusion matrices</p>
+          <h2>Model-by-model result cards.</h2>
+          <MLAllModelMatrices periods={machineLearningResults.periods} />
+        </Reveal>
+      </section>
+
       <section className="section" id="appendix">
         <Reveal>
           <p className="eyebrow">Appendix</p>
-          <h2 className="section-title">Notebook EDA image gallery.</h2>
+          <h2 className="section-title">Notebook image gallery.</h2>
           <p className="section-copy">
             The main story above uses interactive SVG charts. The appendix keeps the original notebook PNGs
-            for traceability and presentation reuse, with filters by EDA group.
+            for traceability and presentation reuse, with filters by EDA and ML group.
           </p>
           <a className="cta-link inline-block" href="#eda">
             Back to interactive EDA
           </a>
         </Reveal>
-        <EdaGallery plots={allPlots} />
+        <EdaGallery plots={appendixPlots} />
       </section>
     </main>
   );

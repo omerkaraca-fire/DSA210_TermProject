@@ -1,0 +1,372 @@
+[
+  {
+    "id": "ml-academic-decision_tree_confusion_matrix",
+    "file": "decision_tree_confusion_matrix.png",
+    "title": "Decision Tree Confusion Matrix",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/decision_tree_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-decision_tree_performance",
+    "file": "decision_tree_performance.png",
+    "title": "Decision Tree Performance",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/decision_tree_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-decision_tree_visualization",
+    "file": "decision_tree_visualization.png",
+    "title": "Decision Tree Visualization",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/decision_tree_visualization.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-dummy_classifier_confusion_matrix",
+    "file": "dummy_classifier_confusion_matrix.png",
+    "title": "Dummy Classifier Confusion Matrix",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/dummy_classifier_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-dummy_classifier_performance",
+    "file": "dummy_classifier_performance.png",
+    "title": "Dummy Classifier Performance",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/dummy_classifier_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-kmeans_clustering",
+    "file": "kmeans_clustering.png",
+    "title": "Kmeans Clustering",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/kmeans_clustering.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-kmeans_macro_performance",
+    "file": "kmeans_macro_performance.png",
+    "title": "Kmeans Macro Performance",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/kmeans_macro_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-logistic_regression_confusion_matrix",
+    "file": "logistic_regression_confusion_matrix.png",
+    "title": "Logistic Regression Confusion Matrix",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/logistic_regression_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-logistic_regression_performance",
+    "file": "logistic_regression_performance.png",
+    "title": "Logistic Regression Performance",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/logistic_regression_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-model_comparison_all_metrics",
+    "file": "model_comparison_all_metrics.png",
+    "title": "Model Comparison All Metrics",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/model_comparison_all_metrics.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-model_comparison_f1_score",
+    "file": "model_comparison_f1_score.png",
+    "title": "Model Comparison F1 Score",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/model_comparison_f1_score.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-model_comparison_precision",
+    "file": "model_comparison_precision.png",
+    "title": "Model Comparison Precision",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/model_comparison_precision.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-model_comparison_recall",
+    "file": "model_comparison_recall.png",
+    "title": "Model Comparison Recall",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/model_comparison_recall.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-random_forest_confusion_matrix",
+    "file": "random_forest_confusion_matrix.png",
+    "title": "Random Forest Confusion Matrix",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/random_forest_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-random_forest_performance",
+    "file": "random_forest_performance.png",
+    "title": "Random Forest Performance",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/random_forest_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-xgboost_confusion_matrix",
+    "file": "xgboost_confusion_matrix.png",
+    "title": "Xgboost Confusion Matrix",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/xgboost_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-academic-xgboost_performance",
+    "file": "xgboost_performance.png",
+    "title": "Xgboost Performance",
+    "group": "ml-academic",
+    "platform": "Academic ML",
+    "src": "/ml-images/ACADEMICAL_PERIOD/xgboost_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-kmeans_summer_clustering",
+    "file": "kmeans_summer_clustering.png",
+    "title": "Kmeans Summer Clustering",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/kmeans_summer_clustering.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-kmeans_summer_macro_performance",
+    "file": "kmeans_summer_macro_performance.png",
+    "title": "Kmeans Summer Macro Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/kmeans_summer_macro_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_decision_tree_confusion_matrix",
+    "file": "summer_decision_tree_confusion_matrix.png",
+    "title": "Decision Tree Confusion Matrix",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_decision_tree_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_decision_tree_performance",
+    "file": "summer_decision_tree_performance.png",
+    "title": "Decision Tree Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_decision_tree_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_decision_tree_visualization",
+    "file": "summer_decision_tree_visualization.png",
+    "title": "Decision Tree Visualization",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_decision_tree_visualization.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_dummy_classifier_confusion_matrix",
+    "file": "summer_dummy_classifier_confusion_matrix.png",
+    "title": "Dummy Classifier Confusion Matrix",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_dummy_classifier_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_dummy_classifier_performance",
+    "file": "summer_dummy_classifier_performance.png",
+    "title": "Dummy Classifier Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_dummy_classifier_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_ensemble_confusion_matrix",
+    "file": "summer_ensemble_confusion_matrix.png",
+    "title": "Ensemble Confusion Matrix",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_ensemble_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_ensemble_performance",
+    "file": "summer_ensemble_performance.png",
+    "title": "Ensemble Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_ensemble_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_logistic_regression_confusion_matrix",
+    "file": "summer_logistic_regression_confusion_matrix.png",
+    "title": "Logistic Regression Confusion Matrix",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_logistic_regression_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_logistic_regression_performance",
+    "file": "summer_logistic_regression_performance.png",
+    "title": "Logistic Regression Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_logistic_regression_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_model_comparison",
+    "file": "summer_model_comparison.png",
+    "title": "Model Comparison",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_model_comparison.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_model_comparison_all_metrics",
+    "file": "summer_model_comparison_all_metrics.png",
+    "title": "Model Comparison All Metrics",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_model_comparison_all_metrics.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_model_comparison_f1_score",
+    "file": "summer_model_comparison_f1_score.png",
+    "title": "Model Comparison F1 Score",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_model_comparison_f1_score.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_model_comparison_precision",
+    "file": "summer_model_comparison_precision.png",
+    "title": "Model Comparison Precision",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_model_comparison_precision.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_model_comparison_recall",
+    "file": "summer_model_comparison_recall.png",
+    "title": "Model Comparison Recall",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_model_comparison_recall.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_random_forest_confusion_matrix",
+    "file": "summer_random_forest_confusion_matrix.png",
+    "title": "Random Forest Confusion Matrix",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_random_forest_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_random_forest_performance",
+    "file": "summer_random_forest_performance.png",
+    "title": "Random Forest Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_random_forest_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_xgboost_confusion_matrix",
+    "file": "summer_xgboost_confusion_matrix.png",
+    "title": "Xgboost Confusion Matrix",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_xgboost_confusion_matrix.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  },
+  {
+    "id": "ml-summer-summer_xgboost_performance",
+    "file": "summer_xgboost_performance.png",
+    "title": "Xgboost Performance",
+    "group": "ml-summer",
+    "platform": "Summer work ML",
+    "src": "/ml-images/SUMMER_WORK_PERIOD/summer_xgboost_performance.png",
+    "caption": "Notebook-generated machine-learning result image kept for appendix traceability.",
+    "curated": false
+  }
+]

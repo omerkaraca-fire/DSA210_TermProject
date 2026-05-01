@@ -1,0 +1,416 @@
+{
+  "periods": [
+    {
+      "id": "academic",
+      "title": "Academic Period ML",
+      "target": "Final exam period vs ordinary term",
+      "labelPositive": "Final Exam",
+      "metrics": [
+        {
+          "model": "Dummy Classifier",
+          "precision": 0.44571428571428573,
+          "recall": 0.5,
+          "f1Score": 0.47129909365558914
+        },
+        {
+          "model": "Logistic Regression",
+          "precision": 0.5194078947368421,
+          "recall": 0.5497638326585694,
+          "f1Score": 0.41458519179304193
+        },
+        {
+          "model": "Decision Tree",
+          "precision": 0.5450525152017689,
+          "recall": 0.6099865047233468,
+          "f1Score": 0.5066948555320648
+        },
+        {
+          "model": "K-Means Clustering",
+          "precision": 0.44438073394495414,
+          "recall": 0.5,
+          "f1Score": 0.4705525197328476
+        },
+        {
+          "model": "XGBoost",
+          "precision": 0.5090408805031447,
+          "recall": 0.5077597840755735,
+          "f1Score": 0.5079365079365079
+        },
+        {
+          "model": "Random Forest",
+          "precision": 0.4444444444444444,
+          "recall": 0.48717948717948717,
+          "f1Score": 0.4648318042813456
+        },
+        {
+          "model": "Ensemble Model",
+          "precision": 0.5244539411206077,
+          "recall": 0.5173751686909582,
+          "f1Score": 0.5184748427672956
+        }
+      ],
+      "confusionMatrices": [
+        {
+          "model": "Dummy Classifier",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              156,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "Logistic Regression",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              73,
+              83
+            ],
+            [
+              7,
+              12
+            ]
+          ]
+        },
+        {
+          "model": "Decision Tree",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              100,
+              56
+            ],
+            [
+              8,
+              11
+            ]
+          ]
+        },
+        {
+          "model": "K-Means Clustering",
+          "source": "derived from kmeans_full_report.csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              775,
+              0
+            ],
+            [
+              97,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "XGBoost",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              142,
+              14
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        },
+        {
+          "model": "Random Forest",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              152,
+              4
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "Ensemble Model",
+          "source": "derived from notebook classification report",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam"
+          ],
+          "values": [
+            [
+              145,
+              11
+            ],
+            [
+              17,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summer-work",
+      "title": "Summer Work Period ML",
+      "target": "Summer work period vs ordinary term",
+      "labelPositive": "Summer Work Period",
+      "metrics": [
+        {
+          "model": "Dummy Classifier",
+          "precision": 0.39540816326530615,
+          "recall": 0.5,
+          "f1Score": 0.4415954415954416
+        },
+        {
+          "model": "Logistic Regression",
+          "precision": 0.6458398417161304,
+          "recall": 0.7203776553894571,
+          "f1Score": 0.6111111111111112
+        },
+        {
+          "model": "Decision Tree",
+          "precision": 0.6432234432234433,
+          "recall": 0.7153422501966955,
+          "f1Score": 0.6230769230769231
+        },
+        {
+          "model": "K-Means Clustering",
+          "precision": 0.3958120531154239,
+          "recall": 0.5,
+          "f1Score": 0.4418472063854048
+        },
+        {
+          "model": "XGBoost",
+          "precision": 0.6639306885544916,
+          "recall": 0.6697088906372934,
+          "f1Score": 0.6666666666666666
+        },
+        {
+          "model": "Random Forest",
+          "precision": 0.6279761904761905,
+          "recall": 0.5947285601888277,
+          "f1Score": 0.6042536007538026
+        },
+        {
+          "model": "Ensemble Model",
+          "precision": 0.6280821917808219,
+          "recall": 0.6471282454760031,
+          "f1Score": 0.6350626118067979
+        }
+      ],
+      "confusionMatrices": [
+        {
+          "model": "Dummy Classifier",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              155,
+              0
+            ],
+            [
+              41,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "Logistic Regression",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              91,
+              64
+            ],
+            [
+              6,
+              35
+            ]
+          ]
+        },
+        {
+          "model": "Decision Tree",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              97,
+              58
+            ],
+            [
+              8,
+              33
+            ]
+          ]
+        },
+        {
+          "model": "K-Means Clustering",
+          "source": "derived from kmeans_summer_full_report.csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              775,
+              0
+            ],
+            [
+              204,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "XGBoost",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              132,
+              23
+            ],
+            [
+              21,
+              20
+            ]
+          ]
+        },
+        {
+          "model": "Random Forest",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              139,
+              16
+            ],
+            [
+              29,
+              12
+            ]
+          ]
+        },
+        {
+          "model": "Ensemble Model",
+          "source": "csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              125,
+              30
+            ],
+            [
+              21,
+              20
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

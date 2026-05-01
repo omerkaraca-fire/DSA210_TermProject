@@ -21,6 +21,34 @@ export type EdaPlot = {
   curated: boolean;
 };
 
+export type MachineLearningMetric = {
+  model: string;
+  precision: number;
+  recall: number;
+  f1Score: number;
+};
+
+export type MachineLearningConfusionMatrix = {
+  model: string;
+  source: string;
+  predictedLabels: string[];
+  actualLabels: string[];
+  values: number[][];
+};
+
+export type MachineLearningPeriod = {
+  id: string;
+  title: string;
+  target: string;
+  labelPositive: string;
+  metrics: MachineLearningMetric[];
+  confusionMatrices: MachineLearningConfusionMatrix[];
+};
+
+export type MachineLearningResults = {
+  periods: MachineLearningPeriod[];
+};
+
 export type HypothesisResult = {
   hypothesis: string;
   outcome: string;

@@ -10,6 +10,7 @@ const links = [
   { id: "scripts", href: "/#scripts", label: "Scripts" },
   { id: "eda", href: "/#eda", label: "EDA" },
   { id: "hypotheses", href: "/#hypotheses", label: "Hypothesis" },
+  { id: "machine-learning", href: "/#machine-learning", label: "ML" },
   { id: "appendix", href: "/#appendix", label: "Appendix" },
 ];
 
@@ -18,6 +19,7 @@ export function SiteNav() {
 
   useEffect(() => {
     let animationFrame = 0;
+    let hashScrollTimer = 0;
 
     function updateActiveSection() {
       const headerHeight = document.querySelector("header")?.getBoundingClientRect().height ?? 0;
@@ -51,17 +53,37 @@ export function SiteNav() {
       animationFrame = window.requestAnimationFrame(updateActiveSection);
     }
 
+    function stabilizeHashScroll() {
+      const id = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+      const target = id ? document.getElementById(id) : null;
+
+      if (!target) {
+        requestActiveSectionUpdate();
+        return;
+      }
+
+      target.scrollIntoView({ block: "start" });
+      requestActiveSectionUpdate();
+    }
+
+    function requestHashScrollStabilization() {
+      window.clearTimeout(hashScrollTimer);
+      hashScrollTimer = window.setTimeout(stabilizeHashScroll, 120);
+    }
+
     updateActiveSection();
+    requestHashScrollStabilization();
     window.addEventListener("scroll", requestActiveSectionUpdate, { passive: true });
     window.addEventListener("resize", requestActiveSectionUpdate);
-    window.addEventListener("hashchange", requestActiveSectionUpdate);
+    window.addEventListener("hashchange", requestHashScrollStabilization);
     window.addEventListener("load", requestActiveSectionUpdate);
 
     return () => {
       window.cancelAnimationFrame(animationFrame);
+      window.clearTimeout(hashScrollTimer);
       window.removeEventListener("scroll", requestActiveSectionUpdate);
       window.removeEventListener("resize", requestActiveSectionUpdate);
-      window.removeEventListener("hashchange", requestActiveSectionUpdate);
+      window.removeEventListener("hashchange", requestHashScrollStabilization);
       window.removeEventListener("load", requestActiveSectionUpdate);
     };
   }, []);
