@@ -13,8 +13,19 @@ function shortModelName(model: string) {
   return model.replace(" Classifier", "").replace(" Regression", " Reg.").replace(" Clustering", "");
 }
 
+function compactLabel(label: string) {
+  return label
+    .replace("Ordinary Term", "Ordinary")
+    .replace("Final Exam", "Final")
+    .replace("Summer Work Period", "Summer");
+}
+
 function metricValue(value: number) {
   return value.toFixed(3);
+}
+
+function matrixTotal(matrix: MachineLearningConfusionMatrix) {
+  return matrix.values.flat().reduce((total, value) => total + value, 0);
 }
 
 function findMatrix(period: MachineLearningPeriod, model: string) {
@@ -107,15 +118,19 @@ export function MLConfusionMatrixHeatmap({
   compact?: boolean;
   matrix: MachineLearningConfusionMatrix;
 }) {
-  const width = compact ? 420 : 560;
-  const height = compact ? 360 : 410;
-  const margin = compact ? { top: 58, right: 28, bottom: 54, left: 118 } : { top: 70, right: 34, bottom: 64, left: 150 };
+  const width = compact ? 380 : 560;
+  const height = compact ? 326 : 410;
+  const margin = compact ? { top: 56, right: 24, bottom: 42, left: 104 } : { top: 70, right: 34, bottom: 64, left: 150 };
   const cellSize = Math.min(
     (width - margin.left - margin.right) / matrix.predictedLabels.length,
     (height - margin.top - margin.bottom) / matrix.actualLabels.length,
   );
   const values = matrix.values.flat();
-  const color = d3.scaleSequential(d3.interpolateYlOrBr).domain([0, Math.max(...values, 1)]);
+  const maxValue = Math.max(...values, 1);
+  const color = d3
+    .scaleLinear<string>()
+    .domain([0, maxValue * 0.5, maxValue])
+    .range(["#e9f7f6", "#7dc9c0", "#206a72"]);
 
   return (
     <svg className="chart-svg interactive-svg ml-confusion-chart" viewBox={`0 0 ${width} ${height}`} role="img">
@@ -127,17 +142,18 @@ export function MLConfusionMatrixHeatmap({
       </text>
       {matrix.predictedLabels.map((label, index) => (
         <text key={label} x={margin.left + index * cellSize + cellSize / 2} y={margin.top - 16} textAnchor="middle" className="chart-axis ml-axis-label">
-          {label}
+          {compact ? compactLabel(label) : label}
         </text>
       ))}
       {matrix.actualLabels.map((label, rowIndex) => (
         <text key={label} x={margin.left - 14} y={margin.top + rowIndex * cellSize + cellSize / 2 + 5} textAnchor="end" className="chart-axis ml-axis-label">
-          {label}
+          {compact ? compactLabel(label) : label}
         </text>
       ))}
       {matrix.values.map((row, rowIndex) =>
         row.map((value, columnIndex) => {
           const fill = color(value);
+          const textFill = value >= maxValue * 0.56 ? "#fff8e8" : "#142326";
           return (
             <g key={`${rowIndex}-${columnIndex}`}>
               <rect
@@ -154,6 +170,7 @@ export function MLConfusionMatrixHeatmap({
                 y={margin.top + rowIndex * cellSize + cellSize / 2 + 9}
                 textAnchor="middle"
                 className="ml-confusion-value"
+                style={{ fill: textFill }}
               >
                 {value}
               </text>
@@ -161,16 +178,12 @@ export function MLConfusionMatrixHeatmap({
           );
         }),
       )}
-      {matrix.source === "csv" ? null : (
-        <text x={margin.left} y={height - 18} className="chart-note">
-          Source: {matrix.source}
-        </text>
-      )}
     </svg>
   );
 }
 
 export function MLBestModels({ periods }: { periods: MachineLearningPeriod[] }) {
+  const compact = periods.length >= 3;
   return (
     <div className="ml-two-column">
       {periods.map((period) => {
@@ -195,7 +208,7 @@ export function MLBestModels({ periods }: { periods: MachineLearningPeriod[] }) 
                 <dd>{metricValue(best.recall)}</dd>
               </div>
             </dl>
-            {matrix ? <MLConfusionMatrixHeatmap matrix={matrix} /> : null}
+            {matrix ? <MLConfusionMatrixHeatmap compact={compact} matrix={matrix} /> : null}
           </article>
         );
       })}
@@ -205,40 +218,51 @@ export function MLBestModels({ periods }: { periods: MachineLearningPeriod[] }) 
 
 export function MLAllModelMatrices({ periods }: { periods: MachineLearningPeriod[] }) {
   return (
-    <div className="ml-period-stack">
-      {periods.map((period) => (
-        <article className="ml-period-panel" key={period.id}>
-          <div>
-            <p className="eyebrow">{period.title}</p>
-            <h3>{period.target}</h3>
-          </div>
-          <div className="ml-model-grid">
-            {period.metrics.map((metric) => {
-              const matrix = findMatrix(period, metric.model);
-              return (
-                <article className="ml-mini-model-card" key={metric.model}>
-                  <h4>{metric.model}</h4>
-                  <dl className="ml-metric-list is-compact">
-                    <div>
-                      <dt>F1</dt>
-                      <dd>{metricValue(metric.f1Score)}</dd>
+    <>
+      <p className="ml-count-note">
+        Confusion-matrix totals follow the notebook evaluation rows. Supervised classifiers use held-out test
+        sets (175 academical rows, 196 summer-work rows, and 216 all-period rows). K-Means is an unsupervised
+        comparison, so its count can follow the report produced for that task rather than the same supervised
+        test split.
+      </p>
+      <div className="ml-period-comparison">
+        {periods.map((period) => (
+          <article className="ml-period-panel" key={period.id}>
+            <div>
+              <p className="eyebrow">{period.title}</p>
+              <h3>{period.target}</h3>
+            </div>
+            <div className="ml-model-grid">
+              {period.metrics.map((metric) => {
+                const matrix = findMatrix(period, metric.model);
+                return (
+                  <article className="ml-mini-model-card" key={metric.model}>
+                    <div className="ml-mini-model-header">
+                      <h4>{metric.model}</h4>
+                      {matrix ? <span>{matrixTotal(matrix)} rows</span> : null}
                     </div>
-                    <div>
-                      <dt>Prec.</dt>
-                      <dd>{metricValue(metric.precision)}</dd>
-                    </div>
-                    <div>
-                      <dt>Rec.</dt>
-                      <dd>{metricValue(metric.recall)}</dd>
-                    </div>
-                  </dl>
-                  {matrix ? <MLConfusionMatrixHeatmap compact matrix={matrix} /> : null}
-                </article>
-              );
-            })}
-          </div>
-        </article>
-      ))}
-    </div>
+                    <dl className="ml-metric-list is-compact">
+                      <div>
+                        <dt>F1</dt>
+                        <dd>{metricValue(metric.f1Score)}</dd>
+                      </div>
+                      <div>
+                        <dt>Prec.</dt>
+                        <dd>{metricValue(metric.precision)}</dd>
+                      </div>
+                      <div>
+                        <dt>Rec.</dt>
+                        <dd>{metricValue(metric.recall)}</dd>
+                      </div>
+                    </dl>
+                    {matrix ? <MLConfusionMatrixHeatmap compact matrix={matrix} /> : null}
+                  </article>
+                );
+              })}
+            </div>
+          </article>
+        ))}
+      </div>
+    </>
   );
 }

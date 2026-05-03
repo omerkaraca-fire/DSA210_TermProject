@@ -632,43 +632,255 @@ export default function HomePage() {
           <div className="hero-intro-block relative z-10">
             <p className="eyebrow">Machine learning extension</p>
             <h2 className="hero-title">Predicting period labels from activity.</h2>
-            <div className="project-intro">
+            <div className="project-intro ml-narrative">
               <p>
-                <em>to be filled</em>
+                <em>This part examines the ML work of the project.</em>
               </p>
               <p>
-                Model results are reported with macro F1, macro precision, and macro recall so the minority
-                target classes are visible instead of being hidden by overall accuracy.
+                <em>
+                  First, I examined my dataset to find a goal where ML models could be used. Given the number
+                  of daily activities, I asked whether it would be possible to guess my day&apos;s class, where the
+                  class corresponds to normal day, final exam period, or summer work period.
+                </em>
+              </p>
+              <p>
+                <em>
+                  To illustrate better, exam period corresponds to the final exam period. <strong>Midterm dates
+                  are not separately labeled here; if they fall outside the final exam period, they remain inside
+                  the ordinary term class</strong>, due to each course distributing its workload in different time
+                  periods. The summer work period is the time where I worked in summers as an intern in a local
+                  company in my hometown, and the ordinary time period is the remaining days. Except for some
+                  outliers, most certainly, the years can be differentiated into these three groups.
+                </em>
+              </p>
+              <p>
+                <em>
+                  Thus, as in the EDA and hypothesis testing, I used the academic calendar of Sabanci University
+                  to determine those dates. In that manner, I classified the dates as ordinary term date, summer
+                  work period, and final exam based on analysis_period.
+                </em>
+              </p>
+              <div className="ml-table-grid">
+                <div className="table-shell">
+                  <p className="eyebrow">analysis_period</p>
+                  <table className="result-table ml-narrative-table">
+                    <thead>
+                      <tr>
+                        <th>Value</th>
+                        <th>Meaning</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><code>ordinary_term</code></td>
+                        <td>Regular academic term days</td>
+                      </tr>
+                      <tr>
+                        <td><code>final_exam</code></td>
+                        <td>Final exam period days</td>
+                      </tr>
+                      <tr>
+                        <td><code>summer_work_period</code></td>
+                        <td>Summer term/work period days</td>
+                      </tr>
+                      <tr>
+                        <td><code>outside_calendar</code></td>
+                        <td>Days outside the labeled academic calendar</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div className="table-shell">
+                  <p className="eyebrow">Classification tasks</p>
+                  <table className="result-table ml-narrative-table">
+                    <thead>
+                      <tr>
+                        <th>Task</th>
+                        <th>Classes Included</th>
+                        <th>Full</th>
+                        <th>Train</th>
+                        <th>Test</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Final Exam vs Ordinary Term</td>
+                        <td><code>ordinary_term</code>, <code>final_exam</code></td>
+                        <td>872</td>
+                        <td>697</td>
+                        <td>175</td>
+                      </tr>
+                      <tr>
+                        <td>Summer Work vs Ordinary Term</td>
+                        <td><code>ordinary_term</code>, <code>summer_work_period</code></td>
+                        <td>979</td>
+                        <td>783</td>
+                        <td>196</td>
+                      </tr>
+                      <tr>
+                        <td>All Periods Classification</td>
+                        <td><code>ordinary_term</code>, <code>final_exam</code>, <code>summer_work_period</code></td>
+                        <td>1076</td>
+                        <td>860</td>
+                        <td>216</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className="ml-feature-columns">
+                <div>
+                  <p className="eyebrow">Final Exam ML and All Class</p>
+                  <div className="ml-feature-grid" aria-label="Common machine learning feature columns">
+                    {[
+                      "youtube_daily_watched_count",
+                      "youtube_daily_search_count",
+                      "youtube_after_2130_count",
+                      "spotify_daily_hours",
+                      "spotify_daily_stream_count",
+                      "spotify_daily_unique_tracks",
+                      "spotify_after_2130_hours",
+                      "netflix_daily_count",
+                      "prime_video_daily_count",
+                      "netflix_prime_daily_count",
+                      "daily_distinct_entertainment_platform_count",
+                    ].map((feature) => (
+                      <code key={feature}>{feature}</code>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="eyebrow">Additional Features For Summer Working Period</p>
+                  <div className="ml-feature-grid" aria-label="Summer work machine learning feature columns">
+                    {["youtube_after_2130_share", "spotify_after_2130_hour_share"].map((feature) => (
+                      <code key={feature}>{feature}</code>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p>
+                <em>
+                  The ML classification is intentionally separated due to sequential development and how I
+                  decided to develop it. Classification happened in three ways: ordinary term or final exam
+                  period, summer time work period or ordinary term, and the combined three-class classification.
+                </em>
+              </p>
+              <div className="table-shell">
+                <p className="eyebrow">Decision Tree validation split</p>
+                <table className="result-table ml-narrative-table">
+                  <thead>
+                    <tr>
+                      <th>Classification Task</th>
+                      <th>Decision Tree Training Subset</th>
+                      <th>Decision Tree Validation Set</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Final Exam vs Ordinary Term</td>
+                      <td>522</td>
+                      <td>175</td>
+                    </tr>
+                    <tr>
+                      <td>Summer Work vs Ordinary Term</td>
+                      <td>587</td>
+                      <td>196</td>
+                    </tr>
+                    <tr>
+                      <td>All Periods Classification</td>
+                      <td>645</td>
+                      <td>215</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                <em>
+                  Based on those features, I used Dummy Classifier, Logistic Regression, Decision Tree, XGBoost,
+                  Random Forest, and an Ensemble Model that soft-votes across the previous models. K-Means is
+                  included as an unsupervised comparison, where clusters are mapped to labels after fitting.
+                </em>
+              </p>
+              <p>
+                <em>
+                  For final exam period versus ordinary term, the dummy classifier macro-F1 was 47.1%, and the
+                  best macro-F1 was the ensemble model with 51.8%. This is an improvement of <strong>4.72
+                  percentage points</strong>, or <strong>10.01%</strong> relative improvement, suggesting that
+                  the current features provide limited predictive signal for distinguishing final exam days from
+                  ordinary term days.
+                </em>
+              </p>
+              <p>
+                <em>
+                  For summer work period versus ordinary term, the dummy classifier macro-F1 was 44.2%, while
+                  the best macro-F1 was <strong>66.7%</strong> with XGBoost. This is an improvement of <strong>
+                  22.51 percentage points</strong>, or <strong>50.97%</strong> relative improvement, suggesting
+                  that the available features capture summer work behavior more clearly than final exam behavior.
+                </em>
+              </p>
+              <p>
+                <em>
+                  For the combined three-class classification, the dummy classifier macro-F1 was 28.0%, while
+                  the best macro-F1 was <strong>44.9%</strong> with the ensemble model. This is an improvement
+                  of <strong>16.97 percentage points</strong>, or <strong>60.70%</strong> relative improvement.
+                </em>
+              </p>
+              <div className="table-shell">
+                <table className="result-table ml-narrative-table">
+                  <thead>
+                    <tr>
+                      <th>Classification Task</th>
+                      <th>Dummy Macro F1</th>
+                      <th>Best Model</th>
+                      <th>Best Model Macro F1</th>
+                      <th>Absolute Increase</th>
+                      <th>Relative Improvement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Final Exam vs Ordinary Term</td>
+                      <td>47.13%</td>
+                      <td>Ensemble Model</td>
+                      <td>51.85%</td>
+                      <td>+4.72 percentage points</td>
+                      <td>+10.01%</td>
+                    </tr>
+                    <tr>
+                      <td>Summer Work vs Ordinary Term</td>
+                      <td>44.16%</td>
+                      <td>XGBoost</td>
+                      <td>66.67%</td>
+                      <td>+22.51 percentage points</td>
+                      <td>+50.97%</td>
+                    </tr>
+                    <tr>
+                      <td>All Periods: Ordinary vs Final vs Summer</td>
+                      <td>27.96%</td>
+                      <td>Ensemble Model</td>
+                      <td>44.93%</td>
+                      <td>+16.97 percentage points</td>
+                      <td>+60.70%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                <em>
+                  In conclusion, the separation hinted that the summer work period pattern is easier to capture
+                  with the available features. The current features were not enough to strongly differentiate the
+                  final period and ordinary period. This can happen either because the final exam period is not
+                  very different from ordinary term behavior, or because important social-media signals are still
+                  excluded from the current feature set.
+                </em>
               </p>
             </div>
           </div>
         </Reveal>
 
         <Reveal className="chart-panel">
-          <p className="eyebrow">ML data preparation</p>
-          <h2>Daily feature panel.</h2>
-          <p>
-            <em>to be filled</em>
-          </p>
-          <div className="ml-feature-grid" aria-label="Machine learning feature examples">
-            {[
-              "youtube_daily_watched_count",
-              "youtube_daily_search_count",
-              "spotify_daily_hours",
-              "spotify_daily_stream_count",
-              "netflix_prime_daily_count",
-              "daily_active_platform_count",
-              "youtube_after_2130_share",
-              "spotify_after_2130_share",
-            ].map((feature) => (
-              <code key={feature}>{feature}</code>
-            ))}
-          </div>
-        </Reveal>
-
-        <Reveal className="chart-panel">
           <p className="eyebrow">Cumulative model comparison</p>
-          <h2>Academic vs summer-work classifiers.</h2>
+          <h2>Three classification tasks.</h2>
           <div className="ml-two-column">
             {machineLearningResults.periods.map((period) => (
               <ZoomableChart key={period.id} title={period.title} description={period.target}>
@@ -697,7 +909,7 @@ export default function HomePage() {
           <h2 className="section-title">Notebook image gallery.</h2>
           <p className="section-copy">
             The main story above uses interactive SVG charts. The appendix keeps the original notebook PNGs
-            for traceability and presentation reuse, with filters by EDA and ML group.
+            for traceability and presentation reuse, with one selected image per EDA and ML group.
           </p>
           <a className="cta-link inline-block" href="#eda">
             Back to interactive EDA

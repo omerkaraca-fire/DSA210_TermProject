@@ -2,7 +2,7 @@
   "periods": [
     {
       "id": "academic",
-      "title": "Academic Period ML",
+      "title": "Academical - Activity ML",
       "target": "Final exam period vs ordinary term",
       "labelPositive": "Final Exam",
       "metrics": [
@@ -26,9 +26,9 @@
         },
         {
           "model": "K-Means Clustering",
-          "precision": 0.44438073394495414,
+          "precision": 0.44571428571428573,
           "recall": 0.5,
-          "f1Score": 0.4705525197328476
+          "f1Score": 0.47129909365558914
         },
         {
           "model": "XGBoost",
@@ -118,7 +118,7 @@
         },
         {
           "model": "K-Means Clustering",
-          "source": "derived from kmeans_full_report.csv",
+          "source": "kmeans report",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -184,7 +184,7 @@
         },
         {
           "model": "Ensemble Model",
-          "source": "derived from notebook classification report",
+          "source": "notebook report",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -208,7 +208,7 @@
     },
     {
       "id": "summer-work",
-      "title": "Summer Work Period ML",
+      "title": "Summer Work Period - Activity ML",
       "target": "Summer work period vs ordinary term",
       "labelPositive": "Summer Work Period",
       "metrics": [
@@ -232,9 +232,9 @@
         },
         {
           "model": "K-Means Clustering",
-          "precision": 0.3958120531154239,
+          "precision": 0.39540816326530615,
           "recall": 0.5,
-          "f1Score": 0.4418472063854048
+          "f1Score": 0.4415954415954416
         },
         {
           "model": "XGBoost",
@@ -324,7 +324,7 @@
         },
         {
           "model": "K-Means Clustering",
-          "source": "derived from kmeans_summer_full_report.csv",
+          "source": "kmeans report",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -406,6 +406,275 @@
             ],
             [
               21,
+              20
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "all-periods",
+      "title": "All Periods - Activity ML",
+      "target": "Ordinary term vs final exam vs summer work period",
+      "labelPositive": "All Periods",
+      "metrics": [
+        {
+          "model": "Dummy Classifier",
+          "precision": 0.24074074074074073,
+          "recall": 0.3333333333333333,
+          "f1Score": 0.2795698924731183
+        },
+        {
+          "model": "Logistic Regression",
+          "precision": 0.44939814814814816,
+          "recall": 0.5411221925984442,
+          "f1Score": 0.4228494538713517
+        },
+        {
+          "model": "Decision Tree",
+          "precision": 0.4132034632034632,
+          "recall": 0.4199444828456382,
+          "f1Score": 0.3992156145252052
+        },
+        {
+          "model": "K-Means Clustering",
+          "precision": 0.24074074074074073,
+          "recall": 0.3333333333333333,
+          "f1Score": 0.2795698924731183
+        },
+        {
+          "model": "XGBoost",
+          "precision": 0.4158838790481303,
+          "recall": 0.4164390024467046,
+          "f1Score": 0.41072475641983347
+        },
+        {
+          "model": "Random Forest",
+          "precision": 0.4198542805100182,
+          "recall": 0.41082968521992913,
+          "f1Score": 0.4086186994998076
+        },
+        {
+          "model": "Ensemble Model",
+          "precision": 0.45529128494244775,
+          "recall": 0.45364975916965644,
+          "f1Score": 0.4492574461421814
+        }
+      ],
+      "confusionMatrices": [
+        {
+          "model": "Dummy Classifier",
+          "source": "notebook image",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              156,
+              0,
+              0
+            ],
+            [
+              19,
+              0,
+              0
+            ],
+            [
+              41,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "Logistic Regression",
+          "source": "notebook image",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              62,
+              36,
+              58
+            ],
+            [
+              6,
+              8,
+              5
+            ],
+            [
+              7,
+              1,
+              33
+            ]
+          ]
+        },
+        {
+          "model": "Decision Tree",
+          "source": "notebook image",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              92,
+              32,
+              32
+            ],
+            [
+              9,
+              3,
+              7
+            ],
+            [
+              11,
+              9,
+              21
+            ]
+          ]
+        },
+        {
+          "model": "K-Means Clustering",
+          "source": "kmeans report",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              156,
+              0,
+              0
+            ],
+            [
+              19,
+              0,
+              0
+            ],
+            [
+              41,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "model": "XGBoost",
+          "source": "notebook image",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              122,
+              7,
+              27
+            ],
+            [
+              16,
+              1,
+              2
+            ],
+            [
+              24,
+              0,
+              17
+            ]
+          ]
+        },
+        {
+          "model": "Random Forest",
+          "source": "notebook image",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              139,
+              4,
+              13
+            ],
+            [
+              18,
+              0,
+              1
+            ],
+            [
+              26,
+              1,
+              14
+            ]
+          ]
+        },
+        {
+          "model": "Ensemble Model",
+          "source": "notebook image",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              128,
+              6,
+              22
+            ],
+            [
+              17,
+              1,
+              1
+            ],
+            [
+              20,
+              1,
               20
             ]
           ]
