@@ -423,6 +423,93 @@ img {
   padding: 1rem;
 }
 
+.eda-context-panel,
+.hypothesis-context-panel {
+  display: grid;
+  gap: 1.2rem;
+  margin: 2rem auto 0;
+  max-width: 1120px;
+}
+
+.eda-context-panel p,
+.hypothesis-context-panel p {
+  margin: 0;
+}
+
+.hypothesis-context-panel h3 {
+  margin: 0;
+  color: #fff1cf;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.9rem, 3vw, 3.4rem);
+  line-height: 1;
+}
+
+.expandable-table {
+  overflow: hidden;
+  border: 1px solid rgba(255, 208, 138, 0.18);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.expandable-table summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.1rem;
+}
+
+.expandable-table summary::-webkit-details-marker {
+  display: none;
+}
+
+.expandable-table summary span {
+  color: #fff1cf;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.expandable-table summary small {
+  border: 1px solid rgba(125, 215, 186, 0.3);
+  border-radius: 999px;
+  color: #9ed8b3;
+  font-weight: 900;
+  padding: 0.35rem 0.65rem;
+  white-space: nowrap;
+}
+
+.expandable-table[open] summary {
+  border-bottom: 1px solid rgba(240, 234, 219, 0.12);
+}
+
+.eda-graph-table {
+  min-width: 840px;
+}
+
+.hypothesis-method-table {
+  min-width: 980px;
+}
+
+.eda-interpretation-copy {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.interpretation-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.interpretation-list li {
+  color: rgba(240, 234, 219, 0.74);
+  line-height: 1.65;
+}
+
 .platform-eda-grid {
   display: grid;
   gap: 1.1rem;
@@ -1714,10 +1801,27 @@ html[data-theme="light"] .gallery-group summary {
   color: #2a1a12;
 }
 
+html[data-theme="light"] .expandable-table {
+  border-color: rgba(80, 52, 34, 0.18);
+  background: rgba(255, 255, 255, 0.52);
+}
+
+html[data-theme="light"] .expandable-table[open] summary {
+  border-color: rgba(80, 52, 34, 0.12);
+}
+
+html[data-theme="light"] .hypothesis-context-panel h3,
+html[data-theme="light"] .expandable-table summary span,
 html[data-theme="light"] .gallery-group summary span {
   color: #2a1a12;
 }
 
+html[data-theme="light"] .expandable-table summary small {
+  border-color: rgba(35, 95, 71, 0.22);
+  color: #235f47;
+}
+
+html[data-theme="light"] .interpretation-list li,
 html[data-theme="light"] .gallery-group summary small,
 html[data-theme="light"] .mobile-table-card dt {
   color: rgba(42, 26, 18, 0.62);
@@ -1768,6 +1872,11 @@ html[data-theme="light"] .mobile-table-card dt {
 
   .table-shell {
     overflow-x: visible;
+  }
+
+  .expandable-table .table-shell,
+  .hypothesis-context-panel .table-shell {
+    overflow-x: auto;
   }
 
   .zoom-chart-scale {

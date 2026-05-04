@@ -154,6 +154,97 @@ const chartDescriptions = {
   hourlyCombined: "Uses YouTube and Spotify timestamps to compare time-of-day behavior in Istanbul time.",
 };
 
+const edaGraphRows = [
+  ["YouTube EDA", "YouTube activity by action", "Checks whether YouTube activity is mostly watching, searching, or other actions."],
+  ["YouTube EDA", "Monthly YouTube watched and search counts", "Shows how YouTube watched and search activity changes month by month."],
+  ["YouTube EDA", "Estimated continuous YouTube watch time", "Estimates rough monthly watch time using gaps between consecutive watched-video timestamps."],
+  ["YouTube EDA", "YouTube activity by hour", "Shows which Istanbul-time hours have more YouTube activity."],
+  ["YouTube EDA", "YouTube watched count by weekday", "Checks whether YouTube watched counts differ by weekday."],
+  ["Spotify EDA", "Monthly Spotify listening", "Shows long-term Spotify listening patterns using monthly hours and stream counts."],
+  ["Spotify EDA", "Spotify listening by hour", "Shows which hours have more Spotify listening activity."],
+  ["Spotify EDA", "Top Spotify artists by listening hours", "Identifies the most repeated artists by total listening hours."],
+  ["Spotify EDA", "Top Spotify tracks by listening minutes", "Identifies the most repeated individual songs by listening minutes."],
+  ["Spotify EDA", "Spotify listening hours by weekday", "Checks whether Spotify listening differs by weekday."],
+  ["Netflix + Prime Video EDA", "Long-form total count by platform", "Compares Netflix and Prime Video total row counts."],
+  ["Netflix + Prime Video EDA", "Monthly long-form streaming", "Shows monthly Netflix, Prime Video, and combined long-form viewing trends."],
+  ["Netflix + Prime Video EDA", "Prime Video record type split", "Checks whether Prime Video records are mostly episodes or movies."],
+  ["Netflix + Prime Video EDA", "Netflix title quality", "Shows usable Netflix titles versus missing or malformed title rows."],
+  ["Netflix + Prime Video EDA", "Top Netflix title groups", "Identifies the most repeated Netflix series or title groups."],
+  ["Netflix + Prime Video EDA", "Top Prime Video titles", "Identifies the most repeated Prime Video series and movie titles."],
+  ["Netflix + Prime Video EDA", "Long-form streaming by weekday", "Shows weekday patterns for active Netflix + Prime days, excluding zero days."],
+  ["Combined EDA", "Spotify hours vs YouTube watched", "Checks same-day co-usage between Spotify hours and YouTube watched count."],
+  ["Combined EDA", "Netflix + Prime count vs YouTube watched", "Checks whether long-form streaming activity relates to YouTube watched count."],
+  ["Combined EDA", "Daily activity correlation heatmap", "Shows which daily platform variables move together more strongly."],
+  ["Combined EDA", "Platform activity by academic period", "Compares YouTube watched count across academic periods."],
+  ["Combined EDA", "Spotify activity by academic period", "Compares Spotify daily hours across academic periods."],
+  ["Combined EDA", "Long-form streaming by academic period", "Compares active long-form streaming days across academic periods, excluding zero days."],
+  ["Combined EDA", "Platform diversity by academic period", "Checks whether the number of active entertainment platforms changes by period."],
+  ["Combined EDA", "YouTube after-21:30 by academic period", "Inspects late-evening YouTube behavior across academic periods."],
+  ["Combined EDA", "Spotify after-21:30 by academic period", "Inspects late-evening Spotify listening across academic periods."],
+  ["Combined EDA overview", "Dataset coverage timeline", "Shows each platform's date range and the shared comparison window."],
+  ["Combined EDA overview", "Active days by platform", "Shows how many days each platform appears in the common window."],
+  ["Combined EDA overview", "Monthly cross-platform trends", "Compares monthly YouTube watched count, Spotify hours, and Netflix + Prime count in separate panels."],
+  ["Combined EDA overview", "Daily distribution overview", "Shows skew, zero-heavy behavior, and outliers in daily variables."],
+  ["Combined EDA overview", "Relative activity by academic period", "Compares period averages after scaling by overall averages."],
+  ["Combined EDA overview", "Hourly activity in Istanbul time", "Compares YouTube and Spotify time-of-day behavior in Istanbul time."],
+];
+
+const edaInterpretations = [
+  "The datasets have different initial dates. Therefore, the Dataset Coverage Timeline shows the starting date of each dataset. The common coverage period starts on 17 April 2022.",
+  "Active Days by Platform examines how many days each platform appears in the dataset, using a count-based approach.",
+  "Hourly Activity in Istanbul Time examines discrete hourly events in a cumulative format. However, this analysis is only performed for entries with appropriate timestamps, where the exact time is available. Therefore, YouTube and Spotify were the suitable platforms for this analysis.",
+  "Relative Activity by Academic Period examines all events according to predefined academic-period classes. These classes are finals, ordinary days, summer work, and outside. The outside category is excluded from the machine learning analysis because the number and type of daily events during those days cannot be determined reliably. For example, the subject may have been working, studying, or doing another activity.",
+  "The remaining graphs can be examined for further understanding.",
+];
+
+const hypothesisMethodRows = [
+  {
+    id: "H1",
+    h0: "Platform activity does not differ whether it is an final exam day or ordinary term day.",
+    h1: "Final-exam days have lower platform activity.",
+    method: "One-sided Mann-Whitney U",
+    note: "-",
+  },
+  {
+    id: "H2",
+    h0: "The number of platforms used does not differ whether it is an final exam day or ordinary term day.",
+    h1: "Platform diversity is lower during finals.",
+    method: "One-sided Mann-Whitney U",
+    note: "-",
+  },
+  {
+    id: "H3",
+    h0: "YouTube watched count does not differ between Netflix + Prime active and inactive days.",
+    h1: "YouTube watched count is lower on Netflix + Prime active days.",
+    method: "One-sided Mann-Whitney U",
+    note: "-",
+  },
+  {
+    id: "H4",
+    h0: "Spotify hours are not associated with YouTube watched count.",
+    h1: "Spotify hours are positively associated with YouTube watched count.",
+    method: "One-sided Spearman correlation",
+    note: "-",
+  },
+  {
+    id: "H5",
+    h0: "Late-evening entertainment share does not differ between final-exam days and ordinary-term days.",
+    h1: "Late-evening share is lower during finals.",
+    method: "One-sided Mann-Whitney U",
+    note: "Spotify & YouTube has 2 different hypothesis in here",
+  },
+];
+
+const hypothesisInterpretations = [
+  "First, the p-values of the first three hypotheses are higher than 0.05, so there is no evidence to reject the null hypothesis.",
+  "For the last two hypotheses, H4 and H5, related to YouTube and Spotify, the p-values are smaller than 0.05. This means that the null hypothesis is rejected in favor of the alternative hypothesis, because the probability of observing such results under the null hypothesis is very low.",
+  "Not rejecting the null hypothesis for H1 might imply that the subject user does not significantly change their usage behavior during exam periods and uses the platform similarly to ordinary periods.",
+  "Not rejecting the null hypothesis for H2 suggests a similar interpretation to H1.",
+  "Not rejecting the null hypothesis for H3 might suggest that the subject does not use YouTube significantly less when also using Netflix and Prime Video.",
+  "Rejecting the null hypothesis for H4 suggests that the subject's YouTube and Spotify usage hours are significantly correlated. The direction of this relationship depends on the correlation coefficient: if it is positive, they increase together; if it is negative, one tends to decrease as the other increases.",
+  "For H5, the late-evening entertainment result suggests that Spotify and YouTube usage during final periods was lower compared to ordinary days.",
+];
+
 export default function HomePage() {
   const eda = chartSeries.platformEda;
 
@@ -284,6 +375,59 @@ export default function HomePage() {
             These charts are SVG-based and interactive. Hover bars, points, and cells to see values and
             highlight the element being inspected.
           </p>
+        </Reveal>
+
+        <Reveal className="eda-context-panel glass-panel" delay={0.05}>
+          <p>
+            <em>The exploratory data analysis (EDA) below examines the following data points:</em>
+          </p>
+          <details className="expandable-table">
+            <summary>
+              <span>Table of graphs</span>
+              <small>{edaGraphRows.length} graphs</small>
+            </summary>
+            <div className="table-shell">
+              <table className="result-table eda-graph-table">
+                <thead>
+                  <tr>
+                    <th>EDA section</th>
+                    <th>Graph</th>
+                    <th>What it inspects</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {edaGraphRows.map(([section, graph, inspection]) => (
+                    <tr key={`${section}-${graph}`}>
+                      <td>{section}</td>
+                      <td>{graph}</td>
+                      <td>{inspection}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </details>
+          <div className="eda-interpretation-copy">
+            <p>
+              <em>Based on the graphs, there is a significant amount of information that requires further interpretation.</em>
+            </p>
+            <p>
+              <em>
+                For this reason, I tried to examine these graphs as thoroughly as possible. The corresponding
+                Matplotlib versions are also included in the appendix.
+              </em>
+            </p>
+            <p>
+              <em>Some important findings and interpretations are as follows:</em>
+            </p>
+            <ul className="interpretation-list">
+              {edaInterpretations.map((interpretation) => (
+                <li key={interpretation}>
+                  <em>{interpretation}</em>
+                </li>
+              ))}
+            </ul>
+          </div>
         </Reveal>
 
         <div className="eda-story-stack">
@@ -555,6 +699,56 @@ export default function HomePage() {
               <small>{hypothesis.method}</small>
             </article>
           ))}
+        </Reveal>
+
+        <Reveal className="hypothesis-context-panel glass-panel" delay={0.12}>
+          <h3>Hypothesis testing</h3>
+          <p><em>There are 5 hypothesis to be inspected in here as the table below.</em></p>
+          <p>
+            <em>
+              The Mann-Whitney U test is used for the group comparisons because the daily activity
+              variables are skewed and zero-heavy, so a rank-based non-parametric test is more suitable
+              than assuming normal distributions.
+            </em>
+          </p>
+          <p>
+            <em>
+              Spearman correlation is used for the Spotify and YouTube relationship because it checks
+              whether two variables move together monotonically without requiring a linear relationship.
+            </em>
+          </p>
+          <div className="table-shell">
+            <table className="result-table hypothesis-method-table">
+              <thead>
+                <tr>
+                  <th>Hypothesis&apos;s</th>
+                  <th>Null Hypothesis</th>
+                  <th>Alternative Hypothesis</th>
+                  <th>The methodology used</th>
+                  <th>Side Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                {hypothesisMethodRows.map((hypothesis) => (
+                  <tr key={hypothesis.id}>
+                    <td>{hypothesis.id}</td>
+                    <td>{hypothesis.h0}</td>
+                    <td>{hypothesis.h1}</td>
+                    <td>{hypothesis.method}</td>
+                    <td>{hypothesis.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p><em>Results and interpretations below;</em></p>
+          <ul className="interpretation-list">
+            {hypothesisInterpretations.map((interpretation) => (
+              <li key={interpretation}>
+                <em>{interpretation}</em>
+              </li>
+            ))}
+          </ul>
         </Reveal>
 
         <Reveal className="table-shell glass-panel">
