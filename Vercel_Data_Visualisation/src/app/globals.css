@@ -1250,6 +1250,27 @@ img {
   white-space: normal;
 }
 
+.ml-next-objectives {
+  display: grid;
+  gap: 0.75rem;
+  width: min(100%, 46rem);
+  margin: 1.2rem auto;
+  text-align: center;
+}
+
+.ml-next-objectives ul {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.ml-next-objectives li {
+  color: rgba(240, 234, 219, 0.74);
+  line-height: 1.65;
+}
+
 .ml-feature-grid {
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   margin-top: 1.2rem;
@@ -1629,6 +1650,7 @@ html[data-theme="light"] .matrix-card p,
 html[data-theme="light"] .ml-model-card p,
 html[data-theme="light"] .ml-period-panel p,
 html[data-theme="light"] .ml-mini-model-card p,
+html[data-theme="light"] .ml-next-objectives li,
 html[data-theme="light"] .plot-caption,
 html[data-theme="light"] .metric-card span {
   color: rgba(42, 26, 18, 0.7);

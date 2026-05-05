@@ -160,6 +160,14 @@ Decision Tree validation splits:
 
 The models used are Dummy Classifier, Logistic Regression, Decision Tree, XGBoost, Random Forest, and an Ensemble Model that soft-votes across the supervised models. K-Means is included as an unsupervised comparison, where clusters are mapped to labels after fitting.
 
+Each soft-voting ensemble uses the supervised models trained for its own classification task. K-Means is not included inside the ensemble because it is used as an unsupervised comparison.
+
+| Classification Task | Models Used Inside Ensemble |
+|---|---|
+| Final Exam vs Ordinary Term | Logistic Regression, tuned Decision Tree, XGBoost, Random Forest |
+| Summer Work vs Ordinary Term | Summer Logistic Regression, tuned Summer Decision Tree, Summer XGBoost, Summer Random Forest |
+| All Periods Classification | All-class Logistic Regression, tuned All-class Decision Tree, All-class XGBoost, All-class Random Forest |
+
 Current ML summary:
 
 | Classification Task | Dummy Macro F1 | Best Model | Best Model Macro F1 | Absolute Increase | Relative Improvement |
@@ -169,6 +177,11 @@ Current ML summary:
 | All Periods: Ordinary vs Final vs Summer | 27.96% | Ensemble Model | 44.93% | +16.97 percentage points | +60.70% |
 
 The separation hints that the summer work period pattern is easier to capture with the available features. The current feature set is not enough to strongly differentiate the final exam period and ordinary term. This can happen either because final exam behavior is not very different from ordinary term behavior, or because important social-media signals are still excluded from the current feature set.
+
+**Next objective to do:**
+
+- The number of hyper-tuned models is still low, and some models can be fine-tuned further.
+- Instead of K-Means, DBSCAN can be tested because it might capture irregular clustering patterns better, which might be the case for this dataset.
 
 ## Repository Structure
 

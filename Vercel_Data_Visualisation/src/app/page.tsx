@@ -937,6 +937,37 @@ export default function HomePage() {
               </p>
               <p>
                 <em>
+                  Each soft-voting ensemble uses the supervised models trained for its own classification task.
+                  K-Means is not included inside the ensemble because it is used as an unsupervised comparison.
+                </em>
+              </p>
+              <div className="table-shell">
+                <p className="eyebrow">Soft-voting ensemble components</p>
+                <table className="result-table ml-narrative-table">
+                  <thead>
+                    <tr>
+                      <th>Classification Task</th>
+                      <th>Models Used Inside Ensemble</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Final Exam vs Ordinary Term</td>
+                      <td>Logistic Regression, tuned Decision Tree, XGBoost, Random Forest</td>
+                    </tr>
+                    <tr>
+                      <td>Summer Work vs Ordinary Term</td>
+                      <td>Summer Logistic Regression, tuned Summer Decision Tree, Summer XGBoost, Summer Random Forest</td>
+                    </tr>
+                    <tr>
+                      <td>All Periods Classification</td>
+                      <td>All-class Logistic Regression, tuned All-class Decision Tree, All-class XGBoost, All-class Random Forest</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                <em>
                   For final exam period versus ordinary term, the dummy classifier macro-F1 was 47.1%, and the
                   best macro-F1 was the ensemble model with 51.8%. This is an improvement of <strong>4.72
                   percentage points</strong>, or <strong>10.01%</strong> relative improvement, suggesting that
@@ -1008,6 +1039,15 @@ export default function HomePage() {
                   excluded from the current feature set.
                 </em>
               </p>
+              <div className="ml-next-objectives">
+                <p>
+                  <em><strong>Next objective to do:</strong></em>
+                </p>
+                <ul>
+                  <li><em>The number of hyper-tuned models is still low, and some models can be fine-tuned further.</em></li>
+                  <li><em>Instead of K-Means, DBSCAN can be tested because it might capture irregular clustering patterns better, which might be the case for this dataset.</em></li>
+                </ul>
+              </div>
             </div>
           </div>
         </Reveal>
