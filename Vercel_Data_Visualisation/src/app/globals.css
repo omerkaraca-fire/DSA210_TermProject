@@ -444,6 +444,49 @@ img {
   line-height: 1;
 }
 
+.hypothesis-context-copy {
+  display: grid;
+  gap: 1rem;
+  width: min(100%, 46rem);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hypothesis-context-copy p {
+  margin-inline: auto;
+  max-width: 46rem;
+  font-size: clamp(1rem, 1.55vw, 1.22rem);
+  line-height: 1.72;
+}
+
+.hypothesis-reference {
+  border: 1px solid rgba(125, 215, 186, 0.24);
+  border-radius: 1rem;
+  background: rgba(125, 215, 186, 0.08);
+  padding: 0.95rem 1rem;
+}
+
+.hypothesis-reference code {
+  color: #bdf5df;
+  font-size: 0.9em;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.hypothesis-context-panel .interpretation-list {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-left: 0;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.hypothesis-context-panel strong,
+.interpretation-list strong {
+  color: #fff1cf;
+  font-weight: 900;
+}
+
 .expandable-table {
   overflow: hidden;
   border: 1px solid rgba(255, 208, 138, 0.18);
@@ -1692,6 +1735,15 @@ html[data-theme="light"] .ml-narrative-table code {
   color: #235f47;
 }
 
+html[data-theme="light"] .hypothesis-reference {
+  border-color: rgba(35, 95, 71, 0.18);
+  background: rgba(50, 124, 94, 0.08);
+}
+
+html[data-theme="light"] .hypothesis-reference code {
+  color: #235f47;
+}
+
 html[data-theme="light"] .ml-metric-list div {
   border-color: rgba(80, 52, 34, 0.14);
   background: rgba(255, 248, 232, 0.72);
@@ -1811,6 +1863,8 @@ html[data-theme="light"] .expandable-table[open] summary {
 }
 
 html[data-theme="light"] .hypothesis-context-panel h3,
+html[data-theme="light"] .hypothesis-context-panel strong,
+html[data-theme="light"] .interpretation-list strong,
 html[data-theme="light"] .expandable-table summary span,
 html[data-theme="light"] .gallery-group summary span {
   color: #2a1a12;

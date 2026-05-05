@@ -105,7 +105,7 @@ const hypotheses = [
     id: "H4",
     title: "Spotify and YouTube co-usage",
     h0: "Spotify hours are not associated with YouTube watched count.",
-    h1: "Spotify hours are positively associated with YouTube watched count.",
+    h1: "Spotify hours have a positive monotonic association with YouTube watched count.",
     method: "One-sided Spearman correlation",
     formula: "rho_s = corr(rank(Spotify), rank(YouTube))",
   },
@@ -197,52 +197,14 @@ const edaInterpretations = [
   "The remaining graphs can be examined for further understanding.",
 ];
 
-const hypothesisMethodRows = [
-  {
-    id: "H1",
-    h0: "Platform activity does not differ whether it is an final exam day or ordinary term day.",
-    h1: "Final-exam days have lower platform activity.",
-    method: "One-sided Mann-Whitney U",
-    note: "-",
-  },
-  {
-    id: "H2",
-    h0: "The number of platforms used does not differ whether it is an final exam day or ordinary term day.",
-    h1: "Platform diversity is lower during finals.",
-    method: "One-sided Mann-Whitney U",
-    note: "-",
-  },
-  {
-    id: "H3",
-    h0: "YouTube watched count does not differ between Netflix + Prime active and inactive days.",
-    h1: "YouTube watched count is lower on Netflix + Prime active days.",
-    method: "One-sided Mann-Whitney U",
-    note: "-",
-  },
-  {
-    id: "H4",
-    h0: "Spotify hours are not associated with YouTube watched count.",
-    h1: "Spotify hours are positively associated with YouTube watched count.",
-    method: "One-sided Spearman correlation",
-    note: "-",
-  },
-  {
-    id: "H5",
-    h0: "Late-evening entertainment share does not differ between final-exam days and ordinary-term days.",
-    h1: "Late-evening share is lower during finals.",
-    method: "One-sided Mann-Whitney U",
-    note: "Spotify & YouTube has 2 different hypothesis in here",
-  },
-];
-
 const hypothesisInterpretations = [
-  "First, the p-values of the first three hypotheses are higher than 0.05, so there is no evidence to reject the null hypothesis.",
-  "For the last two hypotheses, H4 and H5, related to YouTube and Spotify, the p-values are smaller than 0.05. This means that the null hypothesis is rejected in favor of the alternative hypothesis, because the probability of observing such results under the null hypothesis is very low.",
-  "Not rejecting the null hypothesis for H1 might imply that the subject user does not significantly change their usage behavior during exam periods and uses the platform similarly to ordinary periods.",
+  <>First, the p-values of the first three hypotheses are higher than 0.05, so <strong>there is no evidence to reject the null hypothesis.</strong></>,
+  <>For the last two hypotheses, H4 and H5, related to YouTube and Spotify, the p-values are smaller than 0.05. This means that the null hypothesis is <strong>rejected in favor of the alternative hypothesis</strong>, because the probability of observing such results under the null hypothesis is very low.</>,
+  <>Not rejecting the null hypothesis for H1 might imply that the subject user <strong>does not significantly change their usage behavior during exam periods</strong> and uses the platform similarly to ordinary periods.</>,
   "Not rejecting the null hypothesis for H2 suggests a similar interpretation to H1.",
-  "Not rejecting the null hypothesis for H3 might suggest that the subject does not use YouTube significantly less when also using Netflix and Prime Video.",
-  "Rejecting the null hypothesis for H4 suggests that the subject's YouTube and Spotify usage hours are significantly correlated. The direction of this relationship depends on the correlation coefficient: if it is positive, they increase together; if it is negative, one tends to decrease as the other increases.",
-  "For H5, the late-evening entertainment result suggests that Spotify and YouTube usage during final periods was lower compared to ordinary days.",
+  <>Not rejecting the null hypothesis for H3 might suggest that the subject <strong>does not use YouTube significantly less when also using Netflix and Prime Video.</strong></>,
+  <>For H4, the result shows a <strong>statistically significant positive</strong> association between Spotify hours and YouTube watched count. However, the <strong>relationship is weak</strong>. The Spearman correlation coefficient is <strong>ρ = 0.0934, which is close to zero</strong>. This means that Spotify and YouTube usage tend to <strong>increase together slightly</strong>, but the relationship <strong>should not be interpreted as strong.</strong></>,
+  <>For H5, the <strong>late-evening entertainment</strong> result suggests that Spotify and YouTube usage during final periods <strong>was lower compared to ordinary days.</strong></>,
 ];
 
 export default function HomePage() {
@@ -649,6 +611,34 @@ export default function HomePage() {
           </p>
         </Reveal>
 
+        <Reveal className="hypothesis-context-panel glass-panel" delay={0.05}>
+          <div className="hypothesis-context-copy">
+            <h3>Hypothesis testing</h3>
+            <p><em>There are five hypotheses to be inspected in the table below.</em></p>
+            <p>
+              <em>
+                The Mann-Whitney U test is used for the group comparisons because the daily activity
+                variables are skewed and zero-heavy. Therefore, <strong>a rank-based non-parametric test is
+                more suitable</strong> than assuming normally distributed data.
+              </em>
+            </p>
+            <p>
+              <em>
+                Spearman correlation is used for the Spotify and YouTube relationship because it checks
+                whether two variables move together monotonically without requiring a linear relationship.
+              </em>
+            </p>
+            <p><em>Results and interpretations below:</em></p>
+          </div>
+          <ul className="interpretation-list">
+            {hypothesisInterpretations.map((interpretation, index) => (
+              <li key={index}>
+                <em>{interpretation}</em>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
         <Reveal className="table-shell glass-panel">
           <p className="eyebrow">Hypothesis table</p>
           <table className="result-table desktop-table">
@@ -699,56 +689,6 @@ export default function HomePage() {
               <small>{hypothesis.method}</small>
             </article>
           ))}
-        </Reveal>
-
-        <Reveal className="hypothesis-context-panel glass-panel" delay={0.12}>
-          <h3>Hypothesis testing</h3>
-          <p><em>There are 5 hypothesis to be inspected in here as the table below.</em></p>
-          <p>
-            <em>
-              The Mann-Whitney U test is used for the group comparisons because the daily activity
-              variables are skewed and zero-heavy, so a rank-based non-parametric test is more suitable
-              than assuming normal distributions.
-            </em>
-          </p>
-          <p>
-            <em>
-              Spearman correlation is used for the Spotify and YouTube relationship because it checks
-              whether two variables move together monotonically without requiring a linear relationship.
-            </em>
-          </p>
-          <div className="table-shell">
-            <table className="result-table hypothesis-method-table">
-              <thead>
-                <tr>
-                  <th>Hypothesis&apos;s</th>
-                  <th>Null Hypothesis</th>
-                  <th>Alternative Hypothesis</th>
-                  <th>The methodology used</th>
-                  <th>Side Note</th>
-                </tr>
-              </thead>
-              <tbody>
-                {hypothesisMethodRows.map((hypothesis) => (
-                  <tr key={hypothesis.id}>
-                    <td>{hypothesis.id}</td>
-                    <td>{hypothesis.h0}</td>
-                    <td>{hypothesis.h1}</td>
-                    <td>{hypothesis.method}</td>
-                    <td>{hypothesis.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p><em>Results and interpretations below;</em></p>
-          <ul className="interpretation-list">
-            {hypothesisInterpretations.map((interpretation) => (
-              <li key={interpretation}>
-                <em>{interpretation}</em>
-              </li>
-            ))}
-          </ul>
         </Reveal>
 
         <Reveal className="table-shell glass-panel">
