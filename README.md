@@ -23,9 +23,9 @@ The current public version focuses on YouTube, Spotify, Netflix, Prime Video, an
 
 ## Project Website
 
-The interactive website is inside `Vercel_Data_Visualisation/`. After deploying it on Vercel, add the production URL here:
+The interactive website is inside `Vercel_Data_Visualisation/`.
 
-Live website: TODO - paste the Vercel production URL here after deployment.
+Live website: [https://dsa-210-term-project-ten.vercel.app/](https://dsa-210-term-project-ten.vercel.app/)
 
 For Vercel deployment from GitHub, import this repository and set the project root directory to `Vercel_Data_Visualisation`. Vercel should detect the Next.js app from that folder. Use the default install command and build command:
 
@@ -69,14 +69,16 @@ The website follows the same project logic as this README: public datasets, clea
 
 ## Hypothesis Test
 
-The formal tests use daily variables from the combined public-data panel. Final-exam comparisons use one-sided Mann-Whitney U tests. Same-day Spotify and YouTube co-usage uses a one-sided Spearman correlation. The current version uses raw p-values with `alpha = 0.05`, so the results should be interpreted cautiously because multiple tests are being run.
+The formal tests use daily variables from the combined public-data panel. The Mann-Whitney U test is used for the group comparisons because the daily activity variables are skewed and zero-heavy. Therefore, **a rank-based non-parametric test is more suitable** than assuming normally distributed data. Same-day Spotify and YouTube co-usage uses a one-sided Spearman correlation because it checks whether two variables move together monotonically without requiring a linear relationship.
+
+The current version uses raw p-values with `alpha = 0.05`, so the results should be interpreted cautiously because multiple tests are being run.
 
 | Hypothesis | H0 | H1 | Variables | Method |
 |---|---|---|---|---|
 | Entertainment usage during academic pressure | Platform activity does not differ between final-exam days and ordinary-term days. | Final-exam days have lower platform activity. | YouTube watched count, Spotify hours, Netflix count, Prime Video count | One-sided Mann-Whitney U, tested separately by platform |
 | Platform diversity during academic pressure | Platform diversity does not differ between final-exam days and ordinary-term days. | Platform diversity is lower during finals. | Distinct active entertainment platforms per day | One-sided Mann-Whitney U |
 | Netflix + Prime and YouTube activity | YouTube watched count does not differ between Netflix + Prime active and inactive days. | YouTube watched count is lower on Netflix + Prime active days. | Netflix count, Prime Video count, YouTube watched count | One-sided Mann-Whitney U |
-| Spotify and YouTube co-usage | Spotify hours are not associated with YouTube watched count. | Spotify hours are positively associated with YouTube watched count. | Spotify hours, YouTube watched count | One-sided Spearman correlation |
+| Spotify and YouTube co-usage | Spotify hours are not associated with YouTube watched count. | Spotify hours have a positive monotonic association with YouTube watched count. | Spotify hours, YouTube watched count | One-sided Spearman correlation |
 | After-9:30 PM entertainment during finals | Late-evening entertainment share does not differ between final-exam days and ordinary-term days. | Late-evening share is lower during finals. | YouTube after-21:30 share, Spotify after-21:30 hour share | One-sided Mann-Whitney U, tested separately by platform |
 
 Current basic results:
@@ -93,6 +95,81 @@ Current basic results:
 | H5 | YouTube after-21:30 activity share | Reject H0 | 0.0059 | YouTube late-evening share was lower during finals in this basic test. |
 | H5 | Spotify after-21:30 listening-hour share | Reject H0 | 0.0361 | Spotify late-evening listening share was lower during finals in this basic test. |
 
+Main hypothesis-test interpretation:
+
+- The p-values of the first three hypotheses are higher than `0.05`, so **there is no evidence to reject the null hypothesis** for those tests.
+- For H4 and H5, the p-values are smaller than `0.05`, so the null hypotheses are **rejected in favor of the alternative hypothesis**.
+- Not rejecting H1 might imply that I **do not significantly change my usage behavior during exam periods** and use the platforms similarly to ordinary periods.
+- Not rejecting H3 might suggest that I **do not use YouTube significantly less when also using Netflix and Prime Video**.
+- For H4, the result shows a **statistically significant positive** association between Spotify hours and YouTube watched count. However, the **relationship is weak**. The Spearman correlation coefficient is **rho = 0.0934, which is close to zero**. This means Spotify and YouTube usage tend to **increase together slightly**, but the relationship **should not be interpreted as strong**.
+- For H5, the **late-evening entertainment** result suggests that Spotify and YouTube usage during final periods **was lower compared to ordinary days**.
+
+## Machine Learning Extension
+
+The machine learning part examines whether daily entertainment activity can predict period labels. Given the number of daily activities, I asked whether it would be possible to guess a day's class, where the class corresponds to ordinary term, final exam period, or summer work period.
+
+Final exam period corresponds to the final exam period in the academic calendar. **Midterm dates are not separately labeled here; if they fall outside the final exam period, they remain inside the ordinary term class**, because each course distributes workload in different time periods. The summer work period corresponds to the summers where I worked as an intern in a local company in my hometown. The ordinary term class is the remaining labeled academic-term days.
+
+As in the EDA and hypothesis testing parts, I used the Sabanci University academic calendar to determine these labels through `analysis_period`.
+
+| Value | Meaning |
+|---|---|
+| `ordinary_term` | Regular academic term days |
+| `final_exam` | Final exam period days |
+| `summer_work_period` | Summer term/work period days |
+| `outside_calendar` | Days outside the labeled academic calendar |
+
+Classification happened in three ways:
+
+| Classification Task | Classes Included | Full Dataset | Training Set | Test Set |
+|---|---|---:|---:|---:|
+| Final Exam vs Ordinary Term | `ordinary_term`, `final_exam` | 872 | 697 | 175 |
+| Summer Work vs Ordinary Term | `ordinary_term`, `summer_work_period` | 979 | 783 | 196 |
+| All Periods Classification | `ordinary_term`, `final_exam`, `summer_work_period` | 1,076 | 860 | 216 |
+
+Common feature columns for final-exam ML and all-class ML:
+
+| Feature Column |
+|---|
+| `youtube_daily_watched_count` |
+| `youtube_daily_search_count` |
+| `youtube_after_2130_count` |
+| `spotify_daily_hours` |
+| `spotify_daily_stream_count` |
+| `spotify_daily_unique_tracks` |
+| `spotify_after_2130_hours` |
+| `netflix_daily_count` |
+| `prime_video_daily_count` |
+| `netflix_prime_daily_count` |
+| `daily_distinct_entertainment_platform_count` |
+
+Additional features for summer work period classification:
+
+| Feature Column |
+|---|
+| `youtube_after_2130_share` |
+| `spotify_after_2130_hour_share` |
+
+Decision Tree validation splits:
+
+| Classification Task | Decision Tree Training Subset | Decision Tree Validation Set |
+|---|---:|---:|
+| Final Exam vs Ordinary Term | 522 | 175 |
+| Summer Work vs Ordinary Term | 587 | 196 |
+| All Periods Classification | 645 | 215 |
+
+The models used are Dummy Classifier, Logistic Regression, Decision Tree, XGBoost, Random Forest, and an Ensemble Model that soft-votes across the supervised models. K-Means is included as an unsupervised comparison, where clusters are mapped to labels after fitting.
+
+Current ML summary:
+
+| Classification Task | Dummy Macro F1 | Best Model | Best Model Macro F1 | Absolute Increase | Relative Improvement |
+|---|---:|---|---:|---:|---:|
+| Final Exam vs Ordinary Term | 47.13% | Ensemble Model | 51.85% | +4.72 percentage points | +10.01% |
+| Summer Work vs Ordinary Term | 44.16% | XGBoost | 66.67% | +22.51 percentage points | +50.97% |
+| All Periods: Ordinary vs Final vs Summer | 27.96% | Ensemble Model | 44.93% | +16.97 percentage points | +60.70% |
+
+The separation hints that the summer work period pattern is easier to capture with the available features. The current feature set is not enough to strongly differentiate the final exam period and ordinary term. This can happen either because final exam behavior is not very different from ordinary term behavior, or because important social-media signals are still excluded from the current feature set.
+
 ## Repository Structure
 
 The structure below reflects the current GitHub-facing repository layout.
@@ -107,6 +184,7 @@ DSA210_TermProject/
 │       └── youtube/
 ├── EDA/
 ├── Hypothesis_Testing/
+├── MachineLearning/
 ├── Reports/
 │   ├── .gitignore
 │   ├── Report_EDA_Hypothesis.pdf
