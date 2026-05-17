@@ -900,30 +900,34 @@ export default function HomePage() {
                 </em>
               </p>
               <div className="table-shell">
-                <p className="eyebrow">Decision Tree validation split</p>
+                <p className="eyebrow">Cross-validation and parameter tuning</p>
                 <table className="result-table ml-narrative-table">
                   <thead>
                     <tr>
                       <th>Classification Task</th>
-                      <th>Decision Tree Training Subset</th>
-                      <th>Decision Tree Validation Set</th>
+                      <th>Train/Test Split</th>
+                      <th>Cross-Validation</th>
+                      <th>Tuning Criterion</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Final Exam vs Ordinary Term</td>
-                      <td>522</td>
-                      <td>175</td>
+                      <td>80/20 stratified split</td>
+                      <td>5-fold StratifiedKFold on training data</td>
+                      <td>Macro F1</td>
                     </tr>
                     <tr>
                       <td>Summer Work vs Ordinary Term</td>
-                      <td>587</td>
-                      <td>196</td>
+                      <td>80/20 stratified split</td>
+                      <td>5-fold StratifiedKFold on training data</td>
+                      <td>Macro F1</td>
                     </tr>
                     <tr>
                       <td>All Periods Classification</td>
-                      <td>645</td>
-                      <td>215</td>
+                      <td>80/20 stratified split</td>
+                      <td>5-fold StratifiedKFold on training data</td>
+                      <td>Macro F1</td>
                     </tr>
                   </tbody>
                 </table>
@@ -931,18 +935,21 @@ export default function HomePage() {
               <p>
                 <em>
                   Based on those features, I used Dummy Classifier, Logistic Regression, Decision Tree, XGBoost,
-                  Random Forest, and an Ensemble Model that soft-votes across the previous models. K-Means is
+                  Random Forest, and an Ensemble Model that votes across the previous models. DBSCAN is
                   included as an unsupervised comparison, where clusters are mapped to labels after fitting.
                 </em>
               </p>
               <p>
                 <em>
-                  Each soft-voting ensemble uses the supervised models trained for its own classification task.
-                  K-Means is not included inside the ensemble because it is used as an unsupervised comparison.
+                  The supervised models are tuned with GridSearchCV on the training set, while the held-out test
+                  set is used only for final evaluation. Logistic Regression tunes regularization choices, Decision
+                  Tree tunes tree-shape and class-weight settings, XGBoost tunes boosting/tree settings where
+                  GridSearchCV is used, Random Forest tunes forest and tree-size settings, and the ensemble tunes
+                  voting type and model weights. DBSCAN tunes eps and min_samples using silhouette score.
                 </em>
               </p>
               <div className="table-shell">
-                <p className="eyebrow">Soft-voting ensemble components</p>
+                <p className="eyebrow">Voting ensemble components</p>
                 <table className="result-table ml-narrative-table">
                   <thead>
                     <tr>
@@ -969,25 +976,27 @@ export default function HomePage() {
               <p>
                 <em>
                   For final exam period versus ordinary term, the dummy classifier macro-F1 was 47.1%, and the
-                  best macro-F1 was the ensemble model with 51.8%. This is an improvement of <strong>4.72
+                  best macro-F1 was XGBoost and the ensemble model with 51.8%. This is an improvement of <strong>4.72
                   percentage points</strong>, or <strong>10.01%</strong> relative improvement, suggesting that
-                  the current features provide limited predictive signal for distinguishing final exam days from
-                  ordinary term days.
+                  parameter tuning improved the baseline but the current features still provide limited predictive
+                  signal for distinguishing final exam days from ordinary term days.
                 </em>
               </p>
               <p>
                 <em>
                   For summer work period versus ordinary term, the dummy classifier macro-F1 was 44.2%, while
-                  the best macro-F1 was <strong>66.7%</strong> with XGBoost. This is an improvement of <strong>
-                  22.51 percentage points</strong>, or <strong>50.97%</strong> relative improvement, suggesting
-                  that the available features capture summer work behavior more clearly than final exam behavior.
+                  the best macro-F1 was <strong>68.6%</strong> with the ensemble model. This is an improvement
+                  of <strong>24.43 percentage points</strong>, or <strong>55.32%</strong> relative improvement,
+                  suggesting that parameter tuning and the available features capture summer work behavior more
+                  clearly than final exam behavior.
                 </em>
               </p>
               <p>
                 <em>
                   For the combined three-class classification, the dummy classifier macro-F1 was 28.0%, while
-                  the best macro-F1 was <strong>44.9%</strong> with the ensemble model. This is an improvement
-                  of <strong>16.97 percentage points</strong>, or <strong>60.70%</strong> relative improvement.
+                  the best macro-F1 was <strong>44.5%</strong> with XGBoost. This is an improvement
+                  of <strong>16.56 percentage points</strong>, or <strong>59.25%</strong> relative improvement
+                  after parameter tuning.
                 </em>
               </p>
               <div className="table-shell">
@@ -1006,7 +1015,7 @@ export default function HomePage() {
                     <tr>
                       <td>Final Exam vs Ordinary Term</td>
                       <td>47.13%</td>
-                      <td>Ensemble Model</td>
+                      <td>XGBoost / Ensemble Model</td>
                       <td>51.85%</td>
                       <td>+4.72 percentage points</td>
                       <td>+10.01%</td>
@@ -1014,18 +1023,18 @@ export default function HomePage() {
                     <tr>
                       <td>Summer Work vs Ordinary Term</td>
                       <td>44.16%</td>
-                      <td>XGBoost</td>
-                      <td>66.67%</td>
-                      <td>+22.51 percentage points</td>
-                      <td>+50.97%</td>
+                      <td>Ensemble Model</td>
+                      <td>68.59%</td>
+                      <td>+24.43 percentage points</td>
+                      <td>+55.32%</td>
                     </tr>
                     <tr>
                       <td>All Periods: Ordinary vs Final vs Summer</td>
                       <td>27.96%</td>
-                      <td>Ensemble Model</td>
-                      <td>44.93%</td>
-                      <td>+16.97 percentage points</td>
-                      <td>+60.70%</td>
+                      <td>XGBoost</td>
+                      <td>44.52%</td>
+                      <td>+16.56 percentage points</td>
+                      <td>+59.25%</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1041,11 +1050,11 @@ export default function HomePage() {
               </p>
               <div className="ml-next-objectives">
                 <p>
-                  <em><strong>Next objective to do:</strong></em>
+                  <em><strong>Current model note:</strong></em>
                 </p>
                 <ul>
-                  <li><em>The number of hyper-tuned models is still low, and some models can be fine-tuned further.</em></li>
-                  <li><em>Instead of K-Means, DBSCAN can be tested because it might capture irregular clustering patterns better, which might be the case for this dataset.</em></li>
+                  <li><em>The second ML notebook adds cross-validation and parameter tuning for the main supervised models.</em></li>
+                  <li><em>DBSCAN replaces the earlier clustering comparison because it can capture irregular clusters and noise points.</em></li>
                 </ul>
               </div>
             </div>

@@ -221,7 +221,7 @@ export function MLAllModelMatrices({ periods }: { periods: MachineLearningPeriod
     <>
       <p className="ml-count-note">
         Confusion-matrix totals follow the notebook evaluation rows. Supervised classifiers use held-out test
-        sets (175 academical rows, 196 summer-work rows, and 216 all-period rows). K-Means is an unsupervised
+        sets (175 final-exam rows, 196 summer-work rows, and 216 all-period rows). DBSCAN is an unsupervised
         comparison, so its count can follow the report produced for that task rather than the same supervised
         test split.
       </p>

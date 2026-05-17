@@ -2,7 +2,7 @@
   "periods": [
     {
       "id": "academic",
-      "title": "Academical - Activity ML",
+      "title": "Final Exam Period - Activity ML",
       "target": "Final exam period vs ordinary term",
       "labelPositive": "Final Exam",
       "metrics": [
@@ -14,27 +14,27 @@
         },
         {
           "model": "Logistic Regression",
-          "precision": 0.5194078947368421,
-          "recall": 0.5497638326585694,
-          "f1Score": 0.41458519179304193
-        },
-        {
-          "model": "Decision Tree",
-          "precision": 0.5450525152017689,
-          "recall": 0.6099865047233468,
-          "f1Score": 0.5066948555320648
-        },
-        {
-          "model": "K-Means Clustering",
           "precision": 0.44571428571428573,
           "recall": 0.5,
           "f1Score": 0.47129909365558914
         },
         {
+          "model": "Decision Tree",
+          "precision": 0.5135416666666667,
+          "recall": 0.5109649122807017,
+          "f1Score": 0.5113551749813849
+        },
+        {
+          "model": "DBSCAN",
+          "precision": 0.44438073394495414,
+          "recall": 0.5,
+          "f1Score": 0.4705525197328476
+        },
+        {
           "model": "XGBoost",
-          "precision": 0.5090408805031447,
-          "recall": 0.5077597840755735,
-          "f1Score": 0.5079365079365079
+          "precision": 0.5244539411206077,
+          "recall": 0.5173751686909582,
+          "f1Score": 0.5184748427672956
         },
         {
           "model": "Random Forest",
@@ -52,7 +52,7 @@
       "confusionMatrices": [
         {
           "model": "Dummy Classifier",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -74,7 +74,7 @@
         },
         {
           "model": "Logistic Regression",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -85,18 +85,18 @@
           ],
           "values": [
             [
-              73,
-              83
+              156,
+              0
             ],
             [
-              7,
-              12
+              19,
+              0
             ]
           ]
         },
         {
           "model": "Decision Tree",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -107,18 +107,18 @@
           ],
           "values": [
             [
-              100,
-              56
+              143,
+              13
             ],
             [
-              8,
-              11
+              17,
+              2
             ]
           ]
         },
         {
-          "model": "K-Means Clustering",
-          "source": "kmeans report",
+          "model": "DBSCAN",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -140,7 +140,7 @@
         },
         {
           "model": "XGBoost",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -151,8 +151,8 @@
           ],
           "values": [
             [
-              142,
-              14
+              145,
+              11
             ],
             [
               17,
@@ -162,7 +162,7 @@
         },
         {
           "model": "Random Forest",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -184,7 +184,7 @@
         },
         {
           "model": "Ensemble Model",
-          "source": "notebook report",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam"
@@ -226,15 +226,15 @@
         },
         {
           "model": "Decision Tree",
-          "precision": 0.6432234432234433,
-          "recall": 0.7153422501966955,
-          "f1Score": 0.6230769230769231
+          "precision": 0.6245516603031355,
+          "recall": 0.6693941778127459,
+          "f1Score": 0.6293688054251435
         },
         {
-          "model": "K-Means Clustering",
-          "precision": 0.39540816326530615,
+          "model": "DBSCAN",
+          "precision": 0.3958120531154239,
           "recall": 0.5,
-          "f1Score": 0.4415954415954416
+          "f1Score": 0.4418472063854048
         },
         {
           "model": "XGBoost",
@@ -244,21 +244,21 @@
         },
         {
           "model": "Random Forest",
-          "precision": 0.6279761904761905,
-          "recall": 0.5947285601888277,
-          "f1Score": 0.6042536007538026
+          "precision": 0.6669926119078662,
+          "recall": 0.7418568056648309,
+          "f1Score": 0.6681749622926094
         },
         {
           "model": "Ensemble Model",
-          "precision": 0.6280821917808219,
-          "recall": 0.6471282454760031,
-          "f1Score": 0.6350626118067979
+          "precision": 0.6733500417710944,
+          "recall": 0.7285601888276947,
+          "f1Score": 0.6858974358974359
         }
       ],
       "confusionMatrices": [
         {
           "model": "Dummy Classifier",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -280,7 +280,7 @@
         },
         {
           "model": "Logistic Regression",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -302,7 +302,7 @@
         },
         {
           "model": "Decision Tree",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -313,18 +313,18 @@
           ],
           "values": [
             [
-              97,
-              58
+              113,
+              42
             ],
             [
-              8,
-              33
+              16,
+              25
             ]
           ]
         },
         {
-          "model": "K-Means Clustering",
-          "source": "kmeans report",
+          "model": "DBSCAN",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -346,7 +346,7 @@
         },
         {
           "model": "XGBoost",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -368,7 +368,7 @@
         },
         {
           "model": "Random Forest",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -379,18 +379,18 @@
           ],
           "values": [
             [
-              139,
-              16
+              109,
+              46
             ],
             [
-              29,
-              12
+              9,
+              32
             ]
           ]
         },
         {
           "model": "Ensemble Model",
-          "source": "csv",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Summer Work Period"
@@ -401,12 +401,12 @@
           ],
           "values": [
             [
-              125,
-              30
+              120,
+              35
             ],
             [
-              21,
-              20
+              13,
+              28
             ]
           ]
         }
@@ -426,45 +426,45 @@
         },
         {
           "model": "Logistic Regression",
-          "precision": 0.44939814814814816,
-          "recall": 0.5411221925984442,
-          "f1Score": 0.4228494538713517
+          "precision": 0.40641711229946526,
+          "recall": 0.456639566395664,
+          "f1Score": 0.42940990563908077
         },
         {
           "model": "Decision Tree",
-          "precision": 0.4132034632034632,
+          "precision": 0.41275777120234897,
           "recall": 0.4199444828456382,
-          "f1Score": 0.3992156145252052
+          "f1Score": 0.3997509883755237
         },
         {
-          "model": "K-Means Clustering",
-          "precision": 0.24074074074074073,
+          "model": "DBSCAN",
+          "precision": 0.24008674101610905,
           "recall": 0.3333333333333333,
-          "f1Score": 0.2795698924731183
+          "f1Score": 0.27912839906356923
         },
         {
           "model": "XGBoost",
-          "precision": 0.4158838790481303,
-          "recall": 0.4164390024467046,
-          "f1Score": 0.41072475641983347
+          "precision": 0.44312338222605696,
+          "recall": 0.48368223560778123,
+          "f1Score": 0.4452140646829179
         },
         {
           "model": "Random Forest",
-          "precision": 0.4198542805100182,
-          "recall": 0.41082968521992913,
-          "f1Score": 0.4086186994998076
+          "precision": 0.4043409000398248,
+          "recall": 0.44767563060245985,
+          "f1Score": 0.42292548090483445
         },
         {
           "model": "Ensemble Model",
-          "precision": 0.45529128494244775,
-          "recall": 0.45364975916965644,
-          "f1Score": 0.4492574461421814
+          "precision": 0.41303434954228607,
+          "recall": 0.4523660621221597,
+          "f1Score": 0.4313067784765898
         }
       ],
       "confusionMatrices": [
         {
           "model": "Dummy Classifier",
-          "source": "notebook image",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam",
@@ -495,7 +495,7 @@
         },
         {
           "model": "Logistic Regression",
-          "source": "notebook image",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam",
@@ -508,25 +508,25 @@
           ],
           "values": [
             [
-              62,
-              36,
-              58
+              130,
+              0,
+              26
             ],
             [
-              6,
-              8,
-              5
+              16,
+              0,
+              3
             ],
             [
-              7,
-              1,
-              33
+              19,
+              0,
+              22
             ]
           ]
         },
         {
           "model": "Decision Tree",
-          "source": "notebook image",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam",
@@ -544,9 +544,9 @@
               32
             ],
             [
-              9,
+              10,
               3,
-              7
+              6
             ],
             [
               11,
@@ -556,8 +556,8 @@
           ]
         },
         {
-          "model": "K-Means Clustering",
-          "source": "kmeans report",
+          "model": "DBSCAN",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam",
@@ -570,17 +570,17 @@
           ],
           "values": [
             [
-              156,
+              775,
               0,
               0
             ],
             [
-              19,
+              97,
               0,
               0
             ],
             [
-              41,
+              204,
               0,
               0
             ]
@@ -588,7 +588,38 @@
         },
         {
           "model": "XGBoost",
-          "source": "notebook image",
+          "source": "results2 csv",
+          "predictedLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "actualLabels": [
+            "Ordinary Term",
+            "Final Exam",
+            "Summer Work Period"
+          ],
+          "values": [
+            [
+              99,
+              14,
+              43
+            ],
+            [
+              11,
+              3,
+              5
+            ],
+            [
+              12,
+              2,
+              27
+            ]
+          ]
+        },
+        {
+          "model": "Random Forest",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam",
@@ -602,55 +633,24 @@
           "values": [
             [
               122,
-              7,
-              27
+              6,
+              28
             ],
             [
               16,
-              1,
-              2
-            ],
-            [
-              24,
               0,
-              17
-            ]
-          ]
-        },
-        {
-          "model": "Random Forest",
-          "source": "notebook image",
-          "predictedLabels": [
-            "Ordinary Term",
-            "Final Exam",
-            "Summer Work Period"
-          ],
-          "actualLabels": [
-            "Ordinary Term",
-            "Final Exam",
-            "Summer Work Period"
-          ],
-          "values": [
-            [
-              139,
-              4,
-              13
+              3
             ],
             [
-              18,
-              0,
-              1
-            ],
-            [
-              26,
+              17,
               1,
-              14
+              23
             ]
           ]
         },
         {
           "model": "Ensemble Model",
-          "source": "notebook image",
+          "source": "results2 csv",
           "predictedLabels": [
             "Ordinary Term",
             "Final Exam",
@@ -664,18 +664,18 @@
           "values": [
             [
               128,
-              6,
-              22
+              3,
+              25
             ],
             [
               17,
-              1,
-              1
+              0,
+              2
             ],
             [
-              20,
-              1,
-              20
+              17,
+              2,
+              22
             ]
           ]
         }
