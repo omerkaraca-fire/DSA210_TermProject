@@ -10,7 +10,16 @@ const metrics = [
 ] as const;
 
 function shortModelName(model: string) {
+  if (isDbscanReference(model)) return "DBSCAN*";
   return model.replace(" Classifier", "").replace(" Regression", " Reg.").replace(" Clustering", "");
+}
+
+function isDbscanReference(model: string) {
+  return model === "DBSCAN";
+}
+
+function displayModelName(model: string) {
+  return isDbscanReference(model) ? "DBSCAN" : model;
 }
 
 function compactLabel(label: string) {
@@ -95,7 +104,7 @@ export function MLMetricComparisonChart({ period }: { period: MachineLearningPer
         );
       })}
       <text x={margin.left} y={20} className="chart-note">
-        Macro precision, recall, and F1. Highlighted F1 bar marks the best model.
+        Macro precision, recall, and F1. DBSCAN* is unsupervised reference only.
       </text>
       <g transform={`translate(${margin.left}, ${height - 24})`}>
         {metrics.map((metric, index) => (
@@ -192,7 +201,7 @@ export function MLBestModels({ periods }: { periods: MachineLearningPeriod[] }) 
         return (
           <article className="ml-model-card" key={period.id}>
             <p className="eyebrow">{period.title}</p>
-            <h3>{best.model}</h3>
+            <h3>{displayModelName(best.model)}</h3>
             <p>{period.target}</p>
             <dl className="ml-metric-list">
               <div>
@@ -222,8 +231,8 @@ export function MLAllModelMatrices({ periods }: { periods: MachineLearningPeriod
       <p className="ml-count-note">
         Confusion-matrix totals follow the notebook evaluation rows. Supervised classifiers use held-out test
         sets (175 final-exam rows, 196 summer-work rows, and 216 all-period rows). DBSCAN is an unsupervised
-        comparison, so its count can follow the report produced for that task rather than the same supervised
-        test split.
+        reference-only comparison, so its count can follow the report produced for that task rather than the
+        same supervised test split.
       </p>
       <div className="ml-period-comparison">
         {periods.map((period) => (
@@ -238,7 +247,12 @@ export function MLAllModelMatrices({ periods }: { periods: MachineLearningPeriod
                 return (
                   <article className="ml-mini-model-card" key={metric.model}>
                     <div className="ml-mini-model-header">
-                      <h4>{metric.model}</h4>
+                      <h4>
+                        {displayModelName(metric.model)}
+                        {isDbscanReference(metric.model) ? (
+                          <small className="ml-reference-note">(unsupervised; reference only)</small>
+                        ) : null}
+                      </h4>
                       {matrix ? <span>{matrixTotal(matrix)} rows</span> : null}
                     </div>
                     <dl className="ml-metric-list is-compact">

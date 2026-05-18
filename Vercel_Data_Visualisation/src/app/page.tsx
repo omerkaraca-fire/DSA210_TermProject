@@ -38,7 +38,7 @@ const metricCards = [
   { value: projectSummary.commonDateRange.days.toLocaleString("en-US"), label: "daily rows in the shared analysis window" },
   { value: projectSummary.datasets.length.toString(), label: "public behavior datasets" },
   { value: appendixPlots.length.toString(), label: "appendix figures" },
-  { value: projectSummary.hypothesisResults.length.toString(), label: "basic result rows" },
+  { value: projectSummary.hypothesisResults.length.toString(), label: "hypothesis result rows" },
 ];
 
 const rawDatasetNotes = [
@@ -196,7 +196,8 @@ const hypothesisInterpretations = [
   "Not rejecting the null hypothesis for H2 suggests a similar interpretation to H1.",
   <>Not rejecting the null hypothesis for H3 is especially clear because the observed direction was opposite to the alternative: mean YouTube watched count was higher on Netflix + Prime active days than inactive days.</>,
   <>For H4, the result shows a <strong>statistically significant positive</strong> association between Spotify hours and YouTube watched count. However, the <strong>relationship is very weak</strong>. The Spearman correlation coefficient is <strong>ρ = 0.0934, which is close to zero</strong>. This means that Spotify and YouTube usage tend to <strong>increase together slightly</strong>, but the relationship <strong>should not be interpreted as strong</strong>; the small p-value is helped by the large daily sample size.</>,
-  <>For H5, the <strong>late-evening entertainment</strong> result suggests that Spotify and YouTube usage during final periods <strong>was lower compared to ordinary days.</strong></>,
+  <>For H5, the <strong>YouTube after-21:30 share</strong> result is clearly rejected at p = 0.0059, suggesting lower late-evening YouTube share during finals.</>,
+  <>For H5, the <strong>Spotify after-21:30 listening-hour share</strong> result is also rejected at p = 0.0342, but it is weaker and closer to the 0.05 threshold.</>,
 ];
 
 export default function HomePage() {
@@ -235,8 +236,8 @@ export default function HomePage() {
             </p>
             <p>
               I also prefer looking at project content on a webpage rather than only inside notebook files.
-              That is why I created this page as a public-facing explanation of the project. Webpage
-              explanation will be filled later (TODO).
+              That is why I created this page as a public-facing explanation of the project. The sections below
+              walk through the data, EDA, hypothesis tests, and machine learning results.
             </p>
           </div>
         </Reveal>
@@ -569,7 +570,7 @@ export default function HomePage() {
         <Reveal className="hypothesis-context-panel glass-panel" delay={0.05}>
           <div className="hypothesis-context-copy">
             <h3>Hypothesis testing</h3>
-            <p><em>There are five hypotheses to be inspected in the table below.</em></p>
+            <p><em>There are five hypotheses to be inspected in the cards below.</em></p>
             <p>
               <em>
                 The Mann-Whitney U test is used for the group comparisons because the daily activity
@@ -592,45 +593,6 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
-        </Reveal>
-
-        <Reveal className="table-shell glass-panel">
-          <p className="eyebrow">Hypothesis table</p>
-          <table className="result-table desktop-table">
-            <thead>
-              <tr>
-                <th>Hypothesis</th>
-                <th>Null hypothesis (H0)</th>
-                <th>Alternative hypothesis (H1)</th>
-                <th>Method</th>
-              </tr>
-            </thead>
-            <tbody>
-              {hypotheses.map((hypothesis) => (
-                <tr key={hypothesis.id}>
-                  <td>
-                    <strong>{hypothesis.id}</strong>
-                    <br />
-                    {hypothesis.title}
-                  </td>
-                  <td>{hypothesis.h0}</td>
-                  <td>{hypothesis.h1}</td>
-                  <td>{hypothesis.method}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="mobile-table-cards">
-            {hypotheses.map((hypothesis) => (
-              <article className="mobile-table-card" key={hypothesis.id}>
-                <span className="mobile-table-kicker">{hypothesis.id}</span>
-                <h3>{hypothesis.title}</h3>
-                <p><strong>H0:</strong> {hypothesis.h0}</p>
-                <p><strong>H1:</strong> {hypothesis.h1}</p>
-                <p><strong>Method:</strong> {hypothesis.method}</p>
-              </article>
-            ))}
-          </div>
         </Reveal>
 
         <Reveal className="formula-grid" delay={0.1}>
@@ -712,6 +674,7 @@ export default function HomePage() {
         <Reveal className="chart-panel">
           <p className="eyebrow">Visual result summary</p>
           <h2>Result card summary</h2>
+          <p>Same hypothesis-result data, shown as color-coded cards for quicker scanning.</p>
           <HypothesisMatrix results={projectSummary.hypothesisResults} />
         </Reveal>
       </section>
@@ -915,7 +878,8 @@ export default function HomePage() {
                 <em>
                   Based on those features, I used Dummy Classifier, Logistic Regression, Decision Tree, XGBoost,
                   Random Forest, and an Ensemble Model that votes across the previous models. DBSCAN is
-                  included as an unsupervised comparison, where clusters are mapped to labels after fitting.
+                  included as an unsupervised reference-only comparison, where clusters are mapped to labels
+                  after fitting.
                 </em>
               </p>
               <p>
@@ -943,11 +907,11 @@ export default function HomePage() {
                     </tr>
                     <tr>
                       <td>Summer Work vs Ordinary Term</td>
-                      <td>Summer Logistic Regression, tuned Summer Decision Tree, Summer XGBoost, Summer Random Forest</td>
+                      <td>Logistic Regression, tuned Decision Tree, XGBoost, Random Forest</td>
                     </tr>
                     <tr>
                       <td>All Periods Classification</td>
-                      <td>All-class Logistic Regression, tuned All-class Decision Tree, All-class XGBoost, All-class Random Forest</td>
+                      <td>Logistic Regression, tuned Decision Tree, XGBoost, Random Forest</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1035,7 +999,6 @@ export default function HomePage() {
                 </p>
                 <ul>
                   <li><em>The second ML notebook adds cross-validation and parameter tuning for the main supervised models.</em></li>
-                  <li><em>DBSCAN replaces the earlier clustering comparison because it can capture irregular clusters and noise points.</em></li>
                 </ul>
               </div>
             </div>

@@ -128,7 +128,8 @@ Main hypothesis-test interpretation:
 - Not rejecting H1 might imply that I **do not significantly change my usage behavior during exam periods** and use the platforms similarly to ordinary periods.
 - Not rejecting H3 is especially clear because the observed direction was opposite to the alternative: mean YouTube watched count was higher on Netflix + Prime active days than inactive days.
 - For H4, the result shows a **statistically significant positive** association between Spotify hours and YouTube watched count. However, the **relationship is very weak**. The Spearman correlation coefficient is **rho = 0.0934, which is close to zero**. This means Spotify and YouTube usage tend to **increase together slightly**, but the relationship **should not be interpreted as strong**; the small p-value is helped by the large daily sample size.
-- For H5, the **late-evening entertainment** result suggests that Spotify and YouTube usage during final periods **was lower compared to ordinary days**.
+- For H5, the **YouTube after-21:30 share** result is clearly rejected at `p = 0.0059`, suggesting lower late-evening YouTube share during finals.
+- For H5, the **Spotify after-21:30 listening-hour share** result is also rejected at `p = 0.0342`, but it is weaker and closer to the `0.05` threshold.
 
 ## Machine Learning Extension
 
@@ -190,15 +191,15 @@ The supervised models use an 80/20 train/test split with stratification. After t
 | Summer Work vs Ordinary Term | 80/20 stratified split | 5-fold StratifiedKFold on training data | Macro F1 |
 | All Periods Classification | 80/20 stratified split | 5-fold StratifiedKFold on training data | Macro F1 |
 
-The models used are Dummy Classifier, Logistic Regression, Decision Tree, DBSCAN, XGBoost, Random Forest, and a Voting Ensemble. DBSCAN is included as an unsupervised comparison, where clusters are mapped to labels after fitting.
+The models used are Dummy Classifier, Logistic Regression, Decision Tree, DBSCAN, XGBoost, Random Forest, and a Voting Ensemble. DBSCAN is included as an unsupervised reference-only comparison, where clusters are mapped to labels after fitting, so it should not be read as a directly comparable supervised classifier.
 
 The supervised models are tuned with GridSearchCV on the training set, while the held-out test set is used only for final evaluation. Logistic Regression tunes regularization choices, Decision Tree tunes tree-shape and class-weight settings, XGBoost tunes boosting/tree settings where GridSearchCV is used, Random Forest tunes forest and tree-size settings, and the ensemble tunes voting type and model weights. DBSCAN tunes `eps` and `min_samples` using silhouette score.
 
 | Classification Task | Models Used Inside Ensemble |
 |---|---|
 | Final Exam vs Ordinary Term | Logistic Regression, tuned Decision Tree, XGBoost, Random Forest |
-| Summer Work vs Ordinary Term | Summer Logistic Regression, tuned Summer Decision Tree, Summer XGBoost, Summer Random Forest |
-| All Periods Classification | All-class Logistic Regression, tuned All-class Decision Tree, All-class XGBoost, All-class Random Forest |
+| Summer Work vs Ordinary Term | Logistic Regression, tuned Decision Tree, XGBoost, Random Forest |
+| All Periods Classification | Logistic Regression, tuned Decision Tree, XGBoost, Random Forest |
 
 Current ML summary:
 

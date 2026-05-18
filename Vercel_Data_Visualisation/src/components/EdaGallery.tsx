@@ -9,7 +9,7 @@ const galleryGroups = [
   { id: "youtube", label: "YouTube", title: "YouTube plots" },
   { id: "spotify", label: "Spotify", title: "Spotify plots" },
   { id: "prime-netflix", label: "Netflix + Prime", title: "Netflix + Prime Video plots" },
-  { id: "ml-academic", label: "Academical ML", title: "Academical-period ML plots" },
+  { id: "ml-academic", label: "Academic ML", title: "Academic-period ML plots" },
   { id: "ml-summer", label: "Summer ML", title: "Summer-work ML plots" },
   { id: "ml-all", label: "All Classification", title: "All-classification ML plots" },
 ];

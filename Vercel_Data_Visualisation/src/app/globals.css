@@ -331,6 +331,13 @@ img {
   line-height: 1.58;
 }
 
+.formula-card p,
+.formula-card code,
+.formula-card small {
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .formula-card span {
   display: inline-flex;
   border: 1px solid rgba(255, 208, 138, 0.34);
@@ -721,7 +728,7 @@ img {
 .hypothesis-context-copy p {
   margin-inline: auto;
   max-width: 46rem;
-  font-size: clamp(1rem, 1.55vw, 1.22rem);
+  font-size: 1.05rem;
   line-height: 1.72;
 }
 
@@ -816,6 +823,7 @@ img {
 
 .interpretation-list li {
   color: rgba(240, 234, 219, 0.74);
+  font-size: 1.05rem;
   line-height: 1.65;
 }
 
@@ -1689,6 +1697,15 @@ img {
   font-family: var(--font-sans), Avenir Next, sans-serif;
 }
 
+.ml-reference-note {
+  display: block;
+  margin-top: 0.24rem;
+  color: rgba(240, 234, 219, 0.62);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.22;
+}
+
 .ml-mini-model-card .ml-confusion-chart,
 .ml-model-card .ml-confusion-chart {
   justify-self: center;
@@ -2100,6 +2117,10 @@ html[data-theme="light"] .ml-mini-model-header span {
   border-color: rgba(39, 127, 123, 0.24);
   background: rgba(39, 127, 123, 0.08);
   color: #205f5c;
+}
+
+html[data-theme="light"] .ml-reference-note {
+  color: rgba(42, 26, 18, 0.62);
 }
 
 html[data-theme="light"] .is-rejected .decision-pill {

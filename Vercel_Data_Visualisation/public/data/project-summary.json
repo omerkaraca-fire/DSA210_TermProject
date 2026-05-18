@@ -717,10 +717,5 @@
       "decision": "Reject H0",
       "interpretation": "The Spotify late-evening listening share is lower during finals in the current basic test."
     }
-  ],
-  "roadmap": [
-    "Polish formal hypothesis-test interpretation for the report.",
-    "Add multiple-testing correction only if the project needs a stricter statistical layer.",
-    "Add machine-learning cards later only when a real model exists."
   ]
 }

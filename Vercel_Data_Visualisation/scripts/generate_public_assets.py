@@ -889,11 +889,6 @@ def main() -> None:
         "datasets": dataset_summaries,
         "edaPlots": plots,
         "hypothesisResults": hypothesis_results(combined),
-        "roadmap": [
-            "Polish formal hypothesis-test interpretation for the report.",
-            "Add multiple-testing correction only if the project needs a stricter statistical layer.",
-            "Add machine-learning cards later only when a real model exists.",
-        ],
     }
 
     chart_series = {

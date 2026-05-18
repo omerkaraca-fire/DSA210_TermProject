@@ -218,7 +218,7 @@ The feature sets are not identical across all three tasks. The final-exam and al
 
 Because of this, the three ML tasks should not be read as a perfectly identical feature-set comparison. The summer-work task is still useful, but its stronger result may partly come from having the two additional share features. If the feature set were reduced to the same 11 columns for every task, the summer-work score could change. Therefore, I interpret the summer result as evidence that the task-specific feature set captures summer-work behavior more clearly, not as a strict apples-to-apples proof that summer behavior is always easier to classify.
 
-The models are Dummy Classifier, Logistic Regression, Decision Tree, DBSCAN, XGBoost, Random Forest, and Voting Ensemble. DBSCAN is included as an unsupervised comparison. The supervised models are tuned where applicable: Logistic Regression tunes regularization choices, Decision Tree tunes tree-shape and class-weight settings, XGBoost tunes boosting/tree settings where GridSearchCV is used, Random Forest tunes forest and tree-size settings, and the ensemble tunes voting type and model weights.
+The models are Dummy Classifier, Logistic Regression, Decision Tree, DBSCAN, XGBoost, Random Forest, and Voting Ensemble. DBSCAN is included as an unsupervised reference-only comparison, so its row should not be interpreted as a directly comparable supervised classifier. The supervised models are tuned where applicable: Logistic Regression tunes regularization choices, Decision Tree tunes tree-shape and class-weight settings, XGBoost tunes boosting/tree settings where GridSearchCV is used, Random Forest tunes forest and tree-size settings, and the ensemble tunes voting type and model weights.
 
 \begin{table}[H]
 \centering
@@ -248,7 +248,7 @@ All Periods & 27.96\% & XGBoost & 44.52\% & +16.56 pp & +59.25\%\\
 Dummy Classifier & 47.13\% (+0.00 pp) & 44.16\% (+0.00 pp) & 27.96\% (+0.00 pp)\\
 Logistic Regression & 47.13\% (+0.00 pp) & 61.11\% (+16.95 pp) & 42.94\% (+14.98 pp)\\
 Decision Tree & 51.14\% (+4.01 pp) & 62.94\% (+18.78 pp) & 39.98\% (+12.02 pp)\\
-DBSCAN & 47.06\% (-0.08 pp) & 44.18\% (+0.03 pp) & 27.91\% (-0.04 pp)\\
+DBSCAN {\scriptsize (unsupervised; reference only)} & 47.06\% (-0.08 pp) & 44.18\% (+0.03 pp) & 27.91\% (-0.04 pp)\\
 XGBoost & \textbf{51.85\% (+4.72 pp)} & 66.67\% (+22.51 pp) & \textbf{44.52\% (+16.56 pp)}\\
 Random Forest & 46.48\% (-0.65 pp) & 66.82\% (+22.66 pp) & 42.29\% (+14.34 pp)\\
 Voting Ensemble & \textbf{51.85\% (+4.72 pp)} & \textbf{68.59\% (+24.43 pp)} & 43.13\% (+15.17 pp)\\

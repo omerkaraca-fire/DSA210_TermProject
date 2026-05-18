@@ -93,7 +93,6 @@ export type ProjectSummary = {
   datasets: DatasetSummary[];
   edaPlots: EdaPlot[];
   hypothesisResults: HypothesisResult[];
-  roadmap: string[];
 };
 
 export type ChartSeries = {
