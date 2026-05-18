@@ -1,0 +1,20 @@
+.git
+.DS_Store
+
+# Local-only notes and private data
+LOCAL/
+data_local/
+
+# Generated Python and notebook artifacts
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated app/build folders
+Vercel_Data_Visualisation/.next/
+Vercel_Data_Visualisation/node_modules/
+Vercel_Data_Visualisation/out/
+Vercel_Data_Visualisation/*.log
+Vercel_Data_Visualisation/*.tsbuildinfo
