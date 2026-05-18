@@ -32,13 +32,11 @@ export const resultGroups = [
 
 export function formatNumber(value: number): string {
   return new Intl.NumberFormat("en", {
-    maximumFractionDigits: value < 1 ? 4 : 1,
+    minimumFractionDigits: 3,
+    maximumFractionDigits: 3,
   }).format(value);
 }
 
 export function formatPValue(value: number): string {
-  if (value < 0.001) {
-    return "< 0.001";
-  }
   return value.toFixed(4);
 }

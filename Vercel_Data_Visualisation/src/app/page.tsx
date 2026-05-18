@@ -255,7 +255,7 @@ export default function HomePage() {
       </section>
 
       <section className="section" id="data">
-        <Reveal>
+        <Reveal className="section-heading-centered">
           <p className="eyebrow">Raw data and public outputs</p>
           <h2 className="section-title">Different exports, one daily frame.</h2>
           <p className="section-copy">
@@ -286,7 +286,7 @@ export default function HomePage() {
       </section>
 
       <section className="section" id="eda">
-        <Reveal>
+        <Reveal className="section-heading-centered">
           <p className="eyebrow">Interactive EDA</p>
           <h2 className="section-title">Interactive exploratory analysis.</h2>
           <p className="section-copy">
@@ -558,7 +558,7 @@ export default function HomePage() {
       </section>
 
       <section className="section" id="hypotheses">
-        <Reveal>
+        <Reveal className="section-heading-centered">
           <p className="eyebrow">Hypothesis testing</p>
           <h2 className="section-title">Hypothesis tests and current results.</h2>
           <p className="section-copy">
@@ -569,7 +569,6 @@ export default function HomePage() {
 
         <Reveal className="hypothesis-context-panel glass-panel" delay={0.05}>
           <div className="hypothesis-context-copy">
-            <h3>Hypothesis testing</h3>
             <p><em>There are five hypotheses to be inspected in the cards below.</em></p>
             <p>
               <em>
@@ -794,9 +793,15 @@ export default function HomePage() {
                   for a small amount of final-exam recall.
                 </em>
               </p>
+              <p>
+                <em>
+                  Because nearby days are autocorrelated, the random split likely makes these scores optimistic
+                  relative to a chronological held-out split.
+                </em>
+              </p>
               <div className="ml-feature-columns">
                 <div>
-                  <p className="eyebrow">Final Exam ML and All Class Features</p>
+                  <p className="eyebrow">Features used for Final and All-period tasks</p>
                   <div className="ml-feature-grid" aria-label="Common machine learning feature columns">
                     {[
                       "youtube_daily_watched_count",
@@ -1027,6 +1032,91 @@ export default function HomePage() {
           <p className="eyebrow">All model confusion matrices</p>
           <h2>Model-by-model result cards.</h2>
           <MLAllModelMatrices periods={machineLearningResults.periods} />
+        </Reveal>
+      </section>
+
+      <section className="section" id="findings">
+        <Reveal className="synthesis-panel glass-panel">
+          <p className="eyebrow">Findings</p>
+          <h2>What the analysis suggests.</h2>
+          <div className="synthesis-grid">
+            <article>
+              <h3>EDA</h3>
+              <p>
+                <strong>Spotify is the most continuous</strong> behavior source, while Netflix and Prime Video
+                are sparse and bursty. YouTube is highly variable and has <strong>strong evening/night activity</strong>.
+              </p>
+            </article>
+            <article>
+              <h3>Hypothesis Tests</h3>
+              <p>
+                Total platform usage is not clearly lower during finals, but <strong>late-evening YouTube and
+                Spotify shares are lower</strong>. The time-of-day decomposition is where the clearest statistical
+                signal appears.
+              </p>
+            </article>
+            <article>
+              <h3>Machine Learning</h3>
+              <p>
+                The current task-specific features classify <strong>summer work behavior</strong> more clearly than
+                final-exam behavior, but the summer task has two additional late-evening share features.
+              </p>
+            </article>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="section" id="limitations">
+        <Reveal className="synthesis-panel glass-panel">
+          <p className="eyebrow">Limitations and future work</p>
+          <h2>What should be interpreted carefully.</h2>
+          <div className="synthesis-grid">
+            <article>
+              <h3>Personal Scope</h3>
+              <p>
+                The data describes one person, so the conclusions are about my own behavior and should not be
+                generalized to other students.
+              </p>
+            </article>
+            <article>
+              <h3>Measurement Gaps</h3>
+              <p>
+                YouTube and Spotify include timestamps, but Netflix and Prime Video are mostly date-level.
+                Instagram and other social-media behavior are also absent.
+              </p>
+            </article>
+            <article>
+              <h3>Academic Labels</h3>
+              <p>
+                Final-exam periods are coarse labels and do not capture every academic-pressure day. Midterms
+                are not separately labeled.
+              </p>
+            </article>
+            <article>
+              <h3>Validation</h3>
+              <p>
+                Future work should add lagged features, rolling averages, previous-day behavior, and a more
+                chronological validation strategy.
+              </p>
+            </article>
+          </div>
+        </Reveal>
+      </section>
+
+      <section className="section" id="conclusion">
+        <Reveal className="synthesis-panel glass-panel">
+          <p className="eyebrow">Conclusion</p>
+          <h2>Takeaway.</h2>
+          <p>
+            This project shows that my entertainment behavior can be studied meaningfully through personal
+            platform exports when privacy and cleaning decisions are handled carefully. The strongest statistical
+            evidence in my data appears in <strong>late-evening activity changes</strong> rather than total platform
+            usage. The machine learning results show that the current task-specific features capture my
+            <strong> summer work behavior better than my final exam behavior</strong>, while the different feature
+            sets mean this comparison should be <strong>interpreted cautiously</strong>. Overall, the project
+            supports the idea that academic and work periods leave some signal in my personal entertainment
+            patterns, but the <strong>signal is uneven</strong> and depends strongly on the period being classified.
+          </p>
         </Reveal>
       </section>
 

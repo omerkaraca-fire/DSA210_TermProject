@@ -130,7 +130,7 @@ PLOT_CAPTIONS = {
     "top_15_prime_video_title_groups.png": "Prime Video is also series-heavy, led by Supernatural and Game of Thrones.",
     "total_long_form_count_by_platform_common_range.png": "Netflix contributes more long-form rows than Prime Video in the common comparison range.",
     "combined_active_days_by_platform.png": "Spotify is the most continuous platform, while Netflix and Prime Video are sparse.",
-    "combined_after_2130_by_analysis_period_boxplots.png": "Late-night YouTube and Spotify activity are lower during finals in the current basic tests.",
+    "combined_after_2130_by_analysis_period_boxplots.png": "Late-night YouTube and Spotify activity are lower during finals in the current tests.",
     "combined_daily_distribution_overview.png": "All main daily variables are skewed, especially YouTube counts and Netflix + Prime counts.",
     "combined_daily_variable_correlation_heatmap.png": "YouTube variables correlate with each other; Spotify variables correlate with each other; long-form viewing is weakly tied to both.",
     "combined_dataset_date_coverage.png": "The common comparison window is where all four public platform datasets overlap.",
@@ -669,7 +669,7 @@ def hypothesis_results(combined: pd.DataFrame) -> list[dict[str, object]]:
             "final_exam < ordinary_term",
             final_days[column],
             ordinary_days[column],
-            "Current basic result does not provide strong evidence that this platform is lower during finals."
+            "The current test does not provide strong evidence that this platform is lower during finals."
             if column in {"youtube_daily_watched_count", "spotify_daily_hours", "netflix_daily_count", "prime_video_daily_count"}
             else "",
         )
@@ -680,7 +680,7 @@ def hypothesis_results(combined: pd.DataFrame) -> list[dict[str, object]]:
         "final_exam < ordinary_term",
         final_days["daily_distinct_entertainment_platform_count"],
         ordinary_days["daily_distinct_entertainment_platform_count"],
-        "Platform diversity is slightly lower in finals, but the current basic test does not reject H0.",
+        "Platform diversity is slightly lower in finals, but the current test does not reject H0.",
     )
     add_mann_whitney(
         "H3 Long-form streaming and YouTube activity",
@@ -723,7 +723,7 @@ def hypothesis_results(combined: pd.DataFrame) -> list[dict[str, object]]:
         "final_exam < ordinary_term",
         final_days["youtube_after_2130_share"],
         ordinary_days["youtube_after_2130_share"],
-        "The YouTube late-evening share is lower during finals in the current basic test.",
+        "The YouTube late-evening share is lower during finals in the current test.",
     )
     add_mann_whitney(
         "H5 After-9:30 PM entertainment during finals",
@@ -731,7 +731,7 @@ def hypothesis_results(combined: pd.DataFrame) -> list[dict[str, object]]:
         "final_exam < ordinary_term",
         final_days["spotify_after_2130_hour_share"],
         ordinary_days["spotify_after_2130_hour_share"],
-        "The Spotify late-evening listening share is lower during finals in the current basic test.",
+        "The Spotify late-evening listening share is lower during finals in the current test.",
     )
 
     for result in results:
@@ -744,7 +744,7 @@ def hypothesis_results(combined: pd.DataFrame) -> list[dict[str, object]]:
             result["pValue"] = 0.0342
             result["decision"] = decision(result["pValue"])
         if result["decision"] == "Reject H0" and result["hypothesis"].startswith("H1"):
-            result["interpretation"] = "This platform is lower during finals in the current basic test."
+            result["interpretation"] = "This platform is lower during finals in the current test."
     return results
 
 

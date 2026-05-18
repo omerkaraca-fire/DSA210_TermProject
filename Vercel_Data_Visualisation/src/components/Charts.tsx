@@ -4,7 +4,7 @@ import * as d3 from "d3";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import type { ChartSeries, HypothesisResult } from "@/types";
-import { formatPValue } from "@/lib/data";
+import { formatNumber, formatPValue } from "@/lib/data";
 
 type DailyPanelRow = ChartSeries["dailyPanel"][number];
 type DailyMetricKey = Exclude<keyof DailyPanelRow, "date" | "analysisPeriod">;
@@ -375,7 +375,7 @@ export function PipelineDiagram() {
     { title: "Processing scripts", note: "Normalize fields and protect identifiers" },
     { title: "fine_* schema", note: "Shared dates, timestamps, and platform labels" },
     { title: "Daily panel", note: "One row per date across platforms" },
-    { title: "EDA and tests", note: "Plots, hypotheses, and current basic results" },
+    { title: "EDA and tests", note: "Plots, hypotheses, and current test results" },
   ];
   return (
     <svg className="chart-svg interactive-svg" viewBox="0 0 980 260" role="img">
@@ -733,10 +733,10 @@ export function HypothesisMatrix({ results }: { results: HypothesisResult[] }) {
           </div>
           <div className="result-detail-popover">
             <strong>Numbers</strong>
-            <span>statistic: {result.statistic.toFixed(4)}</span>
+            <span>statistic: {formatNumber(result.statistic)}</span>
             <span>p-value: {formatPValue(result.pValue)}</span>
-            <span>means: {result.meanGroup1.toFixed(3)} / {result.meanGroup2.toFixed(3)}</span>
-            <span>medians: {result.medianGroup1.toFixed(3)} / {result.medianGroup2.toFixed(3)}</span>
+            <span>means: {formatNumber(result.meanGroup1)} / {formatNumber(result.meanGroup2)}</span>
+            <span>medians: {formatNumber(result.medianGroup1)} / {formatNumber(result.medianGroup2)}</span>
             <span>n: {result.nGroup1} / {result.nGroup2}</span>
           </div>
         </motion.article>

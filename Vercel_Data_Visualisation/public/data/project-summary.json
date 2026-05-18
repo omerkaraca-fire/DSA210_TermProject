@@ -440,7 +440,7 @@
       "group": "combined",
       "platform": "Combined",
       "src": "/eda-images/combined/combined_after_2130_by_analysis_period_boxplots.png",
-      "caption": "Late-night YouTube and Spotify activity are lower during finals in the current basic tests.",
+      "caption": "Late-night YouTube and Spotify activity are lower during finals in the current tests.",
       "curated": true
     },
     {
@@ -571,7 +571,7 @@
       "pValue": 0.090818,
       "alpha": 0.05,
       "decision": "Do not reject H0",
-      "interpretation": "Current basic result does not provide strong evidence that this platform is lower during finals."
+      "interpretation": "The current test does not provide strong evidence that this platform is lower during finals."
     },
     {
       "hypothesis": "H1 Entertainment usage during academic pressure",
@@ -589,7 +589,7 @@
       "pValue": 0.069663,
       "alpha": 0.05,
       "decision": "Do not reject H0",
-      "interpretation": "Current basic result does not provide strong evidence that this platform is lower during finals."
+      "interpretation": "The current test does not provide strong evidence that this platform is lower during finals."
     },
     {
       "hypothesis": "H1 Entertainment usage during academic pressure",
@@ -607,7 +607,7 @@
       "pValue": 0.851172,
       "alpha": 0.05,
       "decision": "Do not reject H0",
-      "interpretation": "Current basic result does not provide strong evidence that this platform is lower during finals."
+      "interpretation": "The current test does not provide strong evidence that this platform is lower during finals."
     },
     {
       "hypothesis": "H1 Entertainment usage during academic pressure",
@@ -625,7 +625,7 @@
       "pValue": 0.389017,
       "alpha": 0.05,
       "decision": "Do not reject H0",
-      "interpretation": "Current basic result does not provide strong evidence that this platform is lower during finals."
+      "interpretation": "The current test does not provide strong evidence that this platform is lower during finals."
     },
     {
       "hypothesis": "H2 Platform diversity during academic pressure",
@@ -643,7 +643,7 @@
       "pValue": 0.130458,
       "alpha": 0.05,
       "decision": "Do not reject H0",
-      "interpretation": "Platform diversity is slightly lower in finals, but the current basic test does not reject H0."
+      "interpretation": "Platform diversity is slightly lower in finals, but the current test does not reject H0."
     },
     {
       "hypothesis": "H3 Long-form streaming and YouTube activity",
@@ -697,7 +697,7 @@
       "pValue": 0.005855,
       "alpha": 0.05,
       "decision": "Reject H0",
-      "interpretation": "The YouTube late-evening share is lower during finals in the current basic test."
+      "interpretation": "The YouTube late-evening share is lower during finals in the current test."
     },
     {
       "hypothesis": "H5 After-9:30 PM entertainment during finals",
@@ -715,7 +715,7 @@
       "pValue": 0.0342,
       "alpha": 0.05,
       "decision": "Reject H0",
-      "interpretation": "The Spotify late-evening listening share is lower during finals in the current basic test."
+      "interpretation": "The Spotify late-evening listening share is lower during finals in the current test."
     }
   ]
 }

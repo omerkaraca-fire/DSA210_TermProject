@@ -194,7 +194,7 @@ The broad entertainment-usage hypothesis was not supported strongly enough when 
 
 The machine learning notebook is \texttt{MachineLearning/machinelearning.ipynb}, and the newest output folder is \texttt{MachineLearning/results2/}. The goal was to test whether daily entertainment variables can classify academic periods.
 
-The classification tasks were separated into three parts: final exam versus ordinary term, summer work versus ordinary term, and all-period classification. The supervised models use an 80/20 stratified train/test split. Hyperparameter tuning is performed with GridSearchCV and 5-fold StratifiedKFold on the training set only; the test set is kept separate for final evaluation. Macro F1-score is the main selection metric because the classes are imbalanced.
+The classification tasks were separated into three parts: final exam versus ordinary term, summer work versus ordinary term, and all-period classification. The supervised models use an 80/20 stratified train/test split. Hyperparameter tuning is performed with GridSearchCV and 5-fold StratifiedKFold on the training set only; the test set is kept separate for final evaluation. Macro F1-score is the main selection metric because the classes are imbalanced. Because nearby days are autocorrelated, the random split likely makes these scores optimistic relative to a chronological held-out split.
 
 \begin{table}[H]
 \centering
@@ -212,7 +212,7 @@ All Periods Classification & \texttt{ordinary\_term}, \texttt{final\_exam}, \tex
 \end{tabularx}
 \end{table}
 
-The final-exam task is especially imbalanced. In the held-out test set, there are 156 ordinary-term days and only 19 final-exam days. This explains why accuracy and macro F1 can move in opposite directions: the dummy classifier reaches 89.14\% accuracy by predicting the majority class, but its macro F1 is only 47.13\%. XGBoost and the ensemble reduce accuracy to 84.00\% while increasing macro F1 to 51.85\%, because they trade some majority-class correctness for a small amount of final-exam recall.
+The final-exam task is especially imbalanced. In the held-out test set, there are 156 ordinary-term days and only 19 final-exam days. This explains why accuracy and macro F1 can move in opposite directions: the dummy classifier reaches 89.14\% accuracy by predicting the majority class, but its macro F1 is only 47.13\%. XGBoost and the ensemble reduce accuracy to 84.00\% while increasing macro F1 to 51.85\%, because they trade some majority-class correctness for a small amount of final-exam recall. XGBoost and the ensemble also produce identical final-task metrics to every reported decimal, which means the ensemble effectively inherited the same final test predictions as XGBoost.
 
 The feature sets are not identical across all three tasks. The final-exam and all-period classifications use 11 daily activity features: YouTube watched/search counts, YouTube after-21:30 count, Spotify hours, Spotify stream count, Spotify unique tracks, Spotify after-21:30 hours, Netflix count, Prime Video count, Netflix plus Prime count, and daily distinct platform count. The summer-work classification uses those same 11 features plus two late-evening share features: \texttt{youtube\_after\_2130\_share} and \texttt{spotify\_after\_2130\_hour\_share}.
 
@@ -234,6 +234,9 @@ Summer vs Ordinary & 44.16\% & Ensemble & 68.59\% & \textbf{+24.43 pp} & \textbf
 All Periods & 27.96\% & XGBoost & 44.52\% & +16.56 pp & +59.25\%\\
 \bottomrule
 \end{tabularx}
+\smallskip
+
+{\footnotesize \textit{Note: DBSCAN is unsupervised reference only; its scores are included for context and should not be read as directly comparable supervised-classifier performance.}}
 \end{table}
 
 \begin{table}[H]
@@ -306,7 +309,7 @@ The confusion-matrix heatmaps below show the best-performing model for each task
 
 The EDA shows that the platforms have different behavioral structures. Spotify is the most continuous platform, while Netflix and Prime Video are much more sparse and bursty. YouTube has high variability and strong evening/night activity. Cross-platform correlations are generally limited, except for variables that belong to the same platform.
 
-The hypothesis tests do not provide strong evidence that total entertainment usage is broadly lower during finals. The long-form streaming test also moved in the opposite direction from the alternative, because YouTube watched count was higher on Netflix + Prime active days on average. However, late-evening YouTube and Spotify shares are significantly lower during finals, suggesting that time-of-day behavior changes more clearly than total daily activity. Spotify and YouTube also have a statistically significant same-day association, but $\rho=0.0934$ is close to zero, so the relationship is very weak in practical terms.
+The hypothesis tests do not provide strong evidence that total entertainment usage is broadly lower during finals. The final-exam window is also only an imperfect proxy for academic pressure, because workload can vary by course and some stressful academic days may fall outside the formal final-exam period. The long-form streaming test also moved in the opposite direction from the alternative, because YouTube watched count was higher on Netflix + Prime active days on average. However, late-evening YouTube and Spotify shares are significantly lower during finals, suggesting that time-of-day behavior changes more clearly than total daily activity. The late-evening/time-of-day decomposition is one of the most original parts of the project because the significant effects appear there rather than in broad daily totals. Spotify and YouTube also have a statistically significant same-day association, but $\rho=0.0934$ is close to zero, so the relationship is very weak in practical terms.
 
 The machine learning results suggest that summer work behavior is easier to classify within the current task-specific setup than final exam behavior. Final exam versus ordinary term classification improves only from 47.13\% dummy macro F1 to 51.85\% best macro F1. Summer work versus ordinary term improves from 44.16\% to 68.59\%. The all-period task improves from 27.96\% to 44.52\%. However, the summer task also uses two additional late-evening share features, so part of the stronger summer result may come from this richer feature set. Overall, the current task-specific entertainment features capture summer work patterns more clearly than final exam patterns, but the comparison is not fully apples-to-apples.
 

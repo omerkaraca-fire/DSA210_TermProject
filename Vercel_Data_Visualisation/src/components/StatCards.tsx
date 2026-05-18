@@ -50,10 +50,10 @@ export function HypothesisResultCards({ results }: { results: HypothesisResult[]
           </dl>
           <div className="result-detail-popover">
             <strong>Numbers</strong>
-            <span>statistic: {result.statistic.toFixed(4)}</span>
+            <span>statistic: {formatNumber(result.statistic)}</span>
             <span>p-value: {formatPValue(result.pValue)}</span>
-            <span>means: {result.meanGroup1.toFixed(3)} / {result.meanGroup2.toFixed(3)}</span>
-            <span>medians: {result.medianGroup1.toFixed(3)} / {result.medianGroup2.toFixed(3)}</span>
+            <span>means: {formatNumber(result.meanGroup1)} / {formatNumber(result.meanGroup2)}</span>
+            <span>medians: {formatNumber(result.medianGroup1)} / {formatNumber(result.medianGroup2)}</span>
             <span>n: {result.nGroup1} / {result.nGroup2}</span>
           </div>
         </article>
