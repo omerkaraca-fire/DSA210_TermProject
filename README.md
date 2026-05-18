@@ -106,7 +106,7 @@ Main hypothesis-test interpretation:
 
 ## Machine Learning Extension
 
-The machine learning part examines whether daily entertainment activity can predict period labels. Given the number of daily activities, I asked whether it would be possible to guess a day's class, where the class corresponds to ordinary term, final exam period, or summer work period.
+The current machine learning notebook is `MachineLearning/machinelearning.ipynb`. It examines whether daily entertainment activity can predict academic-period labels. Given the number of daily activities, I asked whether it would be possible to guess a day's class, where the class corresponds to ordinary term, final exam period, or summer work period.
 
 Final exam period corresponds to the final exam period in the academic calendar. **Midterm dates are not separately labeled here; if they fall outside the final exam period, they remain inside the ordinary term class**, because each course distributes workload in different time periods. The summer work period corresponds to the summers where I worked as an intern in a local company in my hometown. The ordinary term class is the remaining labeled academic-term days.
 
@@ -118,6 +118,8 @@ As in the EDA and hypothesis testing parts, I used the Sabanci University academ
 | `final_exam` | Final exam period days |
 | `summer_work_period` | Summer term/work period days |
 | `outside_calendar` | Days outside the labeled academic calendar |
+
+The newest ML outputs are saved under `MachineLearning/results2/`. The older `MachineLearning/oldresults/` folder is kept only for reference and should not be treated as the latest result source.
 
 Classification happened in three ways:
 
@@ -143,24 +145,24 @@ Common feature columns for final-exam ML and all-class ML:
 | `netflix_prime_daily_count` |
 | `daily_distinct_entertainment_platform_count` |
 
-Additional features for summer work period classification:
+Additional late-evening share features are used in the summer work period classification:
 
 | Feature Column |
 |---|
 | `youtube_after_2130_share` |
 | `spotify_after_2130_hour_share` |
 
-Decision Tree validation splits:
+The supervised models use an 80/20 train/test split with stratification. After the split, parameter tuning is done with `GridSearchCV` and 5-fold `StratifiedKFold` cross-validation on the training set only. This keeps the test set separate until final evaluation.
 
-| Classification Task | Decision Tree Training Subset | Decision Tree Validation Set |
-|---|---:|---:|
-| Final Exam vs Ordinary Term | 522 | 175 |
-| Summer Work vs Ordinary Term | 587 | 196 |
-| All Periods Classification | 645 | 215 |
+| Classification Task | Train/Test Split | Cross-Validation | Tuning Criterion |
+|---|---|---|---|
+| Final Exam vs Ordinary Term | 80/20 stratified split | 5-fold StratifiedKFold on training data | Macro F1 |
+| Summer Work vs Ordinary Term | 80/20 stratified split | 5-fold StratifiedKFold on training data | Macro F1 |
+| All Periods Classification | 80/20 stratified split | 5-fold StratifiedKFold on training data | Macro F1 |
 
-The models used are Dummy Classifier, Logistic Regression, Decision Tree, XGBoost, Random Forest, and an Ensemble Model that soft-votes across the supervised models. K-Means is included as an unsupervised comparison, where clusters are mapped to labels after fitting.
+The models used are Dummy Classifier, Logistic Regression, Decision Tree, DBSCAN, XGBoost, Random Forest, and a Voting Ensemble. DBSCAN is included as an unsupervised comparison, where clusters are mapped to labels after fitting.
 
-Each soft-voting ensemble uses the supervised models trained for its own classification task. K-Means is not included inside the ensemble because it is used as an unsupervised comparison.
+The supervised models are tuned with GridSearchCV on the training set, while the held-out test set is used only for final evaluation. Logistic Regression tunes regularization choices, Decision Tree tunes tree-shape and class-weight settings, XGBoost tunes boosting/tree settings where GridSearchCV is used, Random Forest tunes forest and tree-size settings, and the ensemble tunes voting type and model weights. DBSCAN tunes `eps` and `min_samples` using silhouette score.
 
 | Classification Task | Models Used Inside Ensemble |
 |---|---|
@@ -172,16 +174,15 @@ Current ML summary:
 
 | Classification Task | Dummy Macro F1 | Best Model | Best Model Macro F1 | Absolute Increase | Relative Improvement |
 |---|---:|---|---:|---:|---:|
-| Final Exam vs Ordinary Term | 47.13% | Ensemble Model | 51.85% | +4.72 percentage points | +10.01% |
-| Summer Work vs Ordinary Term | 44.16% | XGBoost | 66.67% | +22.51 percentage points | +50.97% |
-| All Periods: Ordinary vs Final vs Summer | 27.96% | Ensemble Model | 44.93% | +16.97 percentage points | +60.70% |
+| Final Exam vs Ordinary Term | 47.13% | XGBoost / Ensemble Model | 51.85% | +4.72 percentage points | +10.01% |
+| Summer Work vs Ordinary Term | 44.16% | Ensemble Model | 68.59% | +24.43 percentage points | +55.32% |
+| All Periods: Ordinary vs Final vs Summer | 27.96% | XGBoost | 44.52% | +16.56 percentage points | +59.25% |
+
+For final exam period versus ordinary term, the tuned models improved only slightly over the dummy baseline. This suggests that the current features provide limited predictive signal for distinguishing final exam days from ordinary term days.
+
+For summer work period versus ordinary term, the tuned ensemble model improved much more clearly over the dummy baseline. This suggests that the available features capture summer work behavior more clearly than final exam behavior.
 
 The separation hints that the summer work period pattern is easier to capture with the available features. The current feature set is not enough to strongly differentiate the final exam period and ordinary term. This can happen either because final exam behavior is not very different from ordinary term behavior, or because important social-media signals are still excluded from the current feature set.
-
-**Next objective to do:**
-
-- The number of hyper-tuned models is still low, and some models can be fine-tuned further.
-- Instead of K-Means, DBSCAN can be tested because it might capture irregular clustering patterns better, which might be the case for this dataset.
 
 ## Repository Structure
 
@@ -198,6 +199,16 @@ DSA210_TermProject/
 ├── EDA/
 ├── Hypothesis_Testing/
 ├── MachineLearning/
+│   ├── machinelearning.ipynb
+│   ├── machinelearningOLD_FOR_REFERENCE.ipynb
+│   ├── oldresults/
+│   │   ├── ACADEMICAL_PERIOD/
+│   │   ├── All_CLASSIFICATION/
+│   │   └── SUMMER_WORK_PERIOD/
+│   └── results2/
+│       ├── ACADEMICAL_PERIOD/
+│       ├── All_CLASSIFICATION/
+│       └── SUMMER_WORK_PERIOD/
 ├── Reports/
 │   ├── .gitignore
 │   ├── Report_EDA_Hypothesis.pdf
