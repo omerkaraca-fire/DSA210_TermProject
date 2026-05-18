@@ -4,6 +4,7 @@ import {
   MLBestModels,
   MLMetricComparisonChart,
 } from "@/components/MachineLearningCharts";
+import { ProjectWorkflowMap } from "@/components/ProjectWorkflowMap";
 import { Reveal } from "@/components/Reveal";
 import { DatasetCards } from "@/components/StatCards";
 import {
@@ -16,7 +17,6 @@ import {
   RelativeActivityChart,
 } from "@/components/Charts";
 import {
-  AnimatedPipeline,
   InteractiveBarChart,
   InteractiveBoxPlot,
   InteractiveDailyScatter,
@@ -66,14 +66,6 @@ const rawDatasetNotes = [
     kept: "Title, record type, series/movie fields where available, and date-level watch records.",
     excluded: "Raw parse issues and local source details stay out of the public browser app.",
   },
-];
-
-const scriptNotes = [
-  "Platform scripts normalize raw exports into processed row-level tables.",
-  "fine_* builders create shared date, platform, source, and record-id fields.",
-  "Public builders reduce the schema and mask source/account identifiers.",
-  "EDA notebooks aggregate public rows to daily and monthly variables.",
-  "The web app uses compact aggregate JSON and copied plot images, not full raw CSVs.",
 ];
 
 const hypotheses = [
@@ -246,26 +238,6 @@ export default function HomePage() {
               That is why I created this page as a public-facing explanation of the project. Webpage
               explanation will be filled later (TODO).
             </p>
-            <div className="content-list" aria-label="Website content">
-              <span>Raw and public datasets</span>
-              <span>Processing scripts</span>
-              <span>Individual EDA</span>
-              <span>Combined EDA</span>
-              <span>Hypotheses</span>
-              <span>Current test results</span>
-              <span>Notebook plot appendix</span>
-            </div>
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a className="cta-link" href="#data">
-              Data and scripts
-            </a>
-            <a className="cta-link" href="#eda">
-              Interactive EDA
-            </a>
-            <a className="cta-link" href="#hypotheses">
-              Hypothesis results
-            </a>
           </div>
         </Reveal>
       </section>
@@ -307,26 +279,9 @@ export default function HomePage() {
       </section>
 
       <section className="section" id="scripts">
-        <div className="section-grid">
-          <Reveal className="sticky-note">
-            <p className="eyebrow">Processing scripts</p>
-            <h2 className="section-title">From export to public analysis.</h2>
-            <p className="section-copy">
-              Each platform follows the same logic: normalize the raw export, create shared `fine_*` fields,
-              reduce the public schema, then aggregate later for EDA and testing.
-            </p>
-            <div className="script-note-stack">
-              {scriptNotes.map((note, index) => (
-                <span key={note}>{index + 1}. {note}</span>
-              ))}
-            </div>
-          </Reveal>
-          <Reveal className="chart-panel" delay={0.1}>
-            <ZoomableChart title="Processing pipeline">
-              <AnimatedPipeline />
-            </ZoomableChart>
-          </Reveal>
-        </div>
+        <Reveal>
+          <ProjectWorkflowMap />
+        </Reveal>
       </section>
 
       <section className="section" id="eda">
