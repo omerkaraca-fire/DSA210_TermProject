@@ -1082,7 +1082,10 @@ export default function HomePage() {
               <h3>Measurement Gaps</h3>
               <p>
                 YouTube and Spotify include timestamps, but Netflix and Prime Video are mostly date-level.
-                Instagram and other social-media behavior are also absent.
+                Additional behavioral sources such as ChatGPT usage, social-media usage, or calendar workload
+                could improve the analysis if privacy can be handled carefully. <strong>Instagram is especially
+                important</strong> because scrolling can take a significant amount of time, so its absence may
+                reduce classification quality.
               </p>
             </article>
             <article>
