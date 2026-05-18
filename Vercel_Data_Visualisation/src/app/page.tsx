@@ -95,7 +95,7 @@ const hypotheses = [
   },
   {
     id: "H3",
-    title: "Netflix + Prime and YouTube activity",
+    title: "Long-form streaming and YouTube activity",
     h0: "YouTube watched count does not differ between Netflix + Prime active and inactive days.",
     h1: "YouTube watched count is lower on Netflix + Prime active days.",
     method: "One-sided Mann-Whitney U",
@@ -202,8 +202,8 @@ const hypothesisInterpretations = [
   <>For the last two hypotheses, H4 and H5, related to YouTube and Spotify, the p-values are smaller than 0.05. This means that the null hypothesis is <strong>rejected in favor of the alternative hypothesis</strong>, because the probability of observing such results under the null hypothesis is very low.</>,
   <>Not rejecting the null hypothesis for H1 might imply that the subject user <strong>does not significantly change their usage behavior during exam periods</strong> and uses the platform similarly to ordinary periods.</>,
   "Not rejecting the null hypothesis for H2 suggests a similar interpretation to H1.",
-  <>Not rejecting the null hypothesis for H3 might suggest that the subject <strong>does not use YouTube significantly less when also using Netflix and Prime Video.</strong></>,
-  <>For H4, the result shows a <strong>statistically significant positive</strong> association between Spotify hours and YouTube watched count. However, the <strong>relationship is weak</strong>. The Spearman correlation coefficient is <strong>ρ = 0.0934, which is close to zero</strong>. This means that Spotify and YouTube usage tend to <strong>increase together slightly</strong>, but the relationship <strong>should not be interpreted as strong.</strong></>,
+  <>Not rejecting the null hypothesis for H3 is especially clear because the observed direction was opposite to the alternative: mean YouTube watched count was higher on Netflix + Prime active days than inactive days.</>,
+  <>For H4, the result shows a <strong>statistically significant positive</strong> association between Spotify hours and YouTube watched count. However, the <strong>relationship is very weak</strong>. The Spearman correlation coefficient is <strong>ρ = 0.0934, which is close to zero</strong>. This means that Spotify and YouTube usage tend to <strong>increase together slightly</strong>, but the relationship <strong>should not be interpreted as strong</strong>; the small p-value is helped by the large daily sample size.</>,
   <>For H5, the <strong>late-evening entertainment</strong> result suggests that Spotify and YouTube usage during final periods <strong>was lower compared to ordinary days.</strong></>,
 ];
 
@@ -831,6 +831,7 @@ export default function HomePage() {
                       <tr>
                         <th>Task</th>
                         <th>Classes Included</th>
+                        <th>Full Class Balance</th>
                         <th>Full</th>
                         <th>Train</th>
                         <th>Test</th>
@@ -840,6 +841,7 @@ export default function HomePage() {
                       <tr>
                         <td>Final Exam vs Ordinary Term</td>
                         <td><code>ordinary_term</code>, <code>final_exam</code></td>
+                        <td>775 ordinary, 97 final (11.1% final)</td>
                         <td>872</td>
                         <td>697</td>
                         <td>175</td>
@@ -847,6 +849,7 @@ export default function HomePage() {
                       <tr>
                         <td>Summer Work vs Ordinary Term</td>
                         <td><code>ordinary_term</code>, <code>summer_work_period</code></td>
+                        <td>775 ordinary, 204 summer (20.8% summer)</td>
                         <td>979</td>
                         <td>783</td>
                         <td>196</td>
@@ -854,6 +857,7 @@ export default function HomePage() {
                       <tr>
                         <td>All Periods Classification</td>
                         <td><code>ordinary_term</code>, <code>final_exam</code>, <code>summer_work_period</code></td>
+                        <td>775 ordinary, 97 final, 204 summer</td>
                         <td>1076</td>
                         <td>860</td>
                         <td>216</td>
@@ -862,9 +866,19 @@ export default function HomePage() {
                   </table>
                 </div>
               </div>
+              <p>
+                <em>
+                  The final-exam task is especially imbalanced. In the held-out test set, there are 156
+                  ordinary-term days and only 19 final-exam days. This explains why accuracy and macro F1 can
+                  move in opposite directions: the dummy classifier reaches 89.14% accuracy by predicting the
+                  majority class, but its macro F1 is only 47.13%. XGBoost and the ensemble reduce accuracy to
+                  84.00% while increasing macro F1 to 51.85%, because they trade some majority-class correctness
+                  for a small amount of final-exam recall.
+                </em>
+              </p>
               <div className="ml-feature-columns">
                 <div>
-                  <p className="eyebrow">Final Exam ML and All Class</p>
+                  <p className="eyebrow">Final Exam ML and All Class Features</p>
                   <div className="ml-feature-grid" aria-label="Common machine learning feature columns">
                     {[
                       "youtube_daily_watched_count",
@@ -884,7 +898,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div>
-                  <p className="eyebrow">Additional Features For Summer Working Period</p>
+                  <p className="eyebrow">Additional Summer Features</p>
                   <div className="ml-feature-grid" aria-label="Summer work machine learning feature columns">
                     {["youtube_after_2130_share", "spotify_after_2130_hour_share"].map((feature) => (
                       <code key={feature}>{feature}</code>
@@ -892,6 +906,16 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
+              <p>
+                <em>
+                  The feature sets are not identical across all three tasks. Final exam versus ordinary term and
+                  all-period classification use the 11 daily activity features shown in the first group. Summer
+                  work versus ordinary term uses those same features plus the two late-evening share columns. This
+                  means the summer result is not a perfectly apples-to-apples feature comparison; part of its
+                  stronger macro-F1 score may come from the richer summer feature set, and the score could change
+                  if reduced to the same 11 columns.
+                </em>
+              </p>
               <p>
                 <em>
                   The ML classification is intentionally separated due to sequential development and how I
@@ -987,8 +1011,8 @@ export default function HomePage() {
                   For summer work period versus ordinary term, the dummy classifier macro-F1 was 44.2%, while
                   the best macro-F1 was <strong>68.6%</strong> with the ensemble model. This is an improvement
                   of <strong>24.43 percentage points</strong>, or <strong>55.32%</strong> relative improvement,
-                  suggesting that parameter tuning and the available features capture summer work behavior more
-                  clearly than final exam behavior.
+                  suggesting that parameter tuning and the task-specific available features capture summer work
+                  behavior more clearly than final exam behavior.
                 </em>
               </p>
               <p>
@@ -1042,10 +1066,12 @@ export default function HomePage() {
               <p>
                 <em>
                   In conclusion, the separation hinted that the summer work period pattern is easier to capture
-                  with the available features. The current features were not enough to strongly differentiate the
-                  final period and ordinary period. This can happen either because the final exam period is not
-                  very different from ordinary term behavior, or because important social-media signals are still
-                  excluded from the current feature set.
+                  with the current task-specific features. Since the summer task includes two additional
+                  late-evening share columns, the comparison is not fully apples-to-apples. The final-exam
+                  features were not enough to strongly differentiate the final period and ordinary period. This
+                  can happen either because the final exam period is not very different from ordinary term
+                  behavior, or because important social-media signals are still excluded from the current feature
+                  set.
                 </em>
               </p>
               <div className="ml-next-objectives">

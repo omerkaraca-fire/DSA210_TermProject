@@ -179,7 +179,7 @@ For the first hypothesis, the question was broad: ``Does entertainment usage dec
 \midrule
 H1: Entertainment usage during academic pressure & Platform activity does not differ between final-exam days and ordinary-term days. & Final-exam days have lower platform activity. & One-sided Mann--Whitney U, tested separately by platform.\\
 H2: Platform diversity during academic pressure & Platform diversity does not differ between final-exam days and ordinary-term days. & Platform diversity is lower during finals. & One-sided Mann--Whitney U.\\
-H3: Netflix + Prime and YouTube activity & YouTube watched count does not differ between Netflix + Prime active and inactive days. & YouTube watched count is lower on Netflix + Prime active days. & One-sided Mann--Whitney U.\\
+H3: Long-form streaming and YouTube activity & YouTube watched count does not differ between Netflix + Prime active and inactive days. & YouTube watched count is lower on Netflix + Prime active days. & One-sided Mann--Whitney U.\\
 H4: Spotify and YouTube co-usage & Spotify hours are not associated with YouTube watched count. & Spotify hours are positively associated with YouTube watched count. & One-sided Spearman correlation.\\
 H5: After-9:30 PM entertainment during finals & Late-evening entertainment share does not differ between final-exam days and ordinary-term days. & Late-evening share is lower during finals. & One-sided Mann--Whitney U, tested separately for YouTube and Spotify.\\
 \bottomrule
@@ -203,10 +203,10 @@ H1 & Spotify listening hours & Do not reject H0 & 0.0697 & Spotify hours were lo
 H1 & Netflix viewing count & Do not reject H0 & 0.8512 & Netflix did not support the expected lower-finals direction.\\
 H1 & Prime Video viewing count & Do not reject H0 & 0.3890 & Prime Video did not provide enough evidence for lower finals usage.\\
 H2 & Distinct active entertainment platforms & Do not reject H0 & 0.1305 & Platform diversity did not significantly decrease during finals.\\
-H3 & YouTube watched count on Netflix + Prime active days & Do not reject H0 & 0.8731 & Long-form active days did not support lower YouTube watch activity.\\
-H4 & Spotify hours and YouTube watched count & Reject H0 & 0.0002 & There is a statistically detectable but weak positive same-day association.\\
+H3 & YouTube watched count on long-form active days & Do not reject H0 & 0.8731 & The direction was opposite to H1: mean YouTube watched count was higher on Netflix + Prime active days, so the lower-YouTube alternative could not be rejected.\\
+H4 & Spotify hours and YouTube watched count & Reject H0 & 0.0002 & Statistically detectable but practically very weak positive same-day association ($\rho=0.0934$).\\
 H5 & YouTube after-21:30 activity share & Reject H0 & 0.0059 & YouTube late-evening share was lower during finals.\\
-H5 & Spotify after-21:30 listening-hour share & Reject H0 & 0.0361 & Spotify late-evening listening share was lower during finals.\\
+H5 & Spotify after-21:30 listening-hour share & Reject H0 & 0.0342 & Spotify late-evening listening share was lower during finals.\\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -218,7 +218,7 @@ H5 & Spotify after-21:30 listening-hour share & Reject H0 & 0.0361 & Spotify lat
 \label{fig:hypothesis-visual}
 \end{figure}
 
-The main result at this stage is that the broad entertainment-usage hypothesis was not supported strongly enough when tested platform by platform. However, late-evening activity during finals did show statistically significant lower shares for both YouTube and Spotify. The Spotify--YouTube co-usage hypothesis was also rejected, but the effect should be described as weak even though the p-value is small. This distinction is important because statistical detectability does not automatically mean a large practical effect.
+The main result at this stage is that the broad entertainment-usage hypothesis was not supported strongly enough when tested platform by platform. H3 also moved opposite to the stated alternative: YouTube watched count was higher on Netflix + Prime active days on average, so the test could not support the lower-YouTube direction. However, late-evening activity during finals did show statistically significant lower shares for both YouTube and Spotify. The Spotify--YouTube co-usage hypothesis was also rejected, but the Spearman correlation was only $\rho=0.0934$, which is close to zero. This distinction is important because statistical detectability does not automatically mean a large practical effect.
 
 \section*{Limitations and Next Steps}
 There are several limitations at this stage. First, the datasets have different levels of temporal detail. Spotify and YouTube have exact timestamps, while Netflix and Prime Video are mostly date-level viewing records. Second, long-form streaming is sparse: many dates have zero Netflix and Prime Video activity. Third, the current hypothesis results use raw p-values, so multiple-testing correction should be considered later. Finally, YouTube watch time is only estimated from gaps between consecutive watch events, so it should be treated as an exploratory proxy rather than exact screen time.

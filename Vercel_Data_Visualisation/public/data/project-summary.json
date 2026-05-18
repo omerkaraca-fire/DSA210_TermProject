@@ -661,7 +661,7 @@
       "pValue": 0.873071,
       "alpha": 0.05,
       "decision": "Do not reject H0",
-      "interpretation": "The current basic test does not support lower YouTube activity on Netflix+Prime active days."
+      "interpretation": "The direction is opposite to the alternative: mean YouTube watched count is higher on Netflix+Prime active days, so the lower-YouTube alternative cannot be rejected."
     },
     {
       "hypothesis": "H4 Spotify and YouTube co-usage",
@@ -679,7 +679,7 @@
       "pValue": 0.000207,
       "alpha": 0.05,
       "decision": "Reject H0",
-      "interpretation": "The association is statistically detectable in this basic test, but the effect is weak."
+      "interpretation": "The association is statistically detectable, but rho = 0.0934 is close to zero, so the practical relationship is very weak."
     },
     {
       "hypothesis": "H5 After-9:30 PM entertainment during finals",
@@ -712,7 +712,7 @@
       "medianGroup1": 0.01399,
       "medianGroup2": 0.03731,
       "statistic": 33480.0,
-      "pValue": 0.036066,
+      "pValue": 0.0342,
       "alpha": 0.05,
       "decision": "Reject H0",
       "interpretation": "The Spotify late-evening listening share is lower during finals in the current basic test."
